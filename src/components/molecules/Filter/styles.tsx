@@ -6,14 +6,6 @@ export const Container = styled.div`
     flex-direction: column;
     width: 100%;
 
-    h2 {
-      color: ${theme.colors.primary[1]};
-      font-family: ${theme.font.family};
-      font-weight: ${theme.font.weight.bold};
-      font-size: 1.25rem;
-      margin-bottom: 15px;
-    }
-
     span {
       font-size: 1rem;
       font-family: ${theme.font.family};

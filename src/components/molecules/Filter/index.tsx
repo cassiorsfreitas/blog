@@ -1,12 +1,13 @@
 /* eslint-disable multiline-ternary */
 import React from 'react'
 import Button from '../../atoms/Button'
+import SectionTitle from '../../atoms/SectionTitle'
 import { Container } from './styles'
 
 const MenuBottom = () => {
   return (
     <Container>
-      <h2>Categories</h2>
+      <SectionTitle title="Categories" strong />
       <div className="categories">
         <div className="category">
           <Button rounded>
