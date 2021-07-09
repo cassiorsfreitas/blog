@@ -4,6 +4,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
     width: 100%;
 
     span {
@@ -22,7 +23,7 @@ export const Container = styled.div`
       gap: 1rem;
     }
 
-    .categorie {
+    .category {
       flex: 0 0 auto;
     }
   `}
