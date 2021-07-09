@@ -15,14 +15,14 @@ export default {
     }
   },
   colors: {
-    primary: ['#0866B7', '#cbcbcb'],
+    primary: ['#0866B7', '#494949'],
     secondary: ['#09c199', '#09C199BF'],
     paragraph: ['#fff', '#fafafa'],
     red: '#B81213',
     lightGray: '#cbcbcb',
     gray: '#8F8F8F',
     darkGray: '#2E2F42',
-    background: ['#333', '#222', '#555', '#333'],
+    background: ['#FFF', '#222', '#555', '#333'],
     footer: '#111',
     header: '#222',
     dropcard: '#1f1f1f',
