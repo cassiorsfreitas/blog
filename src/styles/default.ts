@@ -18,7 +18,7 @@ export default {
   },
 
   colors: {
-    primary: ['#FFC72C', '#0866B7'],
+    primary: ['#FFC72C', '#D6D6D6'],
     secondary: ['#09c199', '#09C199BF'],
     paragraph: ['#404040', '#ffffff'],
     red: '#B81213',

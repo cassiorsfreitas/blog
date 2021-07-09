@@ -1,4 +1,6 @@
 import React from 'react'
+import MenuBottom from '../../molecules/MenuBottom'
+import MenuTop from '../../molecules/MenuTop'
 import { LayoutProps } from './interface'
 import { Container } from './styles'
 
@@ -8,11 +10,13 @@ import { Container } from './styles'
 const LayoutMobile = ({ children }: LayoutProps) => {
   return (
     <Container>
-      {/* <MenuBottom /> */}
+      <MenuTop />
 
       {children}
 
-      {/* <MenuTop /> */}
+      <div className="menu-bottom">
+        <MenuBottom />
+      </div>
     </Container>
   )
 }

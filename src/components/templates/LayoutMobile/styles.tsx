@@ -6,6 +6,12 @@ export const Container = styled.div`
     height: 100%;
     width: 100%;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 20px;
+
+    .menu-bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
   `}
 `
