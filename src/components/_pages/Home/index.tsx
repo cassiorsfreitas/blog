@@ -1,7 +1,9 @@
 import React from 'react'
+import Filter from '../../molecules/Filter'
 import HeadSeo from '../../organisms/HeadSeo'
 
 import LayoutMobile from '../../templates/LayoutMobile'
+import MainContent from '../../templates/MainContent'
 
 const Home = () => {
   return (
@@ -10,9 +12,9 @@ const Home = () => {
         title="Cássio Freitas"
         description="This is my personal website"
       />
-      <main>
-        <h1>Hello World</h1>
-      </main>
+      <MainContent>
+        <Filter />
+      </MainContent>
     </LayoutMobile>
   )
 }
