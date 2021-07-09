@@ -23,6 +23,10 @@ export const Container = styled.div`
       gap: 1rem;
     }
 
+    .categories::-webkit-scrollbar {
+      display: none;
+    }
+
     .category {
       flex: 0 0 auto;
     }
