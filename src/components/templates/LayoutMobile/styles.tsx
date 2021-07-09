@@ -7,5 +7,11 @@ export const Container = styled.div`
     width: 100%;
     flex-direction: column;
     padding-top: 20px;
+
+    .menu-bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
   `}
 `
