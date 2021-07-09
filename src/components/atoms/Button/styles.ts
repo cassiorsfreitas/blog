@@ -120,10 +120,10 @@ export const WrapperButton = styled.button<ButtonProps>`
     &:focus {
       outline: none;
       border: 1px solid ${
-        outline ? theme.colors.primary[0] : theme.colors.secondary[1]
+        outline ? theme.colors.primary[0] : theme.colors.primary[0]
       };
       background-color: ${
-        outline ? theme.colors.primary[0] : theme.colors.secondary[1]
+        outline ? theme.colors.primary[0] : theme.colors.primary[0]
       };
       color: white;
     }
