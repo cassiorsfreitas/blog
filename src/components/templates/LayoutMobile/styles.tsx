@@ -7,6 +7,7 @@ export const Container = styled.div`
     width: 100%;
     flex-direction: column;
     padding-top: 20px;
+    padding-bottom: 10rem;
 
     .menu-bottom {
       position: fixed;
