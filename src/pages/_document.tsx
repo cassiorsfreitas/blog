@@ -1,18 +1,16 @@
 import React from 'react'
 import Document, {
   DocumentContext,
-  DocumentInitialProps,
   Html,
   Head,
   Main,
   NextScript
 } from 'next/document'
+
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
+  static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
@@ -39,15 +37,13 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="pt">
+      <Html lang="pt-BR">
         <Head>
-          <meta charSet="uft-8" />
-
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
           />
-          {/* <link rel="icon" href="" /> */}
         </Head>
         <body>
           <Main />

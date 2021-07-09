@@ -1,16 +1,18 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components'
 
-import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
+import { GlobalProvider } from '../contexts/globalContext'
+import ThemeWrapper from '../components/templates/ThemeWrapper'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeProvider>
+    <GlobalProvider>
+      <ThemeWrapper>
+        <main>
+          <Component {...pageProps} />
+        </main>
+      </ThemeWrapper>
+    </GlobalProvider>
   )
 }
 
