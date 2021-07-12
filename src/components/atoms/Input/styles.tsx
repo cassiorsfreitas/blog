@@ -16,11 +16,11 @@ export const Container = styled.div<InputProps>`
   }) => css`
     background-color: ${theme.colors.background[1]};
     color: ${theme.colors.primary[1]};
-    font-size: 1rem;
+    font-size: 1.125rem;
     border-radius: 1rem;
     margin-bottom: ${margin ? '3.5rem' : '24px'};
     min-width: 6rem;
-    height: 4.4rem;
+    height: 4.8rem;
     width: max-content;
     max-width: 34rem;
     padding: 1.5rem 1rem 1rem;
@@ -37,7 +37,7 @@ export const Container = styled.div<InputProps>`
       color: inherit;
       background: none;
       font-size: inherit;
-      padding: 0 0.75rem;
+      padding: 0 0.5rem;
 
       &::placeholder {
         color: ${theme.colors.primary[1]};
@@ -62,6 +62,7 @@ export const Container = styled.div<InputProps>`
 
     .line {
       border-bottom: 1px solid ${theme.colors.primary[0]};
+      margin: 0 0.5rem;
     }
 
     label {
