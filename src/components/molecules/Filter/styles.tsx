@@ -19,7 +19,6 @@ export const Container = styled.div`
       padding: 0.1rem 0px;
       flex-wrap: nowrap;
       overflow: auto;
-      width: 90vw;
       gap: 1rem;
     }
 
