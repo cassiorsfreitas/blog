@@ -4,6 +4,7 @@ import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import { Container } from './styles'
 
 import posts from '../../../constants/posts/posts'
+import Button from '../../atoms/Button'
 
 const Recommendations = () => {
   return (
@@ -23,6 +24,11 @@ const Recommendations = () => {
             </div>
           )
         })}
+      </div>
+      <div className="more">
+        <Button rounded fullWidth className="simple-button">
+          <span>See more</span>
+        </Button>
       </div>
     </Container>
   )

@@ -9,5 +9,9 @@ export const Container = styled.div`
     align-items: center;
     padding: 2rem 1.5rem;
     position: relative;
+
+    .picture-profile {
+      border-radius: 100%;
+    }
   `}
 `

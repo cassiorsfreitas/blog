@@ -1,11 +1,13 @@
 /* eslint-disable multiline-ternary */
 import React from 'react'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { FaUserCircle } from 'react-icons/fa'
 import { BiSun, BiMoon, BiSearch } from 'react-icons/bi'
 import { Container } from './styles'
 
 import { useGlobalContext } from '../../../contexts/globalContext'
+
+import profile from '../../../../public/profile.jpg'
 
 const MenuTop = () => {
   const { isLight, setIsLight } = useGlobalContext()
@@ -26,7 +28,14 @@ const MenuTop = () => {
           className="theme-icon"
         />
       )}
-      <FaUserCircle size={40} />
+      <Image
+        src={profile}
+        width={50}
+        height={50}
+        priority
+        alt="Cássio Freitas Profile"
+        className="picture-profile"
+      />
       <BiSearch size={30} onClick={() => router.push('/search')} />
     </Container>
   )
