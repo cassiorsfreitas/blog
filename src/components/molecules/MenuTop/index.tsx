@@ -35,8 +35,9 @@ const MenuTop = () => {
         priority
         alt="Cássio Freitas Profile"
         className="picture-profile"
+        onClick={() => router.push('/')}
       />
-      <BiSearch size={30} onClick={() => router.push('/search')} />
+      <BiSearch size={30} onClick={() => router.push('/explore')} />
     </Container>
   )
 }
