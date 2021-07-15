@@ -2,46 +2,39 @@ import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   ${({ theme }) => css`
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 1rem;
-    width: 100%;
-    align-items: center;
 
     .cardContainer {
       width: 100%;
       display: flex;
-      flex-direction: column;
+      height: 120px;
+      background: ${theme.colors.background[1]};
+      border-radius: 1rem;
     }
 
     .cardImage {
-      min-height: 170px;
-      border-radius: 1rem 1rem 0 0;
+      width: 60%;
+      max-height: 120px;
+      position: relative;
     }
 
     .cardImageIn {
-      border-radius: 1rem 1rem 0 0;
+      border-radius: 1rem 0 0 1rem;
     }
 
     .cardDescription {
+      width: 60%;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 1rem;
       color: ${theme.colors.paragraph[1]};
-      background: ${theme.colors.background[1]};
-      min-height: 170px;
-      border-radius: 0 0 1rem 1rem;
     }
 
     .title {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      font-size: 1rem;
-      font-weight: ${theme.font.weight.normal};
+      font-size: 20px;
     }
 
     .details {

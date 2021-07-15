@@ -1,23 +1,22 @@
 import React from 'react'
-import PostCard from '../../atoms/PostCard'
+import PostCardMini from '../../atoms/PostCardMini'
 import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import { Container } from './styles'
 
 import posts from '../../../constants/posts/posts'
-import Button from '../../atoms/Button'
 
-const Recommendations = () => {
-  const recommendationSize = 2
-  const items = posts.slice(0, recommendationSize)
-
+const LatestPosts = () => {
   return (
     <Container>
-      <SectionDoubleTitle titleMax="Recommendation" titleMin="Your Daily" />
+      <SectionDoubleTitle
+        titleMax="Results found"
+        titleMin="67 results found in 23ms"
+      />
       <div className="postCardContainer">
-        {items.map(post => {
+        {posts.map(post => {
           return (
             <div key={post.title}>
-              <PostCard
+              <PostCardMini
                 title={post.title}
                 subtitle={post.description}
                 time={post.time}
@@ -28,13 +27,8 @@ const Recommendations = () => {
           )
         })}
       </div>
-      <div className="more">
-        <Button rounded fullWidth className="simple-button">
-          <span>See more</span>
-        </Button>
-      </div>
     </Container>
   )
 }
 
-export default Recommendations
+export default LatestPosts

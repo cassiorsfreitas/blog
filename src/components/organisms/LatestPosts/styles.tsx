@@ -9,11 +9,11 @@ export const Container = styled.div`
     .postCardContainer {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1rem;
     }
 
     .more {
-      margin-top: 1.5rem;
+      margin-top: 4rem;
     }
 
     .simple-button {
