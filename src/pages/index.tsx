@@ -1,22 +1,45 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
+import PropTypes from 'prop-types'
 
+import { graphQLClient } from './api/graphql'
 import Home from '../components/_pages/Home'
-import { getAllPosts } from '../scripts/blog/getAllPosts'
 
-const Index = () => {
+export const Index = ({ posts }) => {
   return <Home />
 }
 
 export default Index
 
+Index.propTypes = {
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      metadata: PropTypes.shape({
+        title: PropTypes.string,
+        excerpt: PropTypes.string
+      })
+    })
+  ).isRequired
+}
+
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts()
-  console.log(posts)
+  const query = `
+    query {
+      posts {
+        metadata {
+          title
+          excerpt
+        }
+      }
+    }
+  `
+
+  const { data } = await graphQLClient.executeOperation({ query })
+  console.log(data.posts)
 
   return {
     props: {
-      posts
+      posts: data.posts
     }
   }
 }

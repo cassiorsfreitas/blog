@@ -6,21 +6,19 @@ import remarkHTML from 'remark-html'
 export function getAllPosts() {
   const allPostsFileNames = fs.readdirSync('./_posts')
 
-  const posts = allPostsFileNames.map(fileName => {
-    const fileContents = fs.readFileSync(`./_posts/${fileName}`, 'utf-8')
-    const { content, data: metadata } = grayMatter(fileContents)
-
+  const posts = allPostsFileNames.map(filename => {
+    const fileContent = fs.readFileSync(`./_posts/${filename}`, 'utf-8')
+    const { content, data: metadata } = grayMatter(fileContent)
     const htmlContent = remark().use(remarkHTML).processSync(content).toString()
+
     return {
       metadata: {
         ...metadata,
-        slug: fileName.replace('.md', '')
+        slug: filename.replace('.md', '')
       },
       content: htmlContent
     }
   })
-
-  console.log(posts)
 
   return posts
 }
