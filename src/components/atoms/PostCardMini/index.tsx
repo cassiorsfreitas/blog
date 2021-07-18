@@ -4,13 +4,7 @@ import { Container } from './styles'
 import { FaClock } from 'react-icons/fa'
 import { PostCardMiniProps } from './interface'
 
-const PostCardMini = ({
-  title,
-  subtitle,
-  time,
-  date,
-  imagePath
-}: PostCardMiniProps) => {
+const PostCardMini = ({ title, time, date, imagePath }: PostCardMiniProps) => {
   return (
     <Container>
       <div className="cardContainer">

@@ -6,7 +6,7 @@ import { graphQLClient } from './api/graphql'
 import Home from '../components/_pages/Home'
 
 export const Index = ({ posts }) => {
-  return <Home />
+  return <Home posts={posts} />
 }
 
 export default Index
@@ -29,6 +29,9 @@ export const getStaticProps: GetStaticProps = async () => {
         metadata {
           title
           excerpt
+          date
+          time
+          cover
         }
       }
     }

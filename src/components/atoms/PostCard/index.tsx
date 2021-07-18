@@ -18,6 +18,8 @@ const PostCard = ({
           <Image
             src={imagePath}
             alt="image"
+            height={170}
+            width={200}
             layout="responsive"
             className="cardImageIn"
           />

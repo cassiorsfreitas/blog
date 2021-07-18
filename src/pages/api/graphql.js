@@ -6,6 +6,9 @@ const typeDefs = gql`
     title: String
     slug: String
     excerpt: String
+    date: String
+    time: String
+    cover: String
   }
   type Post {
     metadata: PostMetadata

@@ -3,10 +3,9 @@ import PostCard from '../../atoms/PostCard'
 import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import { Container } from './styles'
 
-import posts from '../../../constants/posts/posts'
 import Button from '../../atoms/Button'
 
-const Recommendations = () => {
+const Recommendations = ({ posts }) => {
   const recommendationSize = 2
   const items = posts.slice(0, recommendationSize)
 
@@ -16,13 +15,13 @@ const Recommendations = () => {
       <div className="postCardContainer">
         {items.map(post => {
           return (
-            <div key={post.title}>
+            <div key={post.metadata.title}>
               <PostCard
-                title={post.title}
-                subtitle={post.description}
-                time={post.time}
-                date={post.date}
-                imagePath={post.cover}
+                title={post.metadata.title}
+                subtitle={post.metadata.excerpt}
+                time={post.metadata.time}
+                date={post.metadata.date}
+                imagePath={post.metadata.cover}
               />
             </div>
           )

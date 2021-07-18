@@ -4,12 +4,12 @@ import LatestPosts from '../../organisms/LatestPosts'
 import LayoutMobile from '../../templates/LayoutMobile'
 import MainContent from '../../templates/MainContent'
 
-const Explore = () => {
+const Explore = ({ posts }) => {
   return (
     <LayoutMobile>
       <MainContent>
         <SearchBar />
-        <LatestPosts />
+        <LatestPosts posts={posts} />
       </MainContent>
     </LayoutMobile>
   )

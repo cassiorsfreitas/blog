@@ -1,9 +1,9 @@
 ---
 
 title: 'Why should we know SEO?'
-date: '2020-03-16'
+date: '03/16/2021'
 excerpt: 'Tempor ad laboris deserunt ut ea. Cupidatat est eu ipsum culpa amet Lorem voluptate pariatur incididunt incididunt cillum amet ad.'
-cover: '../../../public/loremImage.jpg'
+cover: '/loremImage.jpg'
 time: '3 min'
 
 ---
