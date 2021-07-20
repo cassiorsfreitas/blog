@@ -4,7 +4,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
-import Image from 'next/image'
+// import Image from 'next/image'
 import LayoutMobile from '../components/templates/LayoutMobile'
 import MainContent from '../components/templates/MainContent'
 
