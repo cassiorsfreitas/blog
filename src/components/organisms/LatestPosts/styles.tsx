@@ -13,7 +13,7 @@ export const Container = styled.div`
     }
 
     .more {
-      margin-top: 1.5rem;
+      margin-top: 4rem;
     }
 
     .simple-button {

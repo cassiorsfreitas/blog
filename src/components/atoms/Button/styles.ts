@@ -43,7 +43,7 @@ const wrapperModifiers = {
     &:hover {
       cursor: pointer;
       transition: 140ms ease;
-      background: ${theme.colors.secondary[0]};
+      background: ${theme.colors.primary[1]};
       color: white;
       border: 1px solid rgba(0, 0, 0, 0);
     }

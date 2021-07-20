@@ -6,7 +6,7 @@ import Recommendations from '../../organisms/Recommendations'
 import LayoutMobile from '../../templates/LayoutMobile'
 import MainContent from '../../templates/MainContent'
 
-const Home = () => {
+const Home = ({ posts }) => {
   return (
     <LayoutMobile>
       <HeadSeo
@@ -15,7 +15,7 @@ const Home = () => {
       />
       <MainContent>
         <Filter />
-        <Recommendations />
+        <Recommendations posts={posts} />
       </MainContent>
     </LayoutMobile>
   )

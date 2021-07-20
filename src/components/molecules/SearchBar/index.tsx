@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Container } from './styles'
+
 import Input from '../../atoms/Input'
 
 const SearchBar = () => {
@@ -9,7 +11,7 @@ const SearchBar = () => {
   }
 
   return (
-    <div>
+    <Container>
       <Input
         fullWidth
         type="text"
@@ -19,7 +21,7 @@ const SearchBar = () => {
           setSearch(e.target.value)
         }}
       />
-    </div>
+    </Container>
   )
 }
 
