@@ -4,4 +4,5 @@ export type PostCardProps = {
   title?: string
   date?: string
   time?: string
+  link?: string
 }

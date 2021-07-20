@@ -1,35 +1,44 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Container } from './styles'
 import { FaClock } from 'react-icons/fa'
 import { PostCardMiniProps } from './interface'
 
-const PostCardMini = ({ title, time, date, imagePath }: PostCardMiniProps) => {
+const PostCardMini = ({
+  title,
+  time,
+  date,
+  imagePath,
+  link
+}: PostCardMiniProps) => {
   return (
     <Container>
-      <div className="cardContainer">
-        <div className="cardImage">
-          <Image
-            src={imagePath}
-            alt="image"
-            layout="fill"
-            objectFit="cover"
-            className="cardImageIn"
-          />
-        </div>
-        <div className="cardDescription">
-          <div className="content">
-            <div className="title">{title}</div>
+      <Link href={`/${link}`}>
+        <div className="cardContainer">
+          <div className="cardImage">
+            <Image
+              src={imagePath}
+              alt="image"
+              layout="fill"
+              objectFit="cover"
+              className="cardImageIn"
+            />
           </div>
-          <div className="details">
-            <div className="time">
-              <FaClock className="clockIcon" />
-              {time}
+          <div className="cardDescription">
+            <div className="content">
+              <div className="title">{title}</div>
             </div>
-            <div className="date">{date}</div>
+            <div className="details">
+              <div className="time">
+                <FaClock className="clockIcon" />
+                {time}
+              </div>
+              <div className="date">{date}</div>
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     </Container>
   )
 }

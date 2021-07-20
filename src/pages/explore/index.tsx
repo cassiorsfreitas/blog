@@ -18,6 +18,7 @@ export const getStaticProps: GetStaticProps = async () => {
           date
           time
           cover
+          slug
         }
       }
     }
