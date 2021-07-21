@@ -1,35 +1,12 @@
-import { GetStaticPaths, GetStaticProps } from 'next'
 import fs from 'fs'
 import path from 'path'
-import matter from 'gray-matter'
-import remark from 'remark'
-import remarkHTML from 'remark-html'
-// import Image from 'next/image'
-import LayoutMobile from '../components/templates/LayoutMobile'
-import MainContent from '../components/templates/MainContent'
+import { GetStaticPaths, GetStaticProps } from 'next'
 
-export default function PostPage() {
-  return (
-    <LayoutMobile>
-      <MainContent>
-        {/* <h1>{title}</h1>
-        {content}
-        {excerpt}
-        {date}
-        {time}
+import Slug from '../components/_pages/Slug'
+import { getPostBySlug } from '../scripts/blog/getPostBySlug'
 
-        <div className="post-image">
-          <Image
-            src={`${cover}`}
-            layout="responsive"
-            width={200}
-            height={170}
-            alt="image"
-          />
-        </div> */}
-      </MainContent>
-    </LayoutMobile>
-  )
+export default function PostPage({ metadata, content }) {
+  return <Slug metadata={metadata} content={content} />
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -47,11 +24,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
-  const markdownWithMeta = fs.readFileSync(`./_posts/${slug}.md`, 'utf-8')
-  const { data: metadata, content } = matter(markdownWithMeta)
-  const htmlContent = remark().use(remarkHTML).processSync(content).toString()
-
-  console.log(htmlContent)
+  const { metadata, content } = getPostBySlug(slug)
+  console.log(metadata)
+  console.log(content)
   return {
     props: {
       metadata,
