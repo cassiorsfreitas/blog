@@ -16,30 +16,32 @@ const PostCard = ({
   return (
     <Container>
       <Link href={`/${link}`}>
-        <div className="cardContainer">
-          <div className="cardImage">
-            <Image
-              src={imagePath}
-              alt="image"
-              height={170}
-              width={200}
-              layout="responsive"
-              className="cardImageIn"
-            />
-          </div>
-          <div className="cardDescription">
-            <div className="content">
-              <div className="title">{title}</div>
-              <div className="subtitle">{subtitle}</div>
+        <a>
+          <div className="cardContainer">
+            <div className="cardImage">
+              <Image
+                src={imagePath}
+                alt="image"
+                height={170}
+                width={200}
+                layout="responsive"
+                className="cardImageIn"
+              />
             </div>
-            <div className="details">
-              <div className="time">
-                <FaClock className="clockIcon" /> {time}
+            <div className="cardDescription">
+              <div className="content">
+                <div className="title">{title}</div>
+                <div className="subtitle">{subtitle}</div>
               </div>
-              <div className="date">{date}</div>
+              <div className="details">
+                <div className="time">
+                  <FaClock className="clockIcon" /> {time}
+                </div>
+                <div className="date">{date}</div>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </Link>
     </Container>
   )
