@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { Container } from './styles'
 
 import Input from '../../atoms/Input'
+import { SearchContext } from '../../../contexts/searchContext'
 
 const SearchBar = () => {
-  const [search, setSearch] = useState('')
+  const { search, setSearch } = useContext(SearchContext)
 
   const validateSearch = () => {
     console.log(search)
@@ -14,7 +15,7 @@ const SearchBar = () => {
     <Container>
       <Input
         fullWidth
-        type="text"
+        type="search"
         placeholder="Search..."
         onBlur={() => validateSearch()}
         onChange={e => {
