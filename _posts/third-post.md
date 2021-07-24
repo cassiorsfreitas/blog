@@ -4,7 +4,7 @@ date: '05/22/2021'
 excerpt: 'Tempor ad laboris deserunt ut ea. Cupidatat est eu ipsum culpa amet Lorem voluptate pariatur incididunt incididunt cillum amet ad.'
 cover: '/loremImage3.jpg'
 time: '2 min'
-category: 'front end'
+category: 'Potato'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.

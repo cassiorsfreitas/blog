@@ -33,6 +33,7 @@ export const getStaticProps: GetStaticProps = async () => {
           time
           cover
           slug
+          category
         }
       }
     }
