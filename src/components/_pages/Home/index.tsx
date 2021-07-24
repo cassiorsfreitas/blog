@@ -14,7 +14,7 @@ const Home = ({ posts }) => {
         description="This is my personal website"
       />
       <MainContent>
-        <Filter />
+        <Filter posts={posts} />
         <Recommendations posts={posts} />
       </MainContent>
     </LayoutMobile>

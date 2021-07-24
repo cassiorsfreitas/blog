@@ -4,6 +4,7 @@ import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import { Container } from './styles'
 
 import Button from '../../atoms/Button'
+import router from 'next/router'
 
 const Recommendations = ({ posts }) => {
   const recommendationSize = 2
@@ -29,9 +30,16 @@ const Recommendations = ({ posts }) => {
         })}
       </div>
       <div className="more">
-        <Button rounded fullWidth className="simple-button">
-          <span>See more</span>
-        </Button>
+        <a>
+          <Button
+            rounded
+            fullWidth
+            className="simple-button"
+            onClick={() => router.push('/explore')}
+          >
+            <span>See more</span>
+          </Button>
+        </a>
       </div>
     </Container>
   )
