@@ -8,7 +8,6 @@ import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import { Container } from './styles'
 
 const LatestPosts = ({ posts }) => {
-  const numberOfResults = posts.length
   const { search } = useContext(SearchContext)
 
   const handleSearch = () => {
@@ -22,6 +21,7 @@ const LatestPosts = ({ posts }) => {
   }
 
   const filteredPosts = handleSearch()
+  const numberOfResults = filteredPosts.length
 
   return (
     <Container>

@@ -45,6 +45,10 @@ export const Container = styled.div<InputProps>`
       &:focus {
         outline: none;
       }
+
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
     }
 
     &::before {
