@@ -40,6 +40,7 @@ export const getStaticProps: GetStaticProps = async () => {
   `
 
   const { data } = await graphQLClient.executeOperation({ query })
+  console.log(data.posts)
 
   return {
     props: {
