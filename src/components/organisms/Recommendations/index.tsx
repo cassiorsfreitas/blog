@@ -24,6 +24,7 @@ const Recommendations = ({ posts }) => {
                 date={post.metadata.date}
                 imagePath={post.metadata.cover}
                 link={post.metadata.slug}
+                category={post.metadata.category}
               />
             </div>
           )

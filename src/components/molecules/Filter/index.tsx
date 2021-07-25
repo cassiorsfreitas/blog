@@ -7,7 +7,6 @@ const MenuBottom = ({ posts }) => {
   return (
     <Container>
       <SectionTitle title="Categories" strong />
-      {console.log(posts)}
       <div className="categories">
         {posts.map(post => {
           return (

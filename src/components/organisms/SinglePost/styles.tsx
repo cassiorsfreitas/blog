@@ -12,8 +12,13 @@ export const Container = styled.div`
 
     h2 {
       font-weight: ${theme.font.weight.normal};
-      font-size: 1.125;
+      font-size: 2rem;
       margin: 1rem 0rem 0.5rem;
+    }
+
+    h3 {
+      font-weight: ${theme.font.weight.normal};
+      font-size: 1.125rem;
     }
 
     h4 {
@@ -32,6 +37,7 @@ export const Container = styled.div`
 
     blockquote {
       padding: 2rem;
+      margin-top: 1rem;
       text-align: center;
       position: relative;
       font-size: 1.375rem;
@@ -39,11 +45,12 @@ export const Container = styled.div`
     }
 
     blockquote:before {
-      content: '"';
+      content: '“';
       left: 0;
       top: 0rem;
       font-size: 7rem;
       position: absolute;
+      font-family: ;
       color: ${theme.colors.primary[0]};
     }
   `}

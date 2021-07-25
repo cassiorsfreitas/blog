@@ -7,16 +7,14 @@ import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 
 import { Container } from './styles'
 
-const LatestPosts = ({ posts }) => {
+const CategoriesPosts = ({ posts }) => {
   const numberOfResults = posts.length
   const { search } = useContext(SearchContext)
 
   const handleSearch = () => {
     return search
       ? posts.filter(post => {
-          return post.metadata.title
-            .toLowerCase()
-            .includes(search.toLowerCase())
+          return post.title.toLowerCase().includes(search.toLowerCase())
         })
       : posts
   }
@@ -48,4 +46,4 @@ const LatestPosts = ({ posts }) => {
   )
 }
 
-export default LatestPosts
+export default CategoriesPosts
