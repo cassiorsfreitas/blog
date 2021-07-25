@@ -57,5 +57,11 @@ export const Container = styled.div`
       color: ${theme.colors.primary[0]};
       margin-right: 0.5rem;
     }
+
+    .tag {
+      padding: 1rem;
+      position: absolute;
+      z-index: 1;
+    }
   `}
 `

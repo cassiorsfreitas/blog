@@ -5,4 +5,5 @@ export type PostCardProps = {
   date?: string
   time?: string
   link?: string
+  category?: string
 }

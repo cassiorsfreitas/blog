@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Container } from './styles'
 import { FaClock } from 'react-icons/fa'
 import { PostCardProps } from './interface'
+import Tag from '../Tag'
 
 const PostCard = ({
   title,
@@ -11,7 +12,8 @@ const PostCard = ({
   time,
   date,
   imagePath,
-  link
+  link,
+  category
 }: PostCardProps) => {
   return (
     <Container>
@@ -19,6 +21,9 @@ const PostCard = ({
         <a>
           <div className="cardContainer">
             <div className="cardImage">
+              <div className="tag">
+                <Tag category={category} />
+              </div>
               <Image
                 src={imagePath}
                 alt="image"
