@@ -17,6 +17,7 @@ const SearchBar = () => {
         fullWidth
         type="search"
         placeholder="Search..."
+        value={search || ''}
         onBlur={() => validateSearch()}
         onChange={e => {
           setSearch(e.target.value)

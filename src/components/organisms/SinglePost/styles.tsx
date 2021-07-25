@@ -8,6 +8,7 @@ export const Container = styled.div`
 
     h1 {
       font-weight: ${theme.font.weight.bold};
+      margin-top: -1rem;
     }
 
     h2 {
@@ -23,10 +24,29 @@ export const Container = styled.div`
 
     h4 {
       font-weight: ${theme.font.weight.light};
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
     }
 
     p {
       margin-top: 1rem;
+    }
+
+    .tag {
+      width: 40%;
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.875rem;
+      font-family: ${theme.font.family};
+      font-weight: ${theme.font.weight.normal};
+      background-color: ${theme.colors.primary[0]};
+      border-radius: 1rem;
+      padding: 0.3rem 2rem;
+    }
+
+    .backToList {
+      margin-top: 1rem;
+      color: ${theme.colors.primary[0]};
     }
 
     .text-content {
