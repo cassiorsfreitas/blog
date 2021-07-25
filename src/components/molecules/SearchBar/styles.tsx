@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     margin-bottom: 2rem;
   `}
 `

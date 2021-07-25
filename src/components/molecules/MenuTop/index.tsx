@@ -2,11 +2,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { BiSun, BiMoon, BiSearch } from 'react-icons/bi'
+import { BiMoon } from 'react-icons/bi'
 import { Container } from './styles'
 
+import { MdSearch, MdWbSunny } from 'react-icons/md'
 import { useGlobalContext } from '../../../contexts/globalContext'
-
 import profile from '../../../../public/profile.jpg'
 
 const MenuTop = () => {
@@ -22,7 +22,7 @@ const MenuTop = () => {
           className="theme-icon"
         />
       ) : (
-        <BiSun
+        <MdWbSunny
           onClick={() => setIsLight !== undefined && setIsLight(!isLight)}
           size={30}
           className="theme-icon"
@@ -37,7 +37,7 @@ const MenuTop = () => {
         className="picture-profile"
         onClick={() => router.push('/')}
       />
-      <BiSearch size={30} onClick={() => router.push('/explore')} />
+      <MdSearch size={30} onClick={() => router.push('/explore')} />
     </Container>
   )
 }

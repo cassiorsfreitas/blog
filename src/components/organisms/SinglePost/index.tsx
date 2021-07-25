@@ -19,9 +19,10 @@ const SinglePost = ({ metadata, content }) => {
       <MainContent>
         <div className="text-content">
           <h4>
-            {metadata.time} - {metadata.date}
+            {metadata.time} • {metadata.date}
           </h4>
           <h1>{metadata.title}</h1>
+          <h3>{metadata.excerpt}</h3>
 
           <div
             className="content"

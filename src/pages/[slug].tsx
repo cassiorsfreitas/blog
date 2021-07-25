@@ -25,8 +25,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   const { metadata, content } = getPostBySlug(slug)
-  console.log(metadata)
-  console.log(content)
   return {
     props: {
       metadata,

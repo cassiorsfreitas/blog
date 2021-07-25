@@ -1,18 +1,28 @@
 /* eslint-disable multiline-ternary */
 import React from 'react'
-import { useRouter } from 'next/router'
-import { FaUserCircle } from 'react-icons/fa'
-import { IoHomeOutline, IoBookOutline } from 'react-icons/io5'
 import { Container } from './styles'
+
+import { useRouter } from 'next/router'
+
+import {
+  MdHome,
+  MdFavorite,
+  MdAccountCircle,
+  MdArrowUpward
+} from 'react-icons/md'
 
 const MenuBottom = () => {
   const router = useRouter()
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <Container>
-      <IoHomeOutline size={30} onClick={() => router.push('/')} />
-      <IoBookOutline size={30} onClick={() => router.push('/')} />
-      <FaUserCircle size={30} onClick={() => router.push('/')} />
+      <MdHome size={30} onClick={() => router.push('/')} />
+      <MdFavorite size={30} onClick={() => router.push('/')} />
+      <MdAccountCircle size={30} onClick={() => router.push('/')} />
+      <MdArrowUpward size={30} onClick={() => scrollTop()} />
     </Container>
   )
 }
