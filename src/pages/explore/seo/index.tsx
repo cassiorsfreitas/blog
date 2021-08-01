@@ -26,15 +26,15 @@ export const getStaticProps: GetStaticProps = async () => {
   `
 
   const { data } = await graphQLClient.executeOperation({ query })
-  const categories = data.posts.map(post =>
-    post.metadata.category.toLowerCase().replace(' ', '')
+
+  data.posts.map(post => console.log(post.metadata.category))
+
+  const dataFiltered = data.posts.filter(
+    post => post.metadata.category === 'SEO'
   )
-
-  console.log(categories)
-
   return {
     props: {
-      posts: data.posts
+      posts: dataFiltered
     }
   }
 }

@@ -20,6 +20,7 @@ const LatestPosts = ({ posts }) => {
       : posts
   }
 
+  const numberOfPosts = posts.length
   const filteredPosts = handleSearch()
   const numberOfResults = filteredPosts.length
 
@@ -27,7 +28,7 @@ const LatestPosts = ({ posts }) => {
     <Container>
       <SectionDoubleTitle
         titleMax="Results found"
-        titleMin={`${numberOfResults} results found in 3ms`}
+        titleMin={`${numberOfResults} results found in ${numberOfPosts} posts`}
       />
       <div className="postCardContainer">
         {filteredPosts.map(post => {
