@@ -6,6 +6,7 @@ excerpt: 'Tempor ad laboris deserunt ut ea. Cupidatat est eu ipsum culpa amet Lo
 cover: '/loremImage.jpg'
 time: '3 min'
 category: 'SEO'
+link: 'seo'
 
 ---
 

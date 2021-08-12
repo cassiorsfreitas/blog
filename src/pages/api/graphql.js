@@ -10,6 +10,7 @@ const typeDefs = gql`
     time: String
     cover: String
     category: String
+    link: String
   }
   type Post {
     metadata: PostMetadata

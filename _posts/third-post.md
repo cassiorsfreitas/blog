@@ -5,6 +5,8 @@ excerpt: 'Tempor ad laboris deserunt ut ea. Cupidatat est eu ipsum culpa amet Lo
 cover: '/loremImage3.jpg'
 time: '2 min'
 category: 'Potato'
+link: 'potato'
+
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
