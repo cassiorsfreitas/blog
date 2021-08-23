@@ -1,11 +1,20 @@
-import React from 'react'
+/* eslint-disable multiline-ternary */
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Container } from './styles'
 
 import MainContent from '../../templates/MainContent'
+import { MdFavoriteBorder, MdFavorite, MdShare } from 'react-icons/md'
+
+import { Container } from './styles'
 
 const SinglePost = ({ metadata, content }) => {
+  const [liked, setLiked] = useState(false)
+
+  const handleLiked = () => {
+    setLiked(!liked)
+  }
+
   return (
     <Container>
       <div className="post-image">
@@ -33,6 +42,22 @@ const SinglePost = ({ metadata, content }) => {
         </div>
         <div className="backToList">
           <Link href="/explore">← back to list</Link>
+          <div className="favorite">
+            <MdShare size={30} />
+            {liked ? (
+              <MdFavorite
+                size={30}
+                className="fav-icon"
+                onClick={handleLiked}
+              />
+            ) : (
+              <MdFavoriteBorder
+                size={30}
+                className="fav-icon"
+                onClick={handleLiked}
+              />
+            )}
+          </div>
         </div>
       </MainContent>
     </Container>

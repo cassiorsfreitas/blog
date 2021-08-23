@@ -1,5 +1,6 @@
 ---
 
+id: 1
 title: 'Why should we know SEO?'
 date: '03/16/2021'
 excerpt: 'Tempor ad laboris deserunt ut ea. Cupidatat est eu ipsum culpa amet Lorem voluptate pariatur incididunt incididunt cillum amet ad.'

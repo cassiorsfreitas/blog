@@ -12,11 +12,11 @@ const MenuBottom = ({ posts }) => {
         {posts.map(post => {
           return (
             <div key={post.metadata.category} className="category">
-              <Link href={`/explore/${post.metadata.link}`}>
-                <Button rounded>
+              <Button rounded>
+                <Link href={`/explore/${post.metadata.link}`}>
                   <span>{post.metadata.category}</span>
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           )
         })}
