@@ -34,6 +34,7 @@ export const getStaticProps: GetStaticProps = async () => {
           cover
           slug
           category
+          link
         }
       }
     }

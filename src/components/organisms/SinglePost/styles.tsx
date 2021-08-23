@@ -47,6 +47,13 @@ export const Container = styled.div`
     .backToList {
       margin-top: 1rem;
       color: ${theme.colors.primary[0]};
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .fav-icon {
+      margin-left: 1rem;
     }
 
     .text-content {

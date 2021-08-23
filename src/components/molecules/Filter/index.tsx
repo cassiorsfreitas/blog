@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import Button from '../../atoms/Button'
 import SectionTitle from '../../atoms/SectionTitle'
@@ -12,7 +13,9 @@ const MenuBottom = ({ posts }) => {
           return (
             <div key={post.metadata.category} className="category">
               <Button rounded>
-                <span>{post.metadata.category}</span>
+                <Link href={`/explore/${post.metadata.link}`}>
+                  <span>{post.metadata.category}</span>
+                </Link>
               </Button>
             </div>
           )

@@ -1,7 +1,7 @@
 /* eslint-disable multiline-ternary */
 import React from 'react'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import Link from 'next/link'
 import { BiMoon } from 'react-icons/bi'
 import { Container } from './styles'
 
@@ -11,7 +11,6 @@ import profile from '../../../../public/profile.jpg'
 
 const MenuTop = () => {
   const { isLight, setIsLight } = useGlobalContext()
-  const router = useRouter()
 
   return (
     <Container>
@@ -28,16 +27,23 @@ const MenuTop = () => {
           className="theme-icon"
         />
       )}
-      <Image
-        src={profile}
-        width={50}
-        height={50}
-        priority
-        alt="Cássio Freitas Profile"
-        className="picture-profile"
-        onClick={() => router.push('/')}
-      />
-      <MdSearch size={30} onClick={() => router.push('/explore')} />
+      <Link href="/">
+        <a>
+          <Image
+            src={profile}
+            width={50}
+            height={50}
+            priority
+            alt="Cássio Freitas Profile"
+            className="picture-profile"
+          />
+        </a>
+      </Link>
+      <Link href="/explore">
+        <a>
+          <MdSearch size={30} />
+        </a>
+      </Link>
     </Container>
   )
 }
