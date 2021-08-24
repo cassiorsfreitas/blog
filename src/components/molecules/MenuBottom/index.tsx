@@ -22,7 +22,7 @@ const MenuBottom = () => {
           <MdHome size={30} />
         </a>
       </Link>
-      <Link href="/">
+      <Link href="/fav">
         <a>
           <MdFavorite size={30} />
         </a>
