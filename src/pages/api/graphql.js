@@ -3,6 +3,7 @@ import { getAllPosts } from '../../scripts/blog/getAllPosts'
 
 const typeDefs = gql`
   type PostMetadata {
+    id: String
     title: String
     slug: String
     excerpt: String

@@ -1,7 +1,8 @@
 /* eslint-disable multiline-ternary */
-import React, { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
+import { setCookie, parseCookies, destroyCookie } from 'nookies'
 
 import MainContent from '../../templates/MainContent'
 import { MdFavoriteBorder, MdFavorite, MdShare } from 'react-icons/md'
@@ -9,11 +10,28 @@ import { MdFavoriteBorder, MdFavorite, MdShare } from 'react-icons/md'
 import { Container } from './styles'
 
 const SinglePost = ({ metadata, content }) => {
+  const router = useRouter()
   const [liked, setLiked] = useState(false)
 
   const handleLiked = () => {
     setLiked(!liked)
+    handleCookies()
   }
+
+  const handleCookies = () => {
+    if (liked) {
+      destroyCookie(null, `FAVPOST${metadata.id}`)
+    } else {
+      setCookie(null, `FAVPOST${metadata.id}`, `${metadata.title}`, {
+        path: '/'
+      })
+    }
+  }
+
+  useEffect(() => {
+    const cookies = parseCookies()
+    cookies['FAVPOST' + metadata.id] ? setLiked(true) : setLiked(false)
+  }, [])
 
   return (
     <Container>
@@ -41,7 +59,7 @@ const SinglePost = ({ metadata, content }) => {
           ></div>
         </div>
         <div className="backToList">
-          <Link href="/explore">← back to list</Link>
+          <a onClick={() => router.back()}>← back to list</a>
           <div className="favorite">
             <MdShare size={30} />
             {liked ? (
