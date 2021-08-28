@@ -14,7 +14,7 @@ keyword: 'mecanismos de busca'
 
 SEO significa **Search Engine Optimization** (Otimização para mecanismos de busca). O próprio nome revela a importância da aplicação dessas técnicas de otimização para conseguir melhores resultados nas pesquisas em motores de busca. Aparecer ou não no Google pode definir o futuro do seu negócio.
 
-A implementação dessas táticas é um diferencial competitivo para manter sua empresa bem rankeada nas primeiras páginas de resultados orgânicos. E não tenha dúvida, seus concorrentes fazem isso! Contudo, existem empresas que temem o investimento em SEO, pois os resultados tendem a aparecer a longo prazo, ao contrário do Google Adwords, que garante resultados imediatos. Neste recurso, no entanto, a partir do momento que os anúncios são interrompidos, o site simplesmente desaparece dos motores de busca.
+A implementação dessas táticas é um diferencial competitivo para manter sua empresa bem rankeada nas primeiras páginas de resultados orgânicos. E não tenha dúvida, seus concorrentes fazem isso! Contudo, existem empresas que temem o investimento em SEO, pois os resultados tendem a aparecer a longo prazo, ao contrário do Google Ads, que garante resultados imediatos. Neste recurso, no entanto, a partir do momento que os anúncios são interrompidos, o site simplesmente desaparece dos resultados de busca.
 
 ![Exemplo de uma pesquisa do Google mostrando o resultado orgânico e pago -fullwidth](images/post1/google-example.jpeg)
 ## Vantagens do SEO
