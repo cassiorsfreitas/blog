@@ -1,14 +1,16 @@
 ---
 
 id: 1
-title: 'SEO: peça chave para o seu negócio.'
+title: 'SEO: peça chave para o seu negócio'
 date: '19/02/2018'
 excerpt: 'Aparecer ou não no Google pode definir o futuro do seu projeto. Mas, antes de tudo, você sabe mesmo o que é SEO?'
 cover: '/images/post1/image-seo.jpg'
 time: '5 min'
 category: 'SEO'
 link: 'seo'
-keyword: 'mecanismos de busca'
+
+metakeyword: 'mecanismos de busca'
+metadescription: 'O SEO é o melhor amigo dos mecanismos de buscas. Sua função é aumentar a indexação e atingir o objetivo de todas as empresas: o primeiro lugar nas pesquisas'
 
 ---
 
@@ -37,11 +39,11 @@ Atualmente, existem diversos fatores que influenciam diretamente o rankeamento d
 
 *Como o usuário vê um post da Resultados Digitais:*
 
-![Exemplo de uma página da Resultado Digitais -fullwidth](images/post1/rd-example1.jpeg)
+![Exemplo de uma página da Resultado Digitais vista por um humano -fullwidth](images/post1/rd-example1.jpeg)
 
 *Como o Google vê um post da Resultados Digitais:*
 
-![Exemplo de uma página da Resultado Digitais -fullwidth](images/post1/rd-example2.jpeg)
+![Exemplo de uma página da Resultado Digitais vista pelo Google -fullwidth](images/post1/rd-example2.jpeg)
 
 Sendo assim, é fundamental que a estrutura do seu site ou blog post seja descrita em cima do texto alternativo (alt text), para cada página ou post, auxiliando os robôs de buscas a entenderem do que se trata. Além dessa técnica, existem outras:
 
