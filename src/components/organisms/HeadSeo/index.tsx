@@ -9,7 +9,7 @@ const HeadSeo = ({ title, description, keyword }: HeadSeoProps) => {
       <meta name="robots" content="nofollow" />
       <meta name="author" content="Cássio Freitas" />
       <meta name="description" content={description} />
-      <meta name="keywords" content={keyword}></meta>
+      <meta name="keywords" content={keyword} />
       {/* <link rel="icon" href="/favicon.ico" /> */}
     </Head>
   )
