@@ -27,9 +27,10 @@ const PostCard = ({
               <Image
                 src={imagePath}
                 alt="image"
-                height={170}
-                width={200}
+                width={170}
+                height={200}
                 layout="responsive"
+                objectFit="cover"
                 className="cardImageIn"
               />
             </div>

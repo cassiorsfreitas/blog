@@ -14,12 +14,13 @@ export const Container = styled.div`
     h2 {
       font-weight: ${theme.font.weight.normal};
       font-size: 2rem;
-      margin: 1rem 0rem 0.5rem;
+      margin: 2rem 0rem 0.5rem;
     }
 
     h3 {
       font-weight: ${theme.font.weight.normal};
       font-size: 1.125rem;
+      margin-bottom: 2rem;
     }
 
     h4 {
@@ -32,9 +33,22 @@ export const Container = styled.div`
       margin-top: 1rem;
     }
 
+    img[alt$='-fullwidth'] {
+      width: 100%;
+      display: block;
+    }
+
+    ul li::marker {
+      color: ${theme.colors.primary[0]};
+    }
+
+    ul > li {
+      margin-left: 1rem;
+    }
+
     .tag {
       width: 40%;
-      margin-top: 1rem;
+      margin-top: 2rem;
       text-align: center;
       font-size: 0.875rem;
       font-family: ${theme.font.family};
