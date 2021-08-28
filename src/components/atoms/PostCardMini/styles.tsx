@@ -34,7 +34,7 @@ export const Container = styled.div`
     }
 
     .title {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .details {
