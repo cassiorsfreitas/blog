@@ -10,6 +10,11 @@
         "plugin:react/recommended",
         "standard"
     ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
@@ -23,6 +28,7 @@
         "prettier"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
         "prettier/prettier": "error",
         "space-before-function-paren": "off",
         "no-use-before-define": "off",

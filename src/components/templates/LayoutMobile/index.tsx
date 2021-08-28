@@ -1,0 +1,24 @@
+import React from 'react'
+import MenuBottom from '../../molecules/MenuBottom'
+import MenuTop from '../../molecules/MenuTop'
+import { LayoutProps } from './interface'
+import { Container } from './styles'
+
+// top menu
+// bottom menu
+
+const LayoutMobile = ({ children }: LayoutProps) => {
+  return (
+    <Container>
+      <MenuTop />
+
+      {children}
+
+      <div className="menu-bottom">
+        <MenuBottom />
+      </div>
+    </Container>
+  )
+}
+
+export default LayoutMobile

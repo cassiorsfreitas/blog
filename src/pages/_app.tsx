@@ -1,16 +1,24 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components'
+// eslint-disable-next-line no-unused-vars
+import NextNprogress from 'nextjs-progressbar'
 
-import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
+import { GlobalProvider } from '../contexts/globalContext'
+import { SearchProvider } from '../contexts/searchContext'
+import ThemeWrapper from '../components/templates/ThemeWrapper'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeProvider>
+    <GlobalProvider>
+      <ThemeWrapper>
+        <NextNprogress color="#FFC72C" />
+        <SearchProvider>
+          <main>
+            <Component {...pageProps} />
+          </main>
+        </SearchProvider>
+      </ThemeWrapper>
+    </GlobalProvider>
   )
 }
 
