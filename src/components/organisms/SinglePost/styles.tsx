@@ -94,5 +94,34 @@ export const Container = styled.div`
       font-family: ;
       color: ${theme.colors.primary[0]};
     }
+
+    .message {
+      background: ${theme.colors.primary[1]};
+      border-radius: 0.8rem;
+      padding: 0.5rem 2rem;
+      text-align: center;
+      margin-top: 1rem;
+      display: none;
+    }
+
+    .message-content {
+      color: ${theme.colors.background[0]};
+    }
+
+    .scale-true {
+      display: block;
+      animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+
+    @keyframes scale-up-ver-top {
+      0% {
+        transform: scaleY(0.4);
+        transform-origin: 100% 0%;
+      }
+      100% {
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+      }
+    }
   `}
 `
