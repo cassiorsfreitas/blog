@@ -1,5 +1,6 @@
 export type HeadSeoProps = {
-  title: string
-  description: string
+  title?: string
+  description?: string
   keyword?: string
+  cover?: string
 }
