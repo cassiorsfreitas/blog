@@ -17,20 +17,26 @@ const HeadSeo = ({ title, description, keyword, cover }: HeadSeoProps) => {
       <meta property="og:url" content="https://cassiorsfreitas.com/" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta
-        property="og:image"
-        content={`https://cassiorsfreitas.com${cover}`}
-      />
+      {cover && (
+        <meta
+          property="og:image"
+          itemProp="image"
+          content={`https://cassiorsfreitas.com${cover}`}
+        />
+      )}
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://cassiorsfreitas.com/" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta
-        property="twitter:image"
-        content={`https://cassiorsfreitas.com${cover}`}
-      />
+      {cover && (
+        <meta
+          property="twitter:image"
+          itemProp="image"
+          content={`https://cassiorsfreitas.com${cover}`}
+        />
+      )}
     </Head>
   )
 }
