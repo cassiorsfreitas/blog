@@ -10,6 +10,7 @@ const Slug = ({ metadata, content }) => {
         title={`${metadata.title} - Cássio Freitas`}
         description={metadata.metadescription}
         keyword={metadata.keyword}
+        cover={metadata.cover}
       />
       <LayoutMobile>
         <SinglePost metadata={metadata} content={content} />
