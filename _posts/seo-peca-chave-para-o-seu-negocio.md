@@ -10,7 +10,7 @@ category: 'SEO'
 link: 'seo'
 
 metakeyword: 'mecanismos de busca'
-metadescription: 'O SEO é o melhor amigo dos mecanismos de buscas. Sua função é aumentar a indexação e atingir o objetivo de todas as empresas: o primeiro lugar nas pesquisas'
+metadescription: 'SEO é peça chave para qualquer negócio. Sua função é aumentar a indexação e atingir o objetivo de todas as empresas: o primeiro lugar nas pesquisas'
 
 ---
 

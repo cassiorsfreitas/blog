@@ -10,8 +10,8 @@ const Home = ({ posts }) => {
   return (
     <LayoutMobile>
       <HeadSeo
-        title="Cássio Freitas"
-        description="This is my personal website"
+        title="Cássio Freitas - Web Developer"
+        description="A blog by a full-stack developer, digital marketing and consumer experience enthusiast. Team Liquid fan and musician in his spare time."
       />
       <MainContent>
         <Filter posts={posts} />
