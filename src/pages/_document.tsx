@@ -44,6 +44,22 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
           />
+
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-JNYCS4FXT5"
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-JNYCS4FXT5', { page_path: window.location.pathname });
+            `
+            }}
+          />
         </Head>
         <body>
           <Main />
