@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { HeadSeoProps } from './interface'
 
 const HeadSeo = ({ title, description, keyword, cover }: HeadSeoProps) => {
-  const currentCover = cover || '/images/cover-blog.png'
+  const currentCover = cover || '/cover-blog.png'
 
   return (
     <Head>
