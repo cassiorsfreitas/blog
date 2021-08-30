@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { AppProps } from 'next/app'
+import { useRouter } from 'next/router'
+
+import * as gtag from '../lib/gtag'
 // eslint-disable-next-line no-unused-vars
 import NextNprogress from 'nextjs-progressbar'
 
@@ -8,6 +11,18 @@ import { SearchProvider } from '../contexts/searchContext'
 import ThemeWrapper from '../components/templates/ThemeWrapper'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url: URL) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <GlobalProvider>
       <ThemeWrapper>
