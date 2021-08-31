@@ -12,6 +12,15 @@ import { Container } from './styles'
 const SinglePost = ({ metadata, content }) => {
   const router = useRouter()
   const [liked, setLiked] = useState(false)
+  const [urlCopied, seturlCopied] = useState('')
+  const [messageCopied, setMessageCopied] = useState('')
+  const [scaleUpVerTop, setScaleUpVerTop] = useState(false)
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(urlCopied)
+    setMessageCopied('URL copied successfully')
+    setScaleUpVerTop(true)
+  }
 
   const handleLiked = () => {
     setLiked(!liked)
@@ -31,6 +40,11 @@ const SinglePost = ({ metadata, content }) => {
   useEffect(() => {
     const cookies = parseCookies()
     cookies['FAVPOST' + metadata.id] ? setLiked(true) : setLiked(false)
+  }, [])
+
+  useEffect(() => {
+    const textToCopy = window.location.href
+    seturlCopied(textToCopy)
   }, [])
 
   return (
@@ -61,7 +75,9 @@ const SinglePost = ({ metadata, content }) => {
         <div className="backToList">
           <a onClick={() => router.back()}>← back to list</a>
           <div className="favorite">
-            <MdShare size={30} />
+            <a onClick={handleCopy}>
+              <MdShare size={30} />
+            </a>
             {liked ? (
               <MdFavorite
                 size={30}
@@ -76,6 +92,9 @@ const SinglePost = ({ metadata, content }) => {
               />
             )}
           </div>
+        </div>
+        <div className={`message scale-${scaleUpVerTop}`}>
+          <div className="message-content">{messageCopied}</div>
         </div>
       </MainContent>
     </Container>
