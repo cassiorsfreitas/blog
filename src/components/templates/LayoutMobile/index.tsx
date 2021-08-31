@@ -7,10 +7,10 @@ import { Container } from './styles'
 // top menu
 // bottom menu
 
-const LayoutMobile = ({ children }: LayoutProps) => {
+const LayoutMobile = ({ children, noTop }: LayoutProps) => {
   return (
     <Container>
-      <MenuTop />
+      {!noTop && <MenuTop />}
 
       {children}
 
