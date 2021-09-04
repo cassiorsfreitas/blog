@@ -1,11 +1,5 @@
 export const GA_TRACKING_ID = 'UA-206182353-1'
 
-declare global {
-  interface Window {
-    FB: any
-  }
-}
-
 export const pageview = (url: URL): void => {
   window.gtag('config', GA_TRACKING_ID, {
     page_path: url
