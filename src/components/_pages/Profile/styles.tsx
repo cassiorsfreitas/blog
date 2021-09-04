@@ -28,5 +28,11 @@ export const Container = styled.div`
       display: flex;
       gap: 2rem;
     }
+
+    .description {
+      text-align: center;
+      font-weight: ${theme.font.weight.normal};
+      color: ${theme.colors.primary[1]};
+    }
   `}
 `

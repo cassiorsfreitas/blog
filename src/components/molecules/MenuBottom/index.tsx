@@ -27,7 +27,7 @@ const MenuBottom = () => {
           <MdFavorite size={30} />
         </a>
       </Link>
-      <Link href="/">
+      <Link href="/profile">
         <a>
           <MdAccountCircle size={30} />
         </a>
