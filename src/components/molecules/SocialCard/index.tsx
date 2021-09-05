@@ -31,7 +31,7 @@ const SocialCard = () => {
       <div className="card">
         <div className="container-card">
           <div className="title">LINKEDIN</div>
-          <div className="subtitle">Last projects</div>
+          <div className="subtitle">Connect to me</div>
           <div className="icon">
             <LinkedInIcon fontSize="large" />
           </div>
