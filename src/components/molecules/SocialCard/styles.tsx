@@ -6,17 +6,15 @@ export const Container = styled.div`
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
 
     .card {
-      width: 150px;
-      height: 150px;
+      width: 47%;
+      height: 47%;
     }
 
     .container-card {
-      width: 100%;
-      height: 100%;
       padding: 1rem;
       background: ${theme.colors.background[1]};
       border-radius: 0.4rem;
@@ -24,10 +22,6 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       gap: 0.2rem;
-    }
-
-    .container-card:hover {
-      transform: scale(1.1);
     }
 
     .title {
