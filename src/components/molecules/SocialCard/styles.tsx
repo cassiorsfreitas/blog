@@ -12,6 +12,7 @@ export const Container = styled.div`
     .card {
       width: 47%;
       height: 47%;
+      cursor: pointer;
     }
 
     .container-card {
