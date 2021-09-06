@@ -34,5 +34,17 @@ export const Container = styled.div`
       font-weight: ${theme.font.weight.normal};
       color: ${theme.colors.primary[1]};
     }
+
+    .status {
+      padding: 2rem 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .tech {
+      color: ${theme.colors.primary[1]};
+    }
   `}
 `
