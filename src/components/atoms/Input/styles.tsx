@@ -22,7 +22,6 @@ export const Container = styled.div<InputProps>`
     min-width: 6rem;
     height: 4.8rem;
     width: max-content;
-    max-width: 34rem;
     padding: 1.5rem 1rem 1rem;
 
     ${!!valid && stateModifiers.valid(theme)}

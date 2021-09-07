@@ -96,7 +96,6 @@ export const WrapperButton = styled.button<ButtonProps>`
     height: 46px;
     border-radius: 0.25rem;
     cursor: pointer;
-    max-width: 34rem;
     min-width: 5.5rem;
     white-space: nowrap;
 

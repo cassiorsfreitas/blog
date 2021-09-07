@@ -11,5 +11,9 @@ export const Container = styled.div`
     padding: 1rem 2rem;
     position: relative;
     border-top: 1px solid ${theme.colors.darkGray};
+
+    .scrollTop {
+      cursor: pointer;
+    }
   `}
 `

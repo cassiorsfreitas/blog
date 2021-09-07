@@ -64,6 +64,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
     }
 
     .fav-icon {
@@ -121,6 +122,16 @@ export const Container = styled.div`
       100% {
         transform: scaleY(1);
         transform-origin: 100% 0%;
+      }
+    }
+
+    @media screen and (min-width: 720px) {
+      .tag {
+        max-width: 10rem;
+      }
+
+      .desktop {
+        padding: 0 15rem;
       }
     }
   `}
