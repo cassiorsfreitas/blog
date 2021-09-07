@@ -32,7 +32,11 @@ const MenuBottom = () => {
           <MdAccountCircle size={30} />
         </a>
       </Link>
-      <MdArrowUpward size={30} onClick={() => scrollTop()} />
+      <MdArrowUpward
+        size={30}
+        onClick={() => scrollTop()}
+        className="scrollTop"
+      />
     </Container>
   )
 }

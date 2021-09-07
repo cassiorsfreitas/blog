@@ -33,7 +33,7 @@ const LatestPosts = ({ posts }) => {
       <div className="postCardContainer">
         {filteredPosts.map(post => {
           return (
-            <div key={post.metadata.title}>
+            <div key={post.metadata.title} className="card">
               <PostCardMini
                 title={post.metadata.title}
                 time={post.metadata.time}

@@ -46,5 +46,13 @@ export const Container = styled.div`
     .tech {
       color: ${theme.colors.primary[1]};
     }
+
+    @media screen and (min-width: 720px) {
+      padding: 0 15rem;
+
+      .description {
+        text-align: justify;
+      }
+    }
   `}
 `

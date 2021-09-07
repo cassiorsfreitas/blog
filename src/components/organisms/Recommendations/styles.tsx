@@ -26,5 +26,19 @@ export const Container = styled.div`
       font-weight: ${theme.font.weight.bold};
       color: ${theme.colors.paragraph[1]};
     }
+
+    @media screen and (min-width: 720px) {
+      .postCardContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        max-width: 20rem;
+        flex-basis: 20rem;
+        flex-grow: 1;
+      }
+    }
   `}
 `

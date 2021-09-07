@@ -59,42 +59,44 @@ const SinglePost = ({ metadata, content }) => {
         />
       </div>
       <MainContent>
-        <div className="tag">{metadata.category}</div>
-        <div className="text-content">
-          <h1>{metadata.title}</h1>
-          <h4>
-            {metadata.time} • {metadata.date}
-          </h4>
-          <h3>{metadata.excerpt}</h3>
+        <div className="desktop">
+          <div className="tag">{metadata.category}</div>
+          <div className="text-content">
+            <h1>{metadata.title}</h1>
+            <h4>
+              {metadata.time} • {metadata.date}
+            </h4>
+            <h3>{metadata.excerpt}</h3>
 
-          <div
-            className="content"
-            dangerouslySetInnerHTML={{ __html: content }}
-          ></div>
-        </div>
-        <div className="backToList">
-          <a onClick={() => router.back()}>← back to list</a>
-          <div className="favorite">
-            <a onClick={handleCopy}>
-              <MdShare size={30} />
-            </a>
-            {liked ? (
-              <MdFavorite
-                size={30}
-                className="fav-icon"
-                onClick={handleLiked}
-              />
-            ) : (
-              <MdFavoriteBorder
-                size={30}
-                className="fav-icon"
-                onClick={handleLiked}
-              />
-            )}
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: content }}
+            ></div>
           </div>
-        </div>
-        <div className={`message scale-${scaleUpVerTop}`}>
-          <div className="message-content">{messageCopied}</div>
+          <div className="backToList">
+            <a onClick={() => router.back()}>← back to list</a>
+            <div className="favorite">
+              <a onClick={handleCopy}>
+                <MdShare size={30} />
+              </a>
+              {liked ? (
+                <MdFavorite
+                  size={30}
+                  className="fav-icon"
+                  onClick={handleLiked}
+                />
+              ) : (
+                <MdFavoriteBorder
+                  size={30}
+                  className="fav-icon"
+                  onClick={handleLiked}
+                />
+              )}
+            </div>
+          </div>
+          <div className={`message scale-${scaleUpVerTop}`}>
+            <div className="message-content">{messageCopied}</div>
+          </div>
         </div>
       </MainContent>
     </Container>

@@ -7,16 +7,16 @@ import Button from '../../atoms/Button'
 import router from 'next/router'
 
 const Recommendations = ({ posts }) => {
-  const recommendationSize = 2
+  const recommendationSize = 4
   const items = posts.slice(0, recommendationSize)
 
   return (
     <Container>
-      <SectionDoubleTitle titleMax="Recommendation" titleMin="Your Daily" />
+      <SectionDoubleTitle titleMax="Recommendation" titleMin="Your Weekly" />
       <div className="postCardContainer">
         {items.map(post => {
           return (
-            <div key={post.metadata.title}>
+            <div key={post.metadata.title} className="card">
               <PostCard
                 title={post.metadata.title}
                 subtitle={post.metadata.excerpt}
@@ -38,7 +38,7 @@ const Recommendations = ({ posts }) => {
             className="simple-button"
             onClick={() => router.push('/explore')}
           >
-            <span>See more</span>
+            <span>Explore</span>
           </Button>
         </a>
       </div>
