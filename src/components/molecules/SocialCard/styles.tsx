@@ -60,5 +60,13 @@ export const Container = styled.div`
         font-size: 0.8rem;
       }
     }
+
+    @media screen and (min-width: 720px) {
+      justify-content: center;
+
+      .card {
+        flex-grow: 1;
+      }
+    }
   `}
 `

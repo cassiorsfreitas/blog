@@ -9,17 +9,13 @@ const MenuBottom = ({ posts }) => {
     <Container>
       <SectionTitle title="Categories" strong />
       <div className="categories">
-        {posts.map(post => {
-          return (
-            <div key={post.metadata.category} className="category">
-              <Button rounded>
-                <Link href={`/explore/${post.metadata.link}`}>
-                  <span>{post.metadata.category}</span>
-                </Link>
-              </Button>
-            </div>
-          )
-        })}
+        <div className="category">
+          <Link href={'/explore/seo'}>
+            <Button rounded>
+              <span>SEO</span>
+            </Button>
+          </Link>
+        </div>
       </div>
     </Container>
   )
