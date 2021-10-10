@@ -11,9 +11,10 @@ const Slug = ({ metadata, content, slug }) => {
         description={metadata.metadescription}
         keyword={metadata.keyword}
         cover={metadata.cover}
+        slug={slug}
       />
       <LayoutMobile>
-        <SinglePost metadata={metadata} content={content} slug={slug} />
+        <SinglePost metadata={metadata} content={content} />
       </LayoutMobile>
     </>
   )
