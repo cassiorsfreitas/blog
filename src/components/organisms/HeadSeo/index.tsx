@@ -10,6 +10,9 @@ const HeadSeo = ({
   slug
 }: HeadSeoProps) => {
   const currentCover = cover || '/cover-blog.png'
+  const currentSlug = slug
+    ? `https://cassiorsfreitas.com/${slug}`
+    : 'https://cassiorsfreitas.com/'
 
   return (
     <Head>
@@ -21,7 +24,7 @@ const HeadSeo = ({
 
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://cassiorsfreitas.com/${slug}`} />
+      <meta property="og:url" content={currentSlug} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta
@@ -32,10 +35,7 @@ const HeadSeo = ({
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta
-        property="twitter:url"
-        content={`https://cassiorsfreitas.com/${slug}`}
-      />
+      <meta property="twitter:url" content={currentSlug} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta
