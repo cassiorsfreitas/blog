@@ -23,7 +23,7 @@ const Profile = () => {
               <div className="photo">
                 <Image
                   src="/profile.jpg"
-                  alt="image"
+                  alt="Profile picture"
                   width={50}
                   height={50}
                   layout="responsive"

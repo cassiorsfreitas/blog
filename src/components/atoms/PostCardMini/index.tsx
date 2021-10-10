@@ -20,7 +20,7 @@ const PostCardMini = ({
             <div className="cardImage">
               <Image
                 src={imagePath}
-                alt="image"
+                alt="Main mini card image"
                 layout="fill"
                 objectFit="cover"
                 className="cardImageIn"
