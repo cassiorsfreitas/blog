@@ -9,40 +9,24 @@ const HeadSeo = ({
   cover,
   slug
 }: HeadSeoProps) => {
-  const currentCover = cover || '/cover-blog.png'
-  const currentSlug = slug
-    ? `https://cassiorsfreitas.com/${slug}`
-    : 'https://cassiorsfreitas.com/'
-
   return (
     <Head>
       <title>{title}</title>
-      <meta name="author" content="Cássio Freitas" />
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keyword} />
-      {/* <link rel="icon" href="/favicon.ico" /> */}
+      <meta name="author" content="Cássio Freitas"></meta>
+      <meta name="description" content={description}></meta>
+      <meta name="keywords" content={keyword}></meta>
 
-      {/* <!-- Open Graph / Facebook --> */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={currentSlug} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta
-        property="og:image"
-        itemProp="image"
-        content={`https://cassiorsfreitas.com${currentCover}`}
-      />
+      <meta property="og:type" content="website"></meta>
+      <meta property="og:url" content={slug}></meta>
+      <meta property="og:title" content={title}></meta>
+      <meta property="og:description" content={description}></meta>
+      <meta property="og:image" content={cover}></meta>
 
-      {/* <!-- Twitter --> */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={currentSlug} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <meta
-        property="twitter:image"
-        itemProp="image"
-        content={`https://cassiorsfreitas.com${currentCover}`}
-      />
+      <meta property="twitter:card" content="summary_large_image"></meta>
+      <meta property="twitter:url" content={slug}></meta>
+      <meta property="twitter:title" content={title}></meta>
+      <meta property="twitter:description" content={description}></meta>
+      <meta property="twitter:image" content={cover}></meta>
     </Head>
   )
 }

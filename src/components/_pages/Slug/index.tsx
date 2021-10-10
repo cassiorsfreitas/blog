@@ -9,9 +9,9 @@ const Slug = ({ metadata, content, slug }) => {
       <HeadSeo
         title={`${metadata.title} - Cássio Freitas`}
         description={metadata.metadescription}
-        keyword={metadata.keyword}
-        cover={metadata.cover}
-        slug={slug}
+        keyword={metadata.metakeyword}
+        cover={`https://cassiorsfreitas.com${metadata.cover}`}
+        slug={`https://cassiorsfreitas.com/${slug}`}
       />
       <LayoutMobile>
         <SinglePost metadata={metadata} content={content} />
