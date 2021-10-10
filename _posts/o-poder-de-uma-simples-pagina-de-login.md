@@ -2,7 +2,7 @@
 id: 2
 title: 'O poder de uma simples página de login'
 date: '10/10/2021'
-excerpt: 'Desenvolver uma página de login web é uma das melhores opções e você vai entender o porquê.'
+excerpt: 'Entenda a estrutura básica de uma pagina de login e o quanto ela pode testar seus conhecimentos.'
 cover: '/images/post2/image-login.png'
 time: '3 min'
 category: 'Front end'
