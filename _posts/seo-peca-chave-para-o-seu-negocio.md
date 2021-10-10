@@ -1,5 +1,4 @@
 ---
-
 id: 1
 title: 'SEO: peça chave para o seu negócio'
 date: '19/02/2018'
@@ -11,7 +10,6 @@ link: 'seo'
 
 metakeyword: 'mecanismos de busca'
 metadescription: 'SEO é peça chave para qualquer negócio. Sua função é aumentar a indexação e atingir o objetivo de todas as empresas: o primeiro lugar nas pesquisas'
-
 ---
 
 SEO significa **Search Engine Optimization** (Otimização para mecanismos de busca). O próprio nome revela a importância da aplicação dessas técnicas de otimização para conseguir melhores resultados nas pesquisas em motores de busca. Aparecer ou não no Google pode definir o futuro do seu negócio.
@@ -19,6 +17,7 @@ SEO significa **Search Engine Optimization** (Otimização para mecanismos de bu
 A implementação dessas táticas é um diferencial competitivo para manter sua empresa bem rankeada nas primeiras páginas de resultados orgânicos. E não tenha dúvida, seus concorrentes fazem isso! Contudo, existem empresas que temem o investimento em SEO, pois os resultados tendem a aparecer a longo prazo, ao contrário do Google Ads, que garante resultados imediatos. Neste recurso, no entanto, a partir do momento que os anúncios são interrompidos, o site simplesmente desaparece dos resultados de busca.
 
 ![Exemplo de uma pesquisa do Google mostrando o resultado orgânico e pago -fullwidth](images/post1/google-example.jpeg)
+
 ## Vantagens do SEO
 
 Hoje, o SEO é uma das ferramentas mais importantes do Marketing Digital, com a função de aumentar a indexação nos mecanismos de busca e atingir o objetivo de quase todas as empresas: o primeiro lugar nas pesquisas. Seguem as principais vantagens da utilização:
@@ -37,11 +36,11 @@ Hoje, o SEO é uma das ferramentas mais importantes do Marketing Digital, com a 
 
 Atualmente, existem diversos fatores que influenciam diretamente o rankeamento de um site, mas, antes de listar alguns, é preciso entender que o motor de busca não enxerga o seu site da mesma maneira que seus clientes. Ao contrário dos que consomem seus conteúdos, o Google, por exemplo, não vislumbra imagens e javascript, apenas texto e código.
 
-*Como o usuário vê um post da Resultados Digitais:*
+_Como o usuário vê um post da Resultados Digitais:_
 
 ![Exemplo de uma página da Resultado Digitais vista por um humano -fullwidth](images/post1/rd-example1.jpeg)
 
-*Como o Google vê um post da Resultados Digitais:*
+_Como o Google vê um post da Resultados Digitais:_
 
 ![Exemplo de uma página da Resultado Digitais vista pelo Google -fullwidth](images/post1/rd-example2.jpeg)
 
@@ -64,4 +63,3 @@ Sendo assim, é fundamental que a estrutura do seu site ou blog post seja descri
 ## Conclusão
 
 Como você pôde perceber, SEO é um assunto extremamente importante para quem está a procura de visibilidade online. Agora, com um conhecimento mais aprofundado, você pôde compreender o quanto o emprego desse recurso pode facilitar e alavancar suas vendas. Para finalizar, 90% dos 66 milhões de internautas brasileiros realizam pesquisas diariamente sobre reputação de empresas e comparam produtos e serviços. Ao todo, para ser exato, são 100 milhões de buscas realizadas mensalmente. Essas são estatísticas de enorme relevância que não podem passar despercebidas e sua empresa pode, sim, se favorecer desses números.
-
