@@ -55,7 +55,7 @@ const SinglePost = ({ metadata, content }) => {
           layout="responsive"
           width={200}
           height={170}
-          alt="image"
+          alt={`Image about ${metadata.title}`}
         />
       </div>
       <MainContent>
