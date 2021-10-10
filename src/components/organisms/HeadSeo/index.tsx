@@ -9,11 +9,6 @@ const HeadSeo = ({
   cover,
   slug
 }: HeadSeoProps) => {
-  const currentCover = cover || '/cover-blog.png'
-  const currentSlug = slug
-    ? `https://cassiorsfreitas.com/${slug}`
-    : 'https://cassiorsfreitas.com/'
-
   return (
     <Head>
       <title>{title}</title>
@@ -22,26 +17,31 @@ const HeadSeo = ({
       <meta name="keywords" content={keyword} />
       {/* <link rel="icon" href="/favicon.ico" /> */}
 
+      {/* <!-- Google / Search Engine Tags --> */}
+      <meta itemProp="name" content="Cássio Freitas - Web Developer" />
+      <meta itemProp="description" content={description} />
+      <meta itemProp="image" content={`https://cassiorsfreitas.com${cover}`} />
+
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={currentSlug} />
+      <meta property="og:url" content={slug} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta
         property="og:image"
         itemProp="image"
-        content={`https://cassiorsfreitas.com${currentCover}`}
+        content={`https://cassiorsfreitas.com${cover}`}
       />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={currentSlug} />
+      <meta property="twitter:url" content={slug} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta
         property="twitter:image"
         itemProp="image"
-        content={`https://cassiorsfreitas.com${currentCover}`}
+        content={`https://cassiorsfreitas.com${cover}`}
       />
     </Head>
   )
