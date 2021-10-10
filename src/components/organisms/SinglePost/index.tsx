@@ -8,8 +8,9 @@ import MainContent from '../../templates/MainContent'
 import { MdFavoriteBorder, MdFavorite, MdShare } from 'react-icons/md'
 
 import { Container } from './styles'
+import Head from 'next/head'
 
-const SinglePost = ({ metadata, content }) => {
+const SinglePost = ({ metadata, content, slug }) => {
   const router = useRouter()
   const [liked, setLiked] = useState(false)
   const [urlCopied, seturlCopied] = useState('')
@@ -49,13 +50,46 @@ const SinglePost = ({ metadata, content }) => {
 
   return (
     <Container>
+      <Head>
+        <title>{metadata.title} - Cássio Freitas</title>
+        <meta name="description" content={metadata.description} />
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta
+          property="og:url"
+          content={`https://www.cassiorsfreitas.com/${slug}`}
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content={`${metadata.title} - Cássio Freitas`}
+        />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content={`${metadata.cover}`} />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:domain"
+          content={`https://www.cassiorsfreitas.com/${slug}`}
+        />
+        <meta
+          property="twitter:url"
+          content={`https://www.cassiorsfreitas.com/${slug}`}
+        />
+        <meta
+          name="twitter:title"
+          content={`${metadata.title} - Cássio Freitas`}
+        />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:image" content={`${metadata.cover}`} />
+      </Head>
       <div className="post-image">
         <Image
           src={`${metadata.cover}`}
           layout="responsive"
           width={200}
           height={170}
-          alt="image"
+          alt={`Image about ${metadata.title}`}
         />
       </div>
       <MainContent>

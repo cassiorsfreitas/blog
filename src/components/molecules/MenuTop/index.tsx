@@ -34,7 +34,7 @@ const MenuTop = () => {
             width={50}
             height={50}
             priority
-            alt="Cássio Freitas Profile"
+            alt="Cássio Freitas Profile Picture"
             className="picture-profile"
           />
         </a>

@@ -5,8 +5,8 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import Slug from '../components/_pages/Slug'
 import { getPostBySlug } from '../scripts/blog/getPostBySlug'
 
-export default function PostPage({ metadata, content }) {
-  return <Slug metadata={metadata} content={content} />
+export default function PostPage({ metadata, content, slug }) {
+  return <Slug metadata={metadata} content={content} slug={slug} />
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -28,7 +28,8 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   return {
     props: {
       metadata,
-      content
+      content,
+      slug
     }
   }
 }
