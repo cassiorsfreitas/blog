@@ -10,7 +10,7 @@ const Slug = ({ metadata, content, slug }) => {
         title={`${metadata.title} - Cássio Freitas`}
         description={metadata.metadescription}
         keyword={metadata.metakeyword}
-        cover={metadata.cover}
+        cover={`https://cassiorsfreitas.com${metadata.cover}`}
         slug={`https://cassiorsfreitas.com/${slug}`}
       />
       <LayoutMobile>
