@@ -33,6 +33,15 @@ export const Container = styled.div`
       margin-top: 1rem;
     }
 
+    a {
+      color: ${theme.colors.primary[0]};
+    }
+
+    hr {
+      margin-top: 2rem;
+      opacity: 0.1;
+    }
+
     img[alt$='-fullwidth'] {
       width: 100%;
       display: block;

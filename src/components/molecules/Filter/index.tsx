@@ -16,6 +16,13 @@ const MenuBottom = ({ posts }) => {
             </Button>
           </Link>
         </div>
+        <div className="category">
+          <Link href={'/explore/front-end'}>
+            <Button rounded>
+              <span>Front end</span>
+            </Button>
+          </Link>
+        </div>
       </div>
     </Container>
   )
