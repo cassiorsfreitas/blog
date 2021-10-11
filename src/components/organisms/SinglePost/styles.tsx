@@ -140,7 +140,13 @@ export const Container = styled.div`
       }
 
       .desktop {
-        padding: 0 15rem;
+        padding: 0 18rem;
+      }
+    }
+
+    @media screen and (min-width: 1460px) {
+      .desktop {
+        padding: 0 32rem;
       }
     }
   `}
