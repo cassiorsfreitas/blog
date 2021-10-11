@@ -27,6 +27,20 @@ export const Container = styled.div`
       color: ${theme.colors.paragraph[1]};
     }
 
+    .explore {
+      background-color: ${theme.colors.background[1]};
+      color: ${theme.colors.paragraph[1]};
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 1rem;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 0.75rem 0;
+    }
+
     @media screen and (min-width: 720px) {
       .postCardContainer {
         display: flex;
@@ -38,6 +52,20 @@ export const Container = styled.div`
         max-width: 20rem;
         flex-basis: 20rem;
         flex-grow: 1;
+      }
+
+      .explore {
+        background-color: ${theme.colors.background[1]};
+        color: ${theme.colors.paragraph[1]};
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 1rem;
+        align-items: center;
+        font-size: 4rem;
+        cursor: pointer;
+        padding: 0;
       }
     }
   `}

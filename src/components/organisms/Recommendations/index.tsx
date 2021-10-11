@@ -1,11 +1,10 @@
 import React from 'react'
-import PostCard from '../../atoms/PostCard'
-import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
+import router from 'next/router'
 import { Container } from './styles'
 
-import Button from '../../atoms/Button'
-import router from 'next/router'
-
+import PostCard from '../../atoms/PostCard'
+import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
+import { MdSearch } from 'react-icons/md'
 const Recommendations = ({ posts }) => {
   const recommendationSize = 4
   const items = posts.slice(0, recommendationSize)
@@ -29,18 +28,9 @@ const Recommendations = ({ posts }) => {
             </div>
           )
         })}
-      </div>
-      <div className="more">
-        <a>
-          <Button
-            rounded
-            fullWidth
-            className="simple-button"
-            onClick={() => router.push('/explore')}
-          >
-            <span>Explore</span>
-          </Button>
-        </a>
+        <div className="card explore" onClick={() => router.push('/explore')}>
+          <MdSearch />
+        </div>
       </div>
     </Container>
   )

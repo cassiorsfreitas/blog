@@ -6,7 +6,11 @@ export const Container = styled.div`
     height: 100%;
     width: 100%;
     flex-direction: column;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
+
+    @media screen and (min-width: 1440px) {
+      padding-bottom: 8rem;
+    }
 
     .menu-bottom {
       position: fixed;
