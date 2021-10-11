@@ -7,7 +7,7 @@ import { Container } from './styles'
 const MenuBottom = ({ posts }) => {
   return (
     <Container>
-      <SectionTitle title="Categories" strong />
+      <SectionTitle title="Tags" strong />
       <div className="categories">
         <div className="category">
           <Link href={'/explore/seo'}>
