@@ -12,7 +12,7 @@ metakeyword: 'desenvolver login'
 metadescription: 'Dentre os infinitos projetos possíveis e sugeridos, desenvolver uma página de login web é uma das melhores práticas e você vai entender o porquê.'
 ---
 
-Hoje é bastante comum encontrar artigos e listas com o título _"5 projetos front end para melhorar suas habilidades"_ e, definitivamente, eu não tenho nada contra calculadores, lista de tarefas, páginas de captura e etc. No entanto, dentre os infinitos projetos possíveis e sugeridos, desenvolver uma página de login web é uma das melhores opções e você vai entender o porquê.
+Hoje é bastante comum encontrar artigos e listas com o título _"5 projetos front end para melhorar suas habilidades"_ e, definitivamente, eu não tenho nada contra calculadoras, lista de tarefas, páginas de captura e etc. No entanto, dentre os infinitos projetos possíveis e sugeridos, desenvolver uma página de login web é uma das melhores opções e você vai entender o porquê.
 
 A título de curiosidade, a ideia de entrar em rotas privadas através de um sistema de log (login), ou seja, um sistema de registro de histórico do usuário, surgiu com a necessidade de restringir o acesso a conteúdos privilegiados: dados sensíveis, permissões, administrações e etc.
 
