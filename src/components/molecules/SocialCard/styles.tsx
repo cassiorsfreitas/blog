@@ -47,8 +47,8 @@ export const Container = styled.div`
 
     @media screen and (max-width: 320px) {
       .card {
-        width: 120px;
-        height: 120px;
+        width: 124px;
+        height: 124px;
       }
 
       .icon {

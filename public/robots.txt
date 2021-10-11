@@ -1,3 +1,9 @@
-# Allow all crawlers
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://cassiorsfreitas.com
+
+# Sitemaps
+Sitemap: https://cassiorsfreitas.com/sitemap.xml
