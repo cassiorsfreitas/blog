@@ -27,11 +27,13 @@ export const Container = styled.div`
 
     .title {
       color: ${theme.colors.primary[1]};
+      font-size: 1rem;
     }
 
     .subtitle {
       color: ${theme.colors.primary[1]};
       font-weight: ${theme.font.weight.light};
+      font-size: 1rem;
     }
 
     .icon {
