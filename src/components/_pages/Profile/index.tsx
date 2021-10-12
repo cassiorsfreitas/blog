@@ -6,14 +6,13 @@ import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import LayoutMobile from '../../templates/LayoutMobile'
 import MainContent from '../../templates/MainContent'
 import SocialCard from '../../molecules/SocialCard'
-import ProgressBar from '@ramonak/react-progress-bar'
 import { Container } from './styles'
 
 const Profile = () => {
   return (
     <>
       <HeadSeo
-        title="Fav - Cássio Freitas"
+        title="Profile - Cássio Freitas"
         description="This is my personal website"
       />
       <LayoutMobile noTop>
@@ -24,8 +23,8 @@ const Profile = () => {
                 <Image
                   src="/profile.jpg"
                   alt="Profile picture"
-                  width={50}
-                  height={50}
+                  width={100}
+                  height={100}
                   layout="responsive"
                   objectFit="cover"
                   className="ProfileImageIn"
@@ -42,36 +41,28 @@ const Profile = () => {
                 <p>
                   A blog by a <strong>full-stack developer</strong>, digital
                   marketing analyst and consumer experience enthusiast. Team
-                  Liquid fan and musician in his spare time.
-                </p>
-                <br />
-                <p>
-                  I love working in a team and I am very communicative. Whenever
-                  possible, I like to teach my friends about something I{"'"}ve
-                  learned, I think that{"'"}s why this blog was born.
+                  Liquid fan and musician in his spare time. Whenever possible,
+                  I like to teach my friends about something I{"'"}ve learned, I
+                  think that{"'"}s why this blog was born.
                 </p>
               </div>
               <div className="status">
-                <div className="tech">Javascript</div>
-                <ProgressBar
-                  completed={80}
-                  bgColor="#FFC72C"
-                  isLabelVisible={false}
-                />
-
-                <div className="tech">Java</div>
-                <ProgressBar
-                  completed={60}
-                  bgColor="#FFC72C"
-                  isLabelVisible={false}
-                />
-
-                <div className="tech">SEO</div>
-                <ProgressBar
-                  completed={90}
-                  bgColor="#FFC72C"
-                  isLabelVisible={false}
-                />
+                <div className="tech">
+                  <div className="about-title">Age</div>
+                  <div className="about-description">29</div>
+                </div>
+                <div className="tech">
+                  <div className="about-title">From</div>
+                  <div className="about-description">Recife, Brazil</div>
+                </div>
+                <div className="tech">
+                  <div className="about-title">Language</div>
+                  <div className="about-description">JavaScript</div>
+                </div>
+                <div className="tech">
+                  <div className="about-title">Favorite Sport</div>
+                  <div className="about-description">Futsal</div>
+                </div>
               </div>
             </div>
             <SocialCard />
