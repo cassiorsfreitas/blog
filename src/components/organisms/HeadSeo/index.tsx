@@ -15,6 +15,7 @@ const HeadSeo = ({
       <meta name="author" content="Cássio Freitas"></meta>
       <meta name="description" content={description}></meta>
       <meta name="keywords" content={keyword}></meta>
+      <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
       <meta property="og:type" content="website"></meta>
       <meta property="og:url" content={slug}></meta>
