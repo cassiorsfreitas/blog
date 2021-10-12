@@ -11,7 +11,7 @@ const Recommendations = ({ posts }) => {
 
   return (
     <Container>
-      <SectionDoubleTitle titleMax="Recommendation" titleMin="Your Weekly" />
+      <SectionDoubleTitle titleMax="Written" titleMin="Latest posts" />
       <div className="postCardContainer">
         {items.map(post => {
           return (
