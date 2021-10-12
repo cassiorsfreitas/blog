@@ -2,7 +2,7 @@
 id: 2
 title: 'O poder de uma simples página de login'
 date: '10/10/2021'
-excerpt: 'Entenda a estrutura básica de uma pagina de login e o quanto ela pode testar seus conhecimentos.'
+excerpt: 'Entenda a estrutura básica de uma página de login e o quanto ela pode testar seus conhecimentos.'
 cover: '/images/post2/image-login.png'
 time: '3 min'
 category: 'Front end'
@@ -16,7 +16,7 @@ Hoje é bastante comum encontrar artigos e listas com o título _"5 projetos fro
 
 A título de curiosidade, a ideia de entrar em rotas privadas através de um sistema de log (login), ou seja, um sistema de registro de histórico do usuário, surgiu com a necessidade de restringir o acesso a conteúdos privilegiados: dados sensíveis, permissões, administrações e etc.
 
-E, por mais "inofensiva" que possa parecer, quando estamos falando sobre estrutura básica de uma página de login, em outras palavras estamos falando sobre os seguintes pontos:
+E, por mais "inofensiva" que ela possa parecer, quando estamos falando sobre **estrutura básica de uma página de login**, estamos falando, em outras palavras, sobre os seguintes pontos:
 
 - Comunicação entre Cliente e Servidor;
 
@@ -28,17 +28,16 @@ E, por mais "inofensiva" que possa parecer, quando estamos falando sobre estrutu
 
 - Design/Layout;
 
-Vamos ser agnósticos a respeito das possíveis arquiteturas front end, construir uma breve introdução sobre os pontos acima e listar sugestões de estudo para começar hoje.
-
+Vamos, então, ser agnósticos a respeito das possíveis arquiteturas front end, construir uma breve introdução sobre os pontos acima e listar sugestões de estudo para começar hoje.
 ## Comunicação entre Cliente e Servidor
 
-Uma das tarefas fundamentais de qualquer aplicação web é realizar a comunicação entre cliente (navegadores) e servidor através do protocolo HTTP. Olhando para uma página de login, isto acontece após o usuário preencher os campos do formulário e clicar em "Entrar". A partir daí, uma requisição (ou mais) será feita a fim de verificar a idoneidade dos dados fornecidos e aprovar ou não a sua entrada no sistema. Simples assim.
+Uma das tarefas fundamentais de qualquer aplicação web é realizar a comunicação entre cliente (navegadores) e servidor através do protocolo HTTP. Olhando para uma página de login, isso acontece após o usuário preencher os campos do formulário e clicar em "Entrar". A partir daí, uma requisição (ou mais) será feita a fim de verificar a idoneidade dos dados fornecidos e aprovar ou não a sua entrada no sistema. Simples assim.
 
-Por sua vez, requisições (requests) são pedidos que contém uma série de dados que são usados para descrever exatamente o que o cliente precisa. Por exemplo de uma requisição Post abaixo:
+Por sua vez, requisições (requests) são pedidos que contêm uma série de dados que são usados para descrever exatamente do que o cliente precisa. Por exemplo:
 
 ![Exemplo de uma requisição utilizando axios -fullwidth](images/post2/example-axios.png)
 
-Em outras palavras, realizar requisições, aguardar respostas e gerenciar dados, são aprendizados básicos que qualquer desenvolvedor front end precisa dominar para criar esta comunicação de maneira eficiente e segura.
+Em outras palavras, realizar requisições, aguardar respostas e gerenciar dados são aprendizados básicos que qualquer desenvolvedor front end precisa dominar para criar essa estrutura de maneira eficiente e segura.
 
 **_Links de apoio_**
 
@@ -51,13 +50,13 @@ Em outras palavras, realizar requisições, aguardar respostas e gerenciar dados
 
 ## Autorização e Autenticação de usuário
 
-Antes de tudo, me permita explicar a diferença entre "autorização" e "autenticação". Imagine um prédio corporativo onde os funcionários precisam entrar todos os dias. Para entrar, eles apresentam um cartão que os identificam como colaboradores e dão a eles autorização para aceder, ou seja, eles possuem permissão para frequentar os espaços corporativos. Todas as vezes que um funcionário mostra o seu cartão magnético e entra com sucesso, ele acabou de ser autenticado.
+Antes de tudo, permita-me explicar a diferença entre "autorização" e "autenticação". Imagine um prédio corporativo onde os funcionários precisam entrar todos os dias. Para entrar, eles  apresentam um cartão que os identificam como colaboradores e os autorizam para aceder, ou seja, eles possuem permissão para frequentar os espaços corporativos. Todas as vezes que um funcionário mostra o seu cartão magnético e entra com sucesso, ele acabou de ser autenticado.
 
-Seguindo essa analogia, no universo web, a segurança deste processo é feita através do Token Based Authentication que utiliza um token JWT para realizar um pedido de autorização em nossa aplicação ou quando queremos realizar troca de informações.
+Seguindo essa analogia, no universo web, a segurança deste processo é feita através do _Token Based Authentication_, que utiliza um token JWT para realizar o pedido de autorização numa aplicação ou quando é necessário realizar troca de informações.
 
 ![Exemplo de um Token JWT -fullwidth](images/post2/example-token.jpeg)
 
-Você pode estar se perguntando "Mas por que tanta burocracia para realizar uma autenticação, quando eu poderia fazer quase tudo do lado do cliente?". Então, conselho de amigo: qualquer camada de segurança do lado do cliente é passível de engenharia reversa. É como uma porta sem tranca. Você pode colocar várias para dificultar o acesso, mas alguém com paciência ~~e mal intencionado~~ vai conseguir debugar o seu código e abrir todas uma por uma.
+Você pode estar se perguntando "por que tanta burocracia para realizar uma autenticação, quando eu poderia fazer quase tudo do lado do cliente?". Então, conselho de amigo: qualquer camada de segurança do lado do cliente é passível de engenharia reversa. É como uma porta sem tranca: você pode colocar várias para dificultar o acesso, mas alguém com paciência ~~e mal intencionado~~ vai conseguir debugar o seu código e abrir todas elas, uma por uma.
 
 **_Links de apoio_**
 
@@ -68,11 +67,11 @@ Você pode estar se perguntando "Mas por que tanta burocracia para realizar uma 
 
 ## Controle de rotas públicas e privadas
 
-Como consequência dos pontos anteriores, agora que já sabemos que tem permissão e está autenticado, podemos prover conteúdos exclusivos, certo? Err... não! Além de trabalhar para que só usuários com autorização possam aceder às rotas privadas, é necessário criar checkpoints sempre que o usuário necessite fazer mais alguma requisição.
+Como consequência dos pontos anteriores, agora que já sabemos quem tem permissão e está autenticado, podemos prover conteúdos exclusivos, certo? Err... não! Além de trabalhar para que só usuários com autorização possam aceder às rotas privadas, é necessário também criar checkpoints sempre que o usuário precise fazer mais alguma requisição.
 
-Normalmente, as rotas privadas possuem middleware que verifica se o solicitante ainda tem as permissões necessárias, considerando seus nível de permissão e ação requisitada. A boa prática é: estude sobre re autenticação e não torne o seu token um objeto inflado de informações sensíveis.
+Normalmente, as rotas privadas possuem middleware, que verifica se o solicitante ainda tem as permissões suficientes, considerando seus nível de autorização e ação requisitadas. Resumindo, a boa prática é estudar sobre autenticação e maneiras de não tornar o seu token um objeto inflado com informações sensíveis.
 
-A notícia boa é que a maioria das bibliotecas e frameworks front end que estão em alta (React, Next, Angular, Vue, etc.) possuem boas soluções de controle e gerenciamento de rotas públicas e privadas.
+Por sorte, a maioria das bibliotecas e frameworks front end que estão em alta (React, Next, Angular, Vue, etc.) possuem boas soluções para o controle e gerenciamento de rotas públicas e privadas.
 
 **_Links de apoio_**
 
@@ -83,11 +82,11 @@ A notícia boa é que a maioria das bibliotecas e frameworks front end que estã
 
 ## Gerenciamento e armazenamento local
 
-O objeto de resposta do back end após a autenticação precisa ser armazenado em algum lugar localmente. Assim, em pontos futuros, é possível reaproveitar estas informações e utilizar em outros pontos da aplicação. Os navegadores fornecem basicamente 3 tipos de armazenamentos: Local Storage, Cookies e Sessions.
+O objeto de resposta do back end após a autenticação precisa ser armazenado em algum lugar localmente. Assim, em pontos futuros, é possível reaproveitar essas informações e utilizá-las em outros pontos da aplicação. Os navegadores fornecem basicamente 3 tipos de armazenamentos: Local Storage, Cookies e Sessions.
 
 **LocalStorage:**
 
-- O armazenamento na web pode ser visto de maneira simplista como uma melhoria nos cookies, oferecendo uma capacidade de armazenamento muito maior. O tamanho disponível é de 5 MB, o que representa consideravelmente mais espaço para trabalhar do que um cookie típico de 4KB;
+- O armazenamento na web pode ser visto de maneira simplista, como uma melhoria nos cookies, oferecendo uma capacidade de armazenamento muito maior. O tamanho disponível é de 5 MB, o que representa consideravelmente mais espaço para trabalhar do que um cookie típico de 4KB;
 
 - Os dados não são enviados de volta ao servidor para cada solicitação HTTP (HTML, imagens, JavaScript, CSS, etc) — reduzindo a quantidade de tráfego entre o cliente e o servidor;
 
@@ -105,9 +104,9 @@ O objeto de resposta do back end após a autenticação precisa ser armazenado e
 
 **SessionStorage:**
 
-- É semelhante ao local storage;
+- É semelhante ao _local storage_;
 
-- As alterações só estão disponíveis por janela (ou em navegadores como o Chrome e o Firefox). As alterações feitas são salvas e disponibilizadas para a página atual, bem como futuras visitas ao site na mesma janela. Depois que a janela é fechada, o armazenamento é excluído;
+- As alterações só estão disponíveis por janela (ou em navegadores como o Chrome e o Firefox). As alterações feitas são salvas e disponibilizadas para a página atual, bem como futuras visitas ao site na mesma janela. Depois que esta é fechada, o armazenamento é excluído;
 
 - Os dados estão disponíveis somente dentro da janela / guia na qual foram definidos;
 
@@ -122,7 +121,7 @@ O objeto de resposta do back end após a autenticação precisa ser armazenado e
 
 ## Design/Layout
 
-Mesmo que o seu objetivo não seja testar as suas habilidades de design web, lembre-se que este é um dos pontos de contato do usuário mais comuns com uma aplicação, ou seja, não negligencie. As páginas de login precisam ser versáteis o suficiente para garantir uma boa experiência do usuário, respeitando tipografia, proporções, responsividade e etc, e ágeis o suficiente para tratar quaisquer que seja o resultado da ação dele.
+Mesmo que o seu objetivo não seja testar as suas habilidades de _design web_, lembre-se que este é um dos pontos de contato do usuário mais comuns com uma aplicação, ou seja, não o negligencie. As páginas de login precisam ser versáteis o suficiente para garantir uma boa experiência do usuário, respeitando tipografia, proporções, responsividade e etc, e ágeis na mesma medida para tratar quaisquer que sejam os resultados da ação dele.
 
 Dicas rápidas:
 
@@ -132,7 +131,7 @@ Dicas rápidas:
 
 - Se o foco é ser eficiente, apresentar a opção pro usuário escolher um provedor social para efetuar o login é sempre uma boa alternativa;
 
-- Se possível, apresente também a opção de se manter conectado e avise sempre que a função Caps Lock estiver ativa.
+- Se possível, apresente também a opção de se manter conectado e avise sempre que a função _Caps Lock_ estiver ativa.
 
 **_Links de apoio_**
 
@@ -141,4 +140,4 @@ Dicas rápidas:
 
 ---
 
-Espero que tenha ficado claro a relevância e o quanto pode ser absorvido ao desenvolver uma página de login web. O mais importante de todos os pontos citados é que o conhecimento adquirido neste estudo será reutilizado em diversas partes da maioria dos sistemas que existem no mercado.
+Ao fim desta explanação, acredito que tenha ficado clara a relevância do desenvolvimento de uma página de login web e o quanto de conhecimento deste mesmo projeto pode ser extraído. O mais importante de tudo: o conhecimento adquirido neste estudo será, sem dúvida, reutilizado em diversas partes da maioria dos sistemas existentes hoje no mercado.
