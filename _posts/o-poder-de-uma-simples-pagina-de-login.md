@@ -29,6 +29,7 @@ E, por mais "inofensiva" que ela possa parecer, quando estamos falando sobre **e
 - Design/Layout;
 
 Vamos, então, ser agnósticos a respeito das possíveis arquiteturas front end, construir uma breve introdução sobre os pontos acima e listar sugestões de estudo para começar hoje.
+
 ## Comunicação entre Cliente e Servidor
 
 Uma das tarefas fundamentais de qualquer aplicação web é realizar a comunicação entre cliente (navegadores) e servidor através do protocolo HTTP. Olhando para uma página de login, isso acontece após o usuário preencher os campos do formulário e clicar em "Entrar". A partir daí, uma requisição (ou mais) será feita a fim de verificar a idoneidade dos dados fornecidos e aprovar ou não a sua entrada no sistema. Simples assim.
@@ -50,13 +51,13 @@ Em outras palavras, realizar requisições, aguardar respostas e gerenciar dados
 
 ## Autorização e Autenticação de usuário
 
-Antes de tudo, permita-me explicar a diferença entre "autorização" e "autenticação". Imagine um prédio corporativo onde os funcionários precisam entrar todos os dias. Para entrar, eles  apresentam um cartão que os identificam como colaboradores e os autorizam para aceder, ou seja, eles possuem permissão para frequentar os espaços corporativos. Todas as vezes que um funcionário mostra o seu cartão magnético e entra com sucesso, ele acabou de ser autenticado.
+Antes de tudo, permita-me explicar a diferença entre "autorização" e "autenticação". Imagine um prédio corporativo onde os funcionários precisam entrar todos os dias. Para entrar, eles apresentam um cartão que os identificam como colaboradores e os autorizam para aceder, ou seja, eles possuem permissão para frequentar os espaços corporativos. Todas as vezes que um funcionário mostra o seu cartão magnético e entra com sucesso, ele acabou de ser autenticado.
 
 Seguindo essa analogia, no universo web, a segurança deste processo é feita através do _Token Based Authentication_, que utiliza um token JWT para realizar o pedido de autorização numa aplicação ou quando é necessário realizar troca de informações.
 
 ![Exemplo de um Token JWT -fullwidth](images/post2/example-token.jpeg)
 
-Você pode estar se perguntando "por que tanta burocracia para realizar uma autenticação, quando eu poderia fazer quase tudo do lado do cliente?". Então, conselho de amigo: qualquer camada de segurança do lado do cliente é passível de engenharia reversa. É como uma porta sem tranca: você pode colocar várias para dificultar o acesso, mas alguém com paciência ~~e mal intencionado~~ vai conseguir debugar o seu código e abrir todas elas, uma por uma.
+Você pode estar se perguntando "por que tanta burocracia para realizar uma autenticação, quando eu poderia fazer quase tudo do lado do cliente?". Então, conselho de amigo: qualquer camada de segurança do lado do cliente é passível de engenharia reversa. É como uma porta sem tranca: você pode colocar várias para dificultar o acesso, mas alguém com paciência <del>e mal intencionado</del> vai conseguir debugar o seu código e abrir todas elas, uma por uma.
 
 **_Links de apoio_**
 
