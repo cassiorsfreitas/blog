@@ -7,7 +7,8 @@ const HeadSeo = ({
   description,
   keyword,
   cover,
-  slug
+  slug,
+  canonical
 }: HeadSeoProps) => {
   return (
     <Head>
@@ -15,6 +16,7 @@ const HeadSeo = ({
       <meta name="author" content="Cássio Freitas"></meta>
       <meta name="description" content={description}></meta>
       <meta name="keywords" content={keyword}></meta>
+      <link rel="canonical" href={canonical} />
 
       <meta property="og:type" content="website"></meta>
       <meta property="og:url" content={slug}></meta>

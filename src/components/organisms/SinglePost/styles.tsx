@@ -29,6 +29,12 @@ export const Container = styled.div`
       font-size: 0.875rem;
     }
 
+    h5 {
+      font-weight: ${theme.font.weight.bold};
+      margin: 1.5rem 0;
+      font-size: 0.875rem;
+    }
+
     p {
       margin-top: 1rem;
     }
