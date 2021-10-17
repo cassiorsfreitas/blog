@@ -24,7 +24,7 @@ Então, entes de falarmos sobre o Google Cloud Plataform (GCP), precisamos dar u
 
 A definição é justa, porém, simples demais, na minha opinião. Isso ocorre porque o termo nuvem abstrai uma gigantesca estrutura física e pode ser facilmente interpretado de maneira simplória, visto atuar desde à substituição de um simples pendrive até à exponencialização neural de uma inteligência artificial, de acordo com o ritmo de aprendizado dela.
 
-Em outras palavras, tudo ~~ou quase tudo~~ que uma aplicação precisa para sobreviver na web pode ser facilmente posto sobre uma estrutura terceira de alta performance e requisitada via internet de "qualquer lugar". Estas estruturas, por sua vez, funcionam de maneira independente da aplicação de modo que não é preciso se preocupar com manutenção, segurança, recurso consumido e diversos outros fatores.
+Em outras palavras, tudo <del>ou quase tudo</del> que uma aplicação precisa para sobreviver na web pode ser facilmente posto sobre uma estrutura terceira de alta performance e requisitada via internet de "qualquer lugar". Estas estruturas, por sua vez, funcionam de maneira independente da aplicação de modo que não é preciso se preocupar com manutenção, segurança, recurso consumido e diversos outros fatores.
 
 ##### _Qualquer lugar_ → Empresas globais trabalham com um sistema de zona/região que leva em consideração a distância e tempo de resposta entre cliente e servidor (latência).
 
