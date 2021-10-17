@@ -23,6 +23,13 @@ const MenuBottom = ({ posts }) => {
             </Button>
           </Link>
         </div>
+        <div className="category">
+          <Link href={'/explore/devops'}>
+            <Button rounded>
+              <span>DevOps</span>
+            </Button>
+          </Link>
+        </div>
       </div>
     </Container>
   )

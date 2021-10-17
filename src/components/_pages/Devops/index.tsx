@@ -5,11 +5,11 @@ import LatestPosts from '../../organisms/LatestPosts'
 import LayoutMobile from '../../templates/LayoutMobile'
 import MainContent from '../../templates/MainContent'
 
-const Frontend = ({ posts }) => {
+const Devops = ({ posts }) => {
   return (
     <>
       <HeadSeo
-        title="Front end - Cássio Freitas"
+        title="DevOps - Cássio Freitas"
         description="This is my personal website"
       />
       <LayoutMobile>
@@ -22,4 +22,4 @@ const Frontend = ({ posts }) => {
   )
 }
 
-export default Frontend
+export default Devops

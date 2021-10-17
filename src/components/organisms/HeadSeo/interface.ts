@@ -4,4 +4,5 @@ export type HeadSeoProps = {
   keyword?: string
   cover?: string
   slug?: string
+  canonical?: string
 }
