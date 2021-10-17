@@ -15,6 +15,7 @@ const Home = ({ posts }) => {
         keyword="desenvolvedor full stack"
         cover="https://cassiorsfreitas.com/cover-blog.png"
         slug="https://cassiorsfreitas.com/"
+        canonical="https://cassiorsfreitas.com/"
       />
       <MainContent>
         <Filter posts={posts} />

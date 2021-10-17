@@ -12,6 +12,7 @@ const Slug = ({ metadata, content, slug }) => {
         keyword={metadata.metakeyword}
         cover={`https://cassiorsfreitas.com${metadata.cover}`}
         slug={`https://cassiorsfreitas.com/${slug}`}
+        canonical={`https://cassiorsfreitas.com/${slug}`}
       />
       <LayoutMobile>
         <SinglePost metadata={metadata} content={content} />

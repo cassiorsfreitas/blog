@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://cassiorsfreitas.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.039Z</lastmod></url>
-<url><loc>https://cassiorsfreitas.com/explore</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.040Z</lastmod></url>
-<url><loc>https://cassiorsfreitas.com/explore/front-end</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.040Z</lastmod></url>
-<url><loc>https://cassiorsfreitas.com/explore/seo</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.040Z</lastmod></url>
-<url><loc>https://cassiorsfreitas.com/fav</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.040Z</lastmod></url>
-<url><loc>https://cassiorsfreitas.com/profile</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.040Z</lastmod></url>
-<url><loc>https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.040Z</lastmod></url>
-<url><loc>https://cassiorsfreitas.com/seo-peca-chave-para-o-seu-negocio</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-11T00:40:53.040Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.515Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/explore</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/explore/devops</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/explore/front-end</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/explore/seo</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/fav</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/profile</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/desmitificando-o-google-cloud-plataform</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
+<url><loc>https://cassiorsfreitas.com/seo-peca-chave-para-o-seu-negocio</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-10-17T23:19:04.516Z</lastmod></url>
 </urlset>
