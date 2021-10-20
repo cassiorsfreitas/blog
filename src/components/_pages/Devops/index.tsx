@@ -10,7 +10,11 @@ const Devops = ({ posts }) => {
     <>
       <HeadSeo
         title="DevOps - Cássio Freitas"
-        description="This is my personal website"
+        description="This is a blog about web development"
+        keyword="full stack developer"
+        cover="https://cassiorsfreitas.com/cover-blog.png"
+        slug="https://cassiorsfreitas.com/explore/devops"
+        canonical="https://cassiorsfreitas.com/explore/devops"
       />
       <LayoutMobile>
         <MainContent>
