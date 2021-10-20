@@ -13,7 +13,11 @@ const Profile = () => {
     <>
       <HeadSeo
         title="Profile - Cássio Freitas"
-        description="This is my personal website"
+        description="This is a blog about web development"
+        keyword="full stack developer"
+        cover="https://cassiorsfreitas.com/cover-blog.png"
+        slug="https://cassiorsfreitas.com/profile"
+        canonical="https://cassiorsfreitas.com/profile"
       />
       <LayoutMobile noTop>
         <MainContent>
