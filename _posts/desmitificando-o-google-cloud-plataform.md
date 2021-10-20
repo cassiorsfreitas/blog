@@ -14,7 +14,7 @@ metadescription: 'A GCP é o conjunto de servidores do Google, distribuídos no 
 
 **Programação em nuvem** e **soluções de infraestrutura** são expressões cada vez mais presentes no mercado de tecnologia. Já faz tempo que a Amazon deixou de ser apenas um grande e-commerce e passou a oferecer suas soluções de armazenamento, segurança e escalabilidade, através dos seus robustos datacenters, por exemplo.
 
-A Microsoft, que já vinha apresentando soluções para infraestrutura corporativa em nuvem, seguiu o mesmo caminho e entrou na corrida com o Azure, capaz de disputar diretamente com qualquer player do mercado. Bem, a Google não poderia ficar de fora, certo?
+A Microsoft, que já apresentava soluções para infraestruturas corporativas em nuvem, seguiu o mesmo caminho e entrou na corrida com o Azure, capaz de disputar diretamente com qualquer player do mercado. Bem, a Google não poderia ficar de fora, certo?
 
 Então, entes de falarmos sobre o Google Cloud Plataform (GCP), precisamos dar um passo atrás para entender o que precede esse ecossistema e o que está na base desses serviços.
 

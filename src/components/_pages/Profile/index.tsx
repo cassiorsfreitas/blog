@@ -13,7 +13,11 @@ const Profile = () => {
     <>
       <HeadSeo
         title="Profile - Cássio Freitas"
-        description="This is my personal website"
+        description="This is a blog about web development"
+        keyword="full stack developer"
+        cover="https://cassiorsfreitas.com/cover-blog.png"
+        slug="https://cassiorsfreitas.com/profile"
+        canonical="https://cassiorsfreitas.com/profile"
       />
       <LayoutMobile noTop>
         <MainContent>
@@ -23,10 +27,9 @@ const Profile = () => {
                 <Image
                   src="/profile.jpg"
                   alt="Profile picture"
-                  width={100}
-                  height={100}
+                  width={842}
+                  height={842}
                   layout="responsive"
-                  objectFit="cover"
                   className="ProfileImageIn"
                 />
               </div>

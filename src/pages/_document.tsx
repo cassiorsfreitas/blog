@@ -8,7 +8,6 @@ import Document, {
 } from 'next/document'
 
 import { GA_TRACKING_ID } from '../lib/gtag'
-
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
