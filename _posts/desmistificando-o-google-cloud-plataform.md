@@ -1,6 +1,6 @@
 ---
 id: 3
-title: 'Desmitificando o Google Cloud Plataform'
+title: 'Desmistificando o Google Cloud Plataform'
 date: '17/10/2021'
 excerpt: 'A GCP é o conjunto de servidores do Google que dão suporte para desenvolvedores nos seus projetos.'
 cover: '/images/post3/image-google.jpg'
