@@ -1,5 +1,5 @@
 /* eslint-disable multiline-ternary */
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { setCookie, parseCookies, destroyCookie } from 'nookies'
@@ -49,7 +49,7 @@ const SinglePost = ({ metadata, content }) => {
 
   return (
     <Container>
-      <div className="post-image">
+      {/* <div className="post-image">
         <Image
           src={`${metadata.cover}`}
           layout="responsive"
@@ -58,7 +58,7 @@ const SinglePost = ({ metadata, content }) => {
           objectFit="cover"
           alt={`Image about ${metadata.title}`}
         />
-      </div>
+      </div> */}
       <MainContent>
         <div className="desktop">
           <div className="tag">{metadata.category}</div>
