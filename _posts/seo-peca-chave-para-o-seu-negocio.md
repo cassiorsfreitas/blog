@@ -1,10 +1,10 @@
 ---
 id: 1
 title: 'SEO: peça chave para o seu negócio'
-date: '19/02/2018'
+date: 'February 19, 2018'
 excerpt: 'Aparecer ou não no Google pode definir o futuro do seu projeto. Mas, antes de tudo, você sabe mesmo o que é SEO?'
 cover: '/images/post1/image-seo.jpg'
-time: '5 min'
+time: '5 minutes of reading'
 category: 'SEO'
 link: 'seo'
 
