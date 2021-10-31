@@ -4,7 +4,7 @@ title: 'O poder de uma simples página de login'
 date: 'October 10, 2021'
 excerpt: 'Entenda a estrutura básica de uma página de login e o quanto ela pode testar seus conhecimentos.'
 cover: '/images/post2/image-login.png'
-time: '3 minutes of reading'
+time: 'Read in 3 minutes'
 category: 'Front end'
 link: 'frontend'
 
