@@ -129,6 +129,10 @@ export const Container = styled.div`
       animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     }
 
+    /* .post-image {
+      padding: 0 18rem;
+    } */
+
     @keyframes scale-up-ver-top {
       0% {
         transform: scaleY(0.4);
