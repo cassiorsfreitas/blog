@@ -111,6 +111,10 @@ export const Container = styled.div`
       color: ${theme.colors.primary[0]};
     }
 
+    iframe {
+      margin-top: 1rem;
+    }
+
     .message {
       background: ${theme.colors.primary[1]};
       border-radius: 0.8rem;
