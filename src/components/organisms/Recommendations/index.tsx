@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import React from 'react'
 import router from 'next/router'
 import { Container } from './styles'
@@ -5,15 +6,17 @@ import { Container } from './styles'
 import PostCard from '../../atoms/PostCard'
 import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import { MdSearch } from 'react-icons/md'
+import postOrganizer from '../../../lib/sortingPosts'
+
 const Recommendations = ({ posts }) => {
-  const recommendationSize = 4
-  const items = posts.slice(0, recommendationSize)
+  const organizer = postOrganizer()
+  const sortedPosts = organizer.descending(posts, 3)
 
   return (
     <Container>
       <SectionDoubleTitle titleMax="Written" titleMin="Latest posts" />
       <div className="postCardContainer">
-        {items.map(post => {
+        {sortedPosts.map(post => {
           return (
             <div key={post.metadata.title} className="card">
               <PostCard

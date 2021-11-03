@@ -27,6 +27,7 @@ export const getStaticProps: GetStaticProps = async () => {
     query {
       posts {
         metadata {
+          id
           title
           excerpt
           date

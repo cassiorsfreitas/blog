@@ -4,7 +4,7 @@ title: 'SSG, SPA and SSR. Pick one!'
 date: '02-11-2021'
 excerpt: 'In the last decade, front end development went through multiple paradigm changes that make it hard to follow.'
 cover: '/images/post1/image-seo.jpg'
-time: 'Read in 5 min'
+time: '5 min'
 category: 'Front end'
 link: 'frontend'
 
