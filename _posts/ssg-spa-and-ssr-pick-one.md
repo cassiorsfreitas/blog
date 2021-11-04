@@ -135,7 +135,7 @@ All the "hard work" is done on the server side, from requests for external APIs 
 
 - Need for good Google indexing.
 
-_**3 Examples: Ecommerce, Sites de Notícias and Wikis.**_
+_**3 Examples: E-commerce, News Sites and Wikis.**_
 
 ## Pick a render
 
