@@ -43,15 +43,15 @@ export const Container = styled.div`
 
     @media screen and (min-width: 720px) {
       .postCardContainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        width: 100%;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(5, 320px);
+        overflow: auto;
       }
 
       .card {
-        max-width: 20rem;
-        flex-basis: 20rem;
-        flex-grow: 1;
+        width: 100%;
       }
 
       .explore {

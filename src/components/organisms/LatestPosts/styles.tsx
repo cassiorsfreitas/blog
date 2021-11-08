@@ -29,14 +29,10 @@ export const Container = styled.div`
 
     @media screen and (min-width: 720px) {
       .postCardContainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-      }
-
-      .card {
-        flex-basis: 20rem;
+        width: 100%;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       }
     }
   `}

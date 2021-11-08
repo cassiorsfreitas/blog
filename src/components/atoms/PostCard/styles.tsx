@@ -17,6 +17,7 @@ export const Container = styled.div`
     .cardImage {
       min-height: 170px;
       border-radius: 1rem 1rem 0 0;
+      position: relative;
     }
 
     .cardImageIn {
