@@ -18,25 +18,31 @@ const MenuBottom = () => {
   return (
     <Container>
       <Link href="/">
-        <a>
-          <MdHome size={30} />
+        <a className="button">
+          <div className="menu-desktop">home</div>
+          <MdHome className="menu-mobile" size={30} />
         </a>
       </Link>
       <Link href="/fav">
-        <a>
-          <MdFavorite size={30} />
+        <a className="button">
+          <div className="menu-desktop">favorites</div>
+          <MdFavorite className="menu-mobile" size={30} />
         </a>
       </Link>
       <Link href="/profile">
-        <a>
-          <MdAccountCircle size={30} />
+        <a className="button">
+          <div className="menu-desktop">profile</div>
+          <MdAccountCircle className="menu-mobile" size={30} />
         </a>
       </Link>
-      <MdArrowUpward
-        size={30}
-        onClick={() => scrollTop()}
-        className="scrollTop"
-      />
+      <a className="button">
+        <div className="menu-desktop">top</div>
+        <MdArrowUpward
+          size={30}
+          onClick={() => scrollTop()}
+          className="scrollTop menu-mobile"
+        />
+      </a>
     </Container>
   )
 }
