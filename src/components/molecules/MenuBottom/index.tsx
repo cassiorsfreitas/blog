@@ -35,13 +35,9 @@ const MenuBottom = () => {
           <MdAccountCircle className="menu-mobile" size={30} />
         </a>
       </Link>
-      <a className="button">
+      <a className="button" onClick={() => scrollTop()}>
         <div className="menu-desktop">top</div>
-        <MdArrowUpward
-          size={30}
-          onClick={() => scrollTop()}
-          className="scrollTop menu-mobile"
-        />
+        <MdArrowUpward size={30} className="scrollTop menu-mobile" />
       </a>
     </Container>
   )
