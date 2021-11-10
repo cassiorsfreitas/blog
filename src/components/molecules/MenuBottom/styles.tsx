@@ -15,5 +15,37 @@ export const Container = styled.div`
     .scrollTop {
       cursor: pointer;
     }
+
+    .menu-desktop {
+      display: none;
+    }
+
+    @media screen and (min-width: 720px) {
+      justify-content: center;
+      gap: 3rem;
+      border-top: 1px solid #333333;
+
+      .menu-desktop {
+        display: block;
+      }
+
+      .menu-mobile {
+        width: 1.25rem;
+        opacity: 0;
+      }
+
+      a:hover .menu-mobile {
+        opacity: 1;
+        transition: opacity 0.2s linear;
+      }
+
+      .button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
   `}
 `
