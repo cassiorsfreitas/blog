@@ -7,6 +7,7 @@ cover: '/images/post4/structure.jpg'
 time: '5 min'
 category: 'Front end'
 link: 'frontend'
+language: 'en'
 
 metakeyword: 'front end, web development, patterns'
 metadescription: 'In the last decade, front end development went through multiple paradigm changes that make it hard to follow.'

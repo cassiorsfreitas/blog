@@ -7,6 +7,7 @@ cover: '/images/post1/image-seo.jpg'
 time: '5 min'
 category: 'SEO'
 link: 'seo'
+language: 'pt'
 
 metakeyword: 'mecanismos de busca'
 metadescription: 'SEO é peça chave para qualquer negócio. Sua função é aumentar a indexação e atingir o objetivo de todas as empresas: o primeiro lugar nas pesquisas'
