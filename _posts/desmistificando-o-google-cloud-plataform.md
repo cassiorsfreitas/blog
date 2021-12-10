@@ -7,6 +7,7 @@ cover: '/images/post3/image-google.jpg'
 time: '4 min'
 category: 'DevOps'
 link: 'devops'
+language: 'pt'
 
 metakeyword: 'programação em nuvem'
 metadescription: 'A GCP é o conjunto de servidores do Google, distribuídos no mundo todo e que dão suporte para desenvolvedores nos seus projetos em nuvem.'

@@ -13,5 +13,11 @@ export const Container = styled.div`
     .picture-profile {
       border-radius: 100%;
     }
+
+    .header-profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   `}
 `

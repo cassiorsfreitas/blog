@@ -7,6 +7,7 @@ cover: '/images/post2/image-login.png'
 time: '3 min'
 category: 'Front end'
 link: 'frontend'
+language: 'pt'
 
 metakeyword: 'desenvolver login'
 metadescription: 'Dentre os infinitos projetos possíveis e sugeridos, desenvolver uma página de login web é uma das melhores práticas e você vai entender o porquê.'
