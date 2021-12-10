@@ -3,7 +3,7 @@ import useSWR from 'swr'
 import { NowPlayingSong } from '../../../lib/types'
 import fetcher from '../../../lib/fetcher'
 import { Container } from './styles'
-import { FaSpotify } from 'react-icons/fa'
+import { SiSpotify } from 'react-icons/si'
 
 const NowPlaying = () => {
   const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
@@ -12,7 +12,7 @@ const NowPlaying = () => {
       {data?.isPlaying && (
         <Container>
           <div className="spotify">
-            <FaSpotify />
+            <SiSpotify size="16px" color="1DB954" />
             Playing on Spotify
           </div>
           <div>
