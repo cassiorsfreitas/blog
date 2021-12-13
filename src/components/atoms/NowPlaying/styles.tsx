@@ -23,7 +23,7 @@ export const Container = styled.div`
       align-content: center;
       margin-bottom: 2rem;
       padding: 1rem;
-      color: white;
+      color: ${theme.colors.primary[1]};
       gap: 0.3rem;
     }
   `}
