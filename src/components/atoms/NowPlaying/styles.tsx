@@ -16,7 +16,7 @@ export const Container = styled.div`
 
     @media screen and (max-width: 780px) {
       display: block;
-      background-color: ${theme.colors.primary[0]};
+      background-color: ${theme.colors.primary[2]};
       display: flex;
       justify-content: center;
       align-items: center;
