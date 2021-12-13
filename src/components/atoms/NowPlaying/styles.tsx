@@ -15,7 +15,16 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 780px) {
-      display: none;
+      display: block;
+      background-color: ${theme.colors.primaryLowOpacity[1]};
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      color: white;
+      gap: 0.3rem;
     }
   `}
 `

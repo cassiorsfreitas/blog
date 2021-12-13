@@ -29,7 +29,8 @@ export default {
     footer: '#0866B7',
     header: '#fff',
     dropcard: '#fafafa',
-    postCard: '#fafafa'
+    postCard: '#fafafa',
+    primaryLowOpacity: ['#FFC72C', 'rgba(214, 214, 214, 0.1)']
   },
 
   layers: {
