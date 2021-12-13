@@ -19,5 +19,21 @@ export const Container = styled.div`
       align-items: center;
       gap: 1rem;
     }
+
+    @media screen and (max-width: 780px) {
+      .spotify-desktop {
+        display: none;
+      }
+    }
+  `}
+`
+
+export const ContainerMobile = styled.div`
+  ${({ theme }) => css`
+    display: none;
+
+    @media screen and (max-width: 780px) {
+      display: block;
+    }
   `}
 `
