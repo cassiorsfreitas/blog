@@ -46,7 +46,7 @@ export const Container = styled.div`
         width: 100%;
         display: grid;
         grid-gap: 1rem;
-        grid-template-columns: repeat(5, 320px);
+        grid-template-columns: repeat(6, 320px);
         overflow: auto;
       }
 

@@ -11,23 +11,29 @@ const MenuBottom = ({ posts }) => {
       <div className="categories">
         <div className="category">
           <Link href={'/explore/seo'}>
-            <Button rounded>
-              <span>SEO</span>
-            </Button>
+            <a>
+              <Button rounded>
+                <span>SEO</span>
+              </Button>
+            </a>
           </Link>
         </div>
         <div className="category">
           <Link href={'/explore/front-end'}>
-            <Button rounded>
-              <span>Front end</span>
-            </Button>
+            <a>
+              <Button rounded>
+                <span>Front end</span>
+              </Button>
+            </a>
           </Link>
         </div>
         <div className="category">
           <Link href={'/explore/devops'}>
-            <Button rounded>
-              <span>DevOps</span>
-            </Button>
+            <a>
+              <Button rounded>
+                <span>DevOps</span>
+              </Button>
+            </a>
           </Link>
         </div>
       </div>
