@@ -20,7 +20,7 @@ const LatestPosts = ({ posts }) => {
       : posts
   }
 
-  const numberOfPosts = posts.length
+  const numberOfPosts = posts?.length
   const filteredPosts = handleSearch()
   const numberOfResults = filteredPosts.length
 
