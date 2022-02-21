@@ -21,6 +21,7 @@ export const Container = styled.div`
       font-weight: ${theme.font.weight.normal};
       font-size: 1.125rem;
       margin-bottom: 2rem;
+      margin-top: 2rem;
     }
 
     h4 {

@@ -10,7 +10,7 @@ import postOrganizer from '../../../lib/sortingPosts'
 
 const Recommendations = ({ posts }) => {
   const organizer = postOrganizer()
-  const sortedPosts = organizer.descending(posts, 4)
+  const sortedPosts = organizer.descending(posts, 5)
 
   return (
     <Container>
