@@ -47,7 +47,18 @@ export const Container = styled.div`
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(6, 320px);
-        overflow: auto;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+      }
+
+      .postCardContainer::-webkit-scrollbar {
+        width: 100%;
+      }
+
+      .postCardContainer::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(90deg, #363636 0%, #fbc72b 99%);
+        box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+        border-radius: 100px;
       }
 
       .card {

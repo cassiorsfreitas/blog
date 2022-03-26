@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.background[0]};
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+
   }
 
   a {
