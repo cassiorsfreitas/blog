@@ -19,7 +19,7 @@ export const Container = styled.div`
       margin-bottom: 1.5rem;
     }
 
-    .ProfileImageIn {
+    .profileImageIn {
       border-radius: 100rem;
     }
 
@@ -30,55 +30,60 @@ export const Container = styled.div`
     }
 
     .description {
-      text-align: center;
       font-weight: ${theme.font.weight.normal};
       color: ${theme.colors.primary[1]};
-    }
-
-    .status {
-      padding: 2rem 0;
-      width: 100%;
-      min-width: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .tech {
-      color: ${theme.colors.primary[1]};
+      text-align: justify;
       margin-top: 1rem;
+      h2 {
+        margin-bottom: 1rem;
+        font-weight: ${theme.font.weight.normal};
+      }
+    }
 
-      .about-title {
-        font-size: 1rem;
-        font-weight: ${theme.font.weight.light};
+    .career {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+
+      .careerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      h2 {
+        font-weight: ${theme.font.weight.normal};
+        color: ${theme.colors.primary[1]};
+        margin-bottom: 1rem;
       }
     }
 
     @media screen and (min-width: 720px) {
       padding: 0 15rem;
 
-      .status {
-        flex-direction: row;
-        justify-content: space-between;
+      .photo {
+        width: 20rem;
       }
 
-      .description {
-        text-align: justify;
+      .career {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .careerContainer {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+        }
+
+        h2 {
+          font-weight: ${theme.font.weight.normal};
+          color: ${theme.colors.primary[1]};
+          margin-bottom: 1rem;
+        }
       }
     }
 
     @media screen and (min-width: 1460px) {
       padding: 0 32rem;
-
-      .status {
-        flex-direction: row;
-      }
-
-      .description {
-        text-align: justify;
-      }
     }
   `}
 `
