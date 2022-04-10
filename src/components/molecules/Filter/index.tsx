@@ -12,7 +12,7 @@ const MenuBottom = ({ posts }) => {
         <div className="category">
           <Link href={'/explore/seo'}>
             <a>
-              <Button rounded>
+              <Button rounded size="small">
                 <span>SEO</span>
               </Button>
             </a>
@@ -21,7 +21,7 @@ const MenuBottom = ({ posts }) => {
         <div className="category">
           <Link href={'/explore/front-end'}>
             <a>
-              <Button rounded>
+              <Button rounded size="small">
                 <span>Front end</span>
               </Button>
             </a>
@@ -30,7 +30,7 @@ const MenuBottom = ({ posts }) => {
         <div className="category">
           <Link href={'/explore/devops'}>
             <a>
-              <Button rounded>
+              <Button rounded size="small">
                 <span>DevOps</span>
               </Button>
             </a>
