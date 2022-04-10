@@ -18,7 +18,7 @@ export default {
   },
 
   colors: {
-    primary: ['#FFC72C', '#D6D6D6', 'rgba(214, 214, 214, 0.1)'],
+    primary: ['#FFC72C', '#D6D6D6', 'rgba(214, 214, 214, 0.1)', '#FFC72C'],
     secondary: ['#09c199', '#09C199BF'],
     paragraph: ['#202329', '#D6D6D6'],
     red: '#B81213',
@@ -29,7 +29,8 @@ export default {
     footer: '#0866B7',
     header: '#fff',
     dropcard: '#fafafa',
-    postCard: '#fafafa'
+    postCard: '#fafafa',
+    scroll: '#2b3138'
   },
 
   layers: {

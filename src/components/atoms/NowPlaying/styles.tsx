@@ -4,8 +4,16 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
     font-size: 0.8rem;
+    width: 100%;
+    background-color: ${theme.colors.primary[2]};
+    margin-bottom: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: ${theme.colors.primary[1]};
+    gap: 0.3rem;
 
     .spotify {
       opacity: 0.5;
@@ -15,7 +23,6 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 780px) {
-      display: block;
       background-color: ${theme.colors.primary[2]};
       display: flex;
       justify-content: center;

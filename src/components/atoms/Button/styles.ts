@@ -2,7 +2,7 @@ import styled, { css, DefaultTheme } from 'styled-components'
 import { ButtonProps } from './interface'
 
 const wrapperModifiers = {
-  small: () => css`
+  small: ({ theme }) => css`
     @media only screen and (min-width: 680px) {
       font-size: 1rem;
       height: 1.95rem;
@@ -94,7 +94,7 @@ export const WrapperButton = styled.button<ButtonProps>`
     selected
   }) => css`
     background: ${theme.colors.primary[0]};
-    color: white;
+    color: #FFC72C;
     border: none;
     height: 46px;
     border-radius: 0.25rem;
@@ -132,6 +132,7 @@ export const WrapperButton = styled.button<ButtonProps>`
 
     p {
       margin 0;
+      color: red;
     }
   `}
 `

@@ -1,14 +1,11 @@
 /* eslint-disable multiline-ternary */
-import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 import { BiMoon } from 'react-icons/bi'
-import { Container, ContainerMobile } from './styles'
-
 import { MdSearch, MdWbSunny } from 'react-icons/md'
 import { useGlobalContext } from '../../../contexts/globalContext'
-import profile from '../../../../public/profile.jpg'
 import NowPlaying from '../../atoms/NowPlaying'
+import { Container, ContainerMobile } from './styles'
 
 const MenuTop = () => {
   const { isLight, setIsLight } = useGlobalContext()
@@ -30,21 +27,7 @@ const MenuTop = () => {
           />
         )}
         <div className="header-profile">
-          <Link href="/">
-            <a>
-              <Image
-                src={profile}
-                width={50}
-                height={50}
-                priority
-                alt="Cássio Freitas Profile Picture"
-                className="picture-profile"
-              />
-            </a>
-          </Link>
-          <div className="spotify-desktop">
-            <NowPlaying />
-          </div>
+          <h1>Read. Learn. Teach.</h1>
         </div>
         <Link href="/explore">
           <a>

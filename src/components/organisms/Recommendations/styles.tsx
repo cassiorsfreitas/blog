@@ -56,7 +56,11 @@ export const Container = styled.div`
       }
 
       .postCardContainer::-webkit-scrollbar-thumb {
-        background-image: linear-gradient(90deg, #20232a 0%, #2b3138 99%);
+        background-image: linear-gradient(
+          90deg,
+          ${theme.colors.scroll} 0%,
+          ${theme.colors.scroll} 99%
+        );
         border-radius: 100px;
       }
 

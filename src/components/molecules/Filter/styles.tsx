@@ -22,6 +22,12 @@ export const Container = styled.div`
       gap: 1rem;
     }
 
+    @media (min-width: 768px) {
+      .categories {
+        gap: 0.8rem;
+      }
+    }
+
     .categories::-webkit-scrollbar {
       display: none;
     }
