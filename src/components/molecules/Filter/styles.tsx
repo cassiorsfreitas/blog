@@ -19,7 +19,13 @@ export const Container = styled.div`
       padding: 0.1rem 0px;
       flex-wrap: nowrap;
       overflow: auto;
-      gap: 0.8rem;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .categories {
+        gap: 0.8rem;
+      }
     }
 
     .categories::-webkit-scrollbar {
