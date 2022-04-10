@@ -19,7 +19,7 @@ export const Container = styled.div`
       padding: 0.1rem 0px;
       flex-wrap: nowrap;
       overflow: auto;
-      gap: 1rem;
+      gap: 0.9rem;
     }
 
     .categories::-webkit-scrollbar {
