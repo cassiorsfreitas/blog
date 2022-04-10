@@ -15,18 +15,19 @@ export default {
     }
   },
   colors: {
-    primary: ['#FFC72C', '#494949', 'rgba(214, 214, 214, 0.3)'],
+    primary: ['#FFC72C', '#494949', 'rgba(214, 214, 214, 0.3)', '#494949'],
     secondary: ['#09c199', '#09C199BF'],
-    paragraph: ['#fff', '#494949'],
+    paragraph: ['#494949', '#494949'],
     red: '#B81213',
     lightGray: '#cbcbcb',
     gray: '#8F8F8F',
     darkGray: '#555555',
-    background: ['#FFF', '#EAEAEA', '#555', '#333'],
+    background: ['#F9F9F9', '#c6c6c6', '#555', '#333'],
     footer: '#111',
     header: '#222',
     dropcard: '#1f1f1f',
-    postCard: '#444'
+    postCard: '#444',
+    scroll: '#c6c6c6'
   },
   layers: {
     base: 10,

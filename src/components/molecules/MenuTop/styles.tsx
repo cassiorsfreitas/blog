@@ -17,12 +17,25 @@ export const Container = styled.div`
     .header-profile {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      flex-direction: column;
+    }
+
+    .header-profile h1 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
     }
 
     @media screen and (max-width: 780px) {
-      .spotify-desktop {
-        display: none;
+      display: flex;
+      align-items: center;
+
+      .header-profile h1 {
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
       }
     }
   `}
@@ -30,10 +43,11 @@ export const Container = styled.div`
 
 export const ContainerMobile = styled.div`
   ${({ theme }) => css`
-    display: none;
-
+    display: flex;
+    justify-content: center;
     @media screen and (max-width: 780px) {
-      display: block;
+      display: flex;
+      justify-content: center;
     }
   `}
 `
