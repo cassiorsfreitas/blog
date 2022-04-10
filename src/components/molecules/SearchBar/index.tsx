@@ -1,8 +1,7 @@
 import React, { useContext } from 'react'
-import { Container } from './styles'
-
-import Input from '../../atoms/Input'
 import { SearchContext } from '../../../contexts/searchContext'
+import Input from '../../atoms/Input'
+import { Container } from './styles'
 
 const SearchBar = () => {
   const { search, setSearch } = useContext(SearchContext)

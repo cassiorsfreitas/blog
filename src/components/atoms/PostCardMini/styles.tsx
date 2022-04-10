@@ -47,7 +47,7 @@ export const Container = styled.div`
     }
 
     .clockIcon {
-      color: ${theme.colors.primary[0]};
+      color: ${theme.colors.primary[3]};
       margin-right: 0.5rem;
     }
   `}

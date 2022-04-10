@@ -64,7 +64,7 @@ export const Container = styled.div<InputProps>`
     }
 
     .line {
-      border-bottom: 1px solid ${theme.colors.primary[0]};
+      border-bottom: 1px solid ${theme.colors.primary[3]};
       margin: 0 0.5rem;
     }
 
