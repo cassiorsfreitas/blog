@@ -36,6 +36,15 @@ const MenuBottom = ({ posts }) => {
             </a>
           </Link>
         </div>
+        <div className="category">
+          <Link href={'/explore/quick-tips'}>
+            <a>
+              <Button rounded size="small">
+                <span>Quick tips</span>
+              </Button>
+            </a>
+          </Link>
+        </div>
       </div>
     </Container>
   )
