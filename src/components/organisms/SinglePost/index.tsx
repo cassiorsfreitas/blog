@@ -1,12 +1,10 @@
 /* eslint-disable multiline-ternary */
 // import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { destroyCookie, parseCookies, setCookie } from 'nookies'
 import React, { useEffect, useState } from 'react'
-import { setCookie, parseCookies, destroyCookie } from 'nookies'
-
+import { MdFavorite, MdFavoriteBorder, MdShare } from 'react-icons/md'
 import MainContent from '../../templates/MainContent'
-import { MdFavoriteBorder, MdFavorite, MdShare } from 'react-icons/md'
-
 import { Container } from './styles'
 
 const SinglePost = ({ metadata, content }) => {

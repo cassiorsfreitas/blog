@@ -116,6 +116,28 @@ export const Container = styled.div`
       margin-top: 1rem;
     }
 
+    table {
+      width: 100%;
+      margin-bottom: 2rem;
+      overflow-x: auto;
+      margin: 0.5em 0 2.5em;
+      max-width: 100%;
+      border-spacing: 0;
+      border-collapse: collapse;
+      vertical-align: top;
+
+      th,
+      td {
+        padding: 1vh 1vw;
+        border: #e9ebec 1px solid;
+      }
+
+      th {
+        background-color: ${theme.colors.primary[2]};
+        color: ${theme.colors.primary[0]};
+      }
+    }
+
     .message {
       background: ${theme.colors.primary[1]};
       border-radius: 0.8rem;
