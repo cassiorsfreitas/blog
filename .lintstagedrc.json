@@ -1,6 +1,6 @@
 {
   "**/*.(ts|tsx)": [
     "eslint . --fix",
-    "yarn test:verbose"
+    "yarn test:staged"
   ]
 }
