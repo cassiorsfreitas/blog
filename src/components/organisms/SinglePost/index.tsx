@@ -80,12 +80,14 @@ const SinglePost = ({ metadata, content }) => {
               </a>
               {liked ? (
                 <MdFavorite
+                  data-testid="favorite-icon"
                   size={30}
                   className="fav-icon"
                   onClick={handleLiked}
                 />
               ) : (
                 <MdFavoriteBorder
+                  data-testid="favorite-icon"
                   size={30}
                   className="fav-icon"
                   onClick={handleLiked}
