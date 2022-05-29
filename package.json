@@ -9,11 +9,11 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --passWithNoTests --runInBand --no-cache --silent --noStackTrace",
-    "test:unit": "yarn test -- --watch -c jest-unit-config.js",
-    "test:staged": "yarn test -- --findRelatedTests",
-    "test:integration": "yarn test -- --watch -c jest-integration-config.js",
+    "test:unit": "yarn test --watch -c jest-unit-config.js",
+    "test:staged": "yarn test",
+    "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:verbose": "jest --passWithNoTests --runInBand --no-cache",
-    "test:ci": "yarn test -- --coverage"
+    "test:ci": "yarn test --coverage"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
