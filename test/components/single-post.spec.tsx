@@ -26,7 +26,6 @@ describe('Component SinglePost', () => {
         <SinglePost metadata={fakeData} content={'any_content'} />
       </ThemeProvider>
     )
-
     expect(getByTestId('favorite-icon')).toBeTruthy()
   })
 })
