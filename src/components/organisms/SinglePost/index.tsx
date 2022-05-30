@@ -47,16 +47,6 @@ const SinglePost = ({ metadata, content }) => {
 
   return (
     <Container>
-      {/* <div className="post-image">
-        <Image
-          src={`${metadata.cover}`}
-          layout="responsive"
-          width={200}
-          height={170}
-          objectFit="cover"
-          alt={`Image about ${metadata.title}`}
-        />
-      </div> */}
       <MainContent>
         <div className="desktop">
           <div className="tag">{metadata.category}</div>
@@ -76,18 +66,18 @@ const SinglePost = ({ metadata, content }) => {
             <a onClick={() => router.back()}>← back to list</a>
             <div className="favorite">
               <a onClick={handleCopy}>
-                <MdShare size={30} />
+                <MdShare size={30} data-testid="share-icon" />
               </a>
               {liked ? (
                 <MdFavorite
-                  data-testid="favorite-icon"
+                  data-testid="like-icon"
                   size={30}
                   className="fav-icon"
                   onClick={handleLiked}
                 />
               ) : (
                 <MdFavoriteBorder
-                  data-testid="favorite-icon"
+                  data-testid="unlike-icon"
                   size={30}
                   className="fav-icon"
                   onClick={handleLiked}

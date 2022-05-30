@@ -10,7 +10,7 @@
     "lint": "next lint",
     "test": "jest --passWithNoTests --runInBand --no-cache --silent --noStackTrace",
     "test:unit": "yarn test --watch -c jest-unit-config.js",
-    "test:staged": "yarn tes --findRelatedTests",
+    "test:staged": "yarn test --findRelatedTests",
     "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:verbose": "jest --passWithNoTests --runInBand --no-cache",
     "test:ci": "yarn test --coverage"
@@ -39,8 +39,10 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-typescript": "^7.14.5",
+    "@testing-library/dom": "^8.13.0",
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^10.4.9",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^14.2.0",
     "@types/gtag.js": "^0.0.7",
     "@types/node": "^16.0.1",
     "@types/react": "^17.0.14",
