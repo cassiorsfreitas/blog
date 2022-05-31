@@ -38,7 +38,7 @@ describe('<SinglePost />', () => {
     expect(screen.queryByTestId('unlike-icon')).not.toBeInTheDocument()
   })
 
-  it('should be favorite post in cookies after click', async () => {
+  it('should add favorite post in cookies after click', async () => {
     makeSut()
     // console.log(userEvent.click(screen.queryByTestId('unliked-icon')))
     await userEvent.click(screen.queryByTestId('unlike-icon'))
@@ -56,8 +56,19 @@ describe('<SinglePost />', () => {
     expect(screen.queryByTestId('share-icon')).toBeInTheDocument()
   })
 
-  // it('should be url in clipboard after click on share icon', async () => {
-  //   makeSut()
-  //   await userEvent.click(screen.queryByTestId('share-icon'))
-  // })
+  it('should add url in clipboard after click on share icon', async () => {
+    makeSut()
+    Object.assign(navigator, {
+      clipboard: {
+        writeText: () => {
+          Object.defineProperty(window, 'location', {
+            value: new URL(fakeData.urlCopied)
+          })
+        }
+      }
+    })
+    await userEvent.click(screen.queryByTestId('share-icon'))
+    expect(window.location.href).toEqual(fakeData.urlCopied)
+    expect(screen.getByText('URL copied successfully')).toBeInTheDocument()
+  })
 })

@@ -11,5 +11,5 @@ export const fakeData = {
     category: 'Quick tips',
     link: 'quick-tips'
   },
-  urlCopied: 'https://cassiorsfreitas.com/vim-cheat-sheet'
+  urlCopied: 'http://localhost/vim-cheat-sheet'
 }
