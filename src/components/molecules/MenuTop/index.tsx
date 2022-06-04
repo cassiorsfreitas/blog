@@ -3,12 +3,16 @@ import Link from 'next/link'
 import React from 'react'
 import { BiMoon } from 'react-icons/bi'
 import { MdSearch, MdWbSunny } from 'react-icons/md'
+import useSWR from 'swr'
 import { useGlobalContext } from '../../../contexts/globalContext'
+import fetcher from '../../../lib/fetcher'
+import { NowPlayingSong } from '../../../lib/types'
 import NowPlaying from '../../atoms/NowPlaying'
 import { Container, ContainerMobile } from './styles'
 
 const MenuTop = () => {
   const { isLight, setIsLight } = useGlobalContext()
+  const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
 
   return (
     <>
@@ -36,7 +40,7 @@ const MenuTop = () => {
         </Link>
       </Container>
       <ContainerMobile>
-        <NowPlaying />
+        <NowPlaying data={data} />
       </ContainerMobile>
     </>
   )

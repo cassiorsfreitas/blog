@@ -3,17 +3,17 @@ import SinglePost from '../../../src/components/organisms/SinglePost'
 import { cleanup, render, screen, userEvent } from '../../config/react-library'
 import { ThemeProvider, dark } from '../../config/theme-wrapper'
 import { parseCookies, destroyCookie } from 'nookies'
-import { fakeData } from './fake-data'
+import { readFakeData } from './readFakeData'
 
 afterEach(() => {
   cleanup()
-  destroyCookie(null, `FAVPOST${fakeData.metadata.id}`)
+  destroyCookie(null, `FAVPOST${readFakeData.metadata.id}`)
 })
 
 const makeSut = () => {
   return render(
     <ThemeProvider theme={dark}>
-      <SinglePost metadata={fakeData.metadata} content={'any_content'} />
+      <SinglePost metadata={readFakeData.metadata} content={'any_content'} />
     </ThemeProvider>
   )
 }
@@ -21,17 +21,17 @@ const makeSut = () => {
 describe('<SinglePost />', () => {
   it('Component has correct title', () => {
     makeSut()
-    expect(screen.getByText(fakeData.metadata.title)).toBeInTheDocument()
+    expect(screen.getByText(readFakeData.metadata.title)).toBeInTheDocument()
   })
 
   it('Component has correct excerpt', () => {
     makeSut()
-    expect(screen.getByText(fakeData.metadata.excerpt)).toBeInTheDocument()
+    expect(screen.getByText(readFakeData.metadata.excerpt)).toBeInTheDocument()
   })
 
   it('Component has correct category', () => {
     makeSut()
-    expect(screen.getByText(fakeData.metadata.category)).toBeInTheDocument()
+    expect(screen.getByText(readFakeData.metadata.category)).toBeInTheDocument()
   })
 
   it('should show unliked icon at start', () => {
@@ -43,7 +43,7 @@ describe('<SinglePost />', () => {
   it('should be no favorite post in cookies at start', () => {
     makeSut()
     const cookies = parseCookies()
-    expect(cookies['FAVPOST' + fakeData.metadata.id]).toBeUndefined()
+    expect(cookies['FAVPOST' + readFakeData.metadata.id]).toBeUndefined()
   })
 
   it('should show liked icon after click', async () => {
@@ -58,7 +58,7 @@ describe('<SinglePost />', () => {
     // console.log(userEvent.click(screen.queryByTestId('unliked-icon')))
     await userEvent.click(screen.queryByTestId('unlike-icon'))
     const cookies = parseCookies()
-    expect(cookies['FAVPOST' + fakeData.metadata.id]).not.toBeUndefined()
+    expect(cookies['FAVPOST' + readFakeData.metadata.id]).not.toBeUndefined()
   })
 
   it('should show backToList link', () => {
@@ -77,13 +77,13 @@ describe('<SinglePost />', () => {
       clipboard: {
         writeText: () => {
           Object.defineProperty(window, 'location', {
-            value: new URL(fakeData.urlCopied)
+            value: new URL(readFakeData.urlCopied)
           })
         }
       }
     })
     await userEvent.click(screen.queryByTestId('share-icon'))
-    expect(window.location.href).toEqual(fakeData.urlCopied)
+    expect(window.location.href).toEqual(readFakeData.urlCopied)
     expect(screen.getByText('URL copied successfully')).toBeInTheDocument()
   })
 })

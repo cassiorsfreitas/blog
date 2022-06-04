@@ -1,4 +1,4 @@
-export const fakeData = {
+export const readFakeData = {
   metadata: {
     id: '6',
     title: 'My VIM Cheat Sheet',

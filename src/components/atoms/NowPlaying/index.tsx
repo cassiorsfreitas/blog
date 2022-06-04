@@ -1,16 +1,17 @@
 import React from 'react'
-import useSWR from 'swr'
 import { NowPlayingSong } from '../../../lib/types'
-import fetcher from '../../../lib/fetcher'
 import { Container } from './styles'
 import { SiSpotify } from 'react-icons/si'
 
-const NowPlaying = () => {
-  const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
+type NowPlayingProps = {
+  data: NowPlayingSong
+}
+
+const NowPlaying = ({ data }: NowPlayingProps) => {
   return (
     <>
       {data?.isPlaying && (
-        <Container>
+        <Container data-testid="nowPlaying">
           <div className="spotify">
             <SiSpotify size="16px" color="1DB954" />
             Playing on Spotify
