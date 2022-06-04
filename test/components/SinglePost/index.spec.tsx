@@ -19,6 +19,11 @@ const makeSut = () => {
 }
 
 describe('<SinglePost />', () => {
+  it('Component has correct title', () => {
+    makeSut()
+    expect(screen.getByText(fakeData.metadata.title)).toBeInTheDocument()
+  })
+
   it('should show unliked icon at start', () => {
     makeSut()
     expect(screen.queryByTestId('unlike-icon')).toBeInTheDocument()
