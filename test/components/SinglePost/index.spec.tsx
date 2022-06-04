@@ -72,6 +72,7 @@ describe('<SinglePost />', () => {
         }
       }
     })
+
     await userEvent.click(screen.queryByTestId('share-icon'))
     expect(window.location.href).toEqual(fakeData.urlCopied)
     expect(screen.getByText('URL copied successfully')).toBeInTheDocument()
