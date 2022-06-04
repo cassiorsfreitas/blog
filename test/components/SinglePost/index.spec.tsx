@@ -24,6 +24,16 @@ describe('<SinglePost />', () => {
     expect(screen.getByText(fakeData.metadata.title)).toBeInTheDocument()
   })
 
+  it('Component has correct excerpt', () => {
+    makeSut()
+    expect(screen.getByText(fakeData.metadata.excerpt)).toBeInTheDocument()
+  })
+
+  it('Component has correct category', () => {
+    makeSut()
+    expect(screen.getByText(fakeData.metadata.category)).toBeInTheDocument()
+  })
+
   it('should show unliked icon at start', () => {
     makeSut()
     expect(screen.queryByTestId('unlike-icon')).toBeInTheDocument()
@@ -72,7 +82,6 @@ describe('<SinglePost />', () => {
         }
       }
     })
-
     await userEvent.click(screen.queryByTestId('share-icon'))
     expect(window.location.href).toEqual(fakeData.urlCopied)
     expect(screen.getByText('URL copied successfully')).toBeInTheDocument()
