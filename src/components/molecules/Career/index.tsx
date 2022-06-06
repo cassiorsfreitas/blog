@@ -12,7 +12,7 @@ interface CareerProps {
   duration?: string
 }
 
-const Carrer = ({
+const Career = ({
   role,
   company,
   urlCompany,
@@ -37,4 +37,4 @@ const Carrer = ({
   )
 }
 
-export default Carrer
+export default Career

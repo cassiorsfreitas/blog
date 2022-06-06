@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
-import Carrer from '../../molecules/Career'
+import Career from '../../molecules/Career'
 import SocialCard from '../../molecules/SocialCard'
 import HeadSeo from '../../organisms/HeadSeo'
 import LayoutMobile from '../../templates/LayoutMobile'
@@ -65,7 +65,7 @@ const Profile = () => {
             <div className="career">
               <h2>Career</h2>
               <div className="careerContainer">
-                <Carrer
+                <Career
                   role="Frontend Developer"
                   company="AGAP2IT"
                   urlCompany="https://www.agap2-it.pt/"
@@ -74,7 +74,7 @@ const Profile = () => {
                   startDate="Nov 2021"
                   finalDate="Present"
                 />
-                <Carrer
+                <Career
                   role="Full Stack Developer"
                   company="Blend Euro"
                   urlCompany="https://www.blendit.com/"
@@ -84,7 +84,7 @@ const Profile = () => {
                   finalDate="Nov 2021"
                   duration="6 mos"
                 />
-                <Carrer
+                <Career
                   role="Chief Marketing Officer"
                   company="Projeto Musique"
                   urlCompany="https://projetomusique.com"
