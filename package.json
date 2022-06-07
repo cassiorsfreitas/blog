@@ -13,7 +13,8 @@
     "test:staged": "yarn test --findRelatedTests",
     "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:verbose": "jest --passWithNoTests --runInBand --no-cache",
-    "test:ci": "yarn test --coverage"
+    "test:ci": "yarn test --coverage",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -52,6 +53,7 @@
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
+    "cypress": "^10.0.3",
     "eslint": "^7.30.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
