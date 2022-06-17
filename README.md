@@ -37,6 +37,39 @@ npm install or yarn
 ```sh
 npm run dev or yarn dev
 ```
+## Running tests
+
+"test": "jest --passWithNoTests --runInBand --no-cache --silent --noStackTrace",
+    "test:unit": "yarn test --watch -c jest-unit-config.js",
+    "test:staged": "yarn test --findRelatedTests",
+    "test:integration": "yarn test --watch -c jest-integration-config.js",
+    "test:verbose": "jest --passWithNoTests --runInBand --no-cache",
+    "test:ci": "yarn test --coverage",
+    "cypress:open": "cypress open"
+
+1. General test:
+
+  ```sh
+"test": "jest --passWithNoTests --runInBand --no-cache --silent --noStackTrace"
+  ```
+
+2. Unit test:
+
+```sh
+"test:unit": "yarn test --watch -c jest-unit-config.js"
+```
+
+3. Integration test:
+
+```sh
+"test:integration": "yarn test --watch -c jest-integration-config.js"
+```
+
+4. CI test:
+
+```sh
+"test:ci": "yarn test --coverage"
+```
 
 ## Figma Project
 [Click here to open the prototype](https://www.figma.com/file/VWeum62Iwl7taKPElGj8YH/Blog-cassiorsfreitas.com?node-id=0%3A1)
