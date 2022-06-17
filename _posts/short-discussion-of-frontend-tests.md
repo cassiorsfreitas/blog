@@ -13,8 +13,7 @@ metakeyword: 'front end, web development, tests'
 metadescription: 'Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".'
 ---
 
-Testing always involves decisions and tradeoffs. I want to talk about why I make the decisions that I do and what have been my "philosophy" about tests for frontend applications. This will be an introductory theme on this blog, however we will use some technologies to make this introduction practical:
-
+Testing always involves decisions and tradeoffs. I want to talk about why I make the decisions that I do and what have been my "philosophy" about tests for frontend applications. This will be an introductory theme on this blog. However, let's use some technologies seen previously to make this introduction practical:
 - React
 
 - React Testing Library
