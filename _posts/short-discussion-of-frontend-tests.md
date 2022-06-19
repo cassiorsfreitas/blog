@@ -3,7 +3,7 @@ id: 7
 title: 'Short discussion of frontend tests'
 date: '08-06-2022'
 excerpt: 'Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".'
-cover: '/images/post7/cover.webp'
+cover: '/images/post7/cover.jpg'
 time: '6 min'
 category: 'Front end'
 link: 'frontend'
