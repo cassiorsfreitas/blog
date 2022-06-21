@@ -1,9 +1,9 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
 import PropTypes from 'prop-types'
-
 import { graphQLClient } from './api/graphql'
 import Home from '../components/_pages/Home'
+import generateRssFeed from '../lib/generateRssFeed'
 
 export const Index = ({ posts }) => {
   return <Home posts={posts} />
@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async () => {
   `
 
   const { data } = await graphQLClient.executeOperation({ query })
-  console.log(data.posts)
+  await generateRssFeed(data.posts)
 
   return {
     props: {
