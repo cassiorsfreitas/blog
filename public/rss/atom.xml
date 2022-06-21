@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cassiorsfreitas.com</id>
+    <title>Cássio Freitas' blog</title>
+    <updated>2022-06-21T22:47:39.076Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>Cássio Freitas</name>
+        <email>cassio.rsfreitas@gmail.com</email>
+        <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+    </author>
+    <link rel="alternate" href="https://cassiorsfreitas.com"/>
+    <link rel="self" href="https://cassiorsfreitas.com/rss/atom.xml"/>
+    <logo>https://cassiorsfreitas.com/cover-blog.png</logo>
+    <icon>https://cassiorsfreitas.com/favicon.png</icon>
+    <rights>All rights reserved 2022, Cássio Freitas</rights>
+    <entry>
+        <title type="html"><![CDATA[Desmistificando o Google Cloud Plataform]]></title>
+        <id>https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform</id>
+        <link href="https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform"/>
+        <updated>2021-10-17T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A GCP é o conjunto de servidores do Google que dão suporte para desenvolvedores nos seus projetos.]]></summary>
+        <content type="html"><![CDATA[A GCP é o conjunto de servidores do Google que dão suporte para desenvolvedores nos seus projetos.]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Containers]]></title>
+        <id>https://cassiorsfreitas.com/hello-containers</id>
+        <link href="https://cassiorsfreitas.com/hello-containers"/>
+        <updated>2022-02-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Like the real world example of a container, the contents is isolated. Let me show you.]]></summary>
+        <content type="html"><![CDATA[Like the real world example of a container, the contents is isolated. Let me show you.]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[O poder de uma simples página de login]]></title>
+        <id>https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login</id>
+        <link href="https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login"/>
+        <updated>2021-10-10T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Entenda a estrutura básica de uma página de login e o quanto ela pode testar seus conhecimentos.]]></summary>
+        <content type="html"><![CDATA[Entenda a estrutura básica de uma página de login e o quanto ela pode testar seus conhecimentos.]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SEO: peça chave para o seu negócio]]></title>
+        <id>https://cassiorsfreitas.com/seo-peca-chave-para-o-seu-negocio</id>
+        <link href="https://cassiorsfreitas.com/seo-peca-chave-para-o-seu-negocio"/>
+        <updated>2018-02-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Aparecer ou não no Google pode definir o futuro do seu projeto. Mas, antes de tudo, você sabe mesmo o que é SEO?]]></summary>
+        <content type="html"><![CDATA[Aparecer ou não no Google pode definir o futuro do seu projeto. Mas, antes de tudo, você sabe mesmo o que é SEO?]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Short discussion of frontend tests]]></title>
+        <id>https://cassiorsfreitas.com/short-discussion-of-frontend-tests</id>
+        <link href="https://cassiorsfreitas.com/short-discussion-of-frontend-tests"/>
+        <updated>2022-06-08T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></summary>
+        <content type="html"><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SSG, SPA and SSR. Pick one!]]></title>
+        <id>https://cassiorsfreitas.com/ssg-spa-and-ssr-pick-one</id>
+        <link href="https://cassiorsfreitas.com/ssg-spa-and-ssr-pick-one"/>
+        <updated>2021-11-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In the last decade, front end development went through multiple paradigm changes that make it hard to follow.]]></summary>
+        <content type="html"><![CDATA[In the last decade, front end development went through multiple paradigm changes that make it hard to follow.]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My VIM Cheat Sheet]]></title>
+        <id>https://cassiorsfreitas.com/vim-cheat-sheet</id>
+        <link href="https://cassiorsfreitas.com/vim-cheat-sheet"/>
+        <updated>2022-04-21T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Great Vim Cheat Sheet! I have compiled a list of essential Vim commands that I use every day.]]></summary>
+        <content type="html"><![CDATA[A Great Vim Cheat Sheet! I have compiled a list of essential Vim commands that I use every day.]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+</feed>

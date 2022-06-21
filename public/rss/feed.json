@@ -1,0 +1,97 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Cássio Freitas' blog",
+    "home_page_url": "https://cassiorsfreitas.com",
+    "feed_url": "https://cassiorsfreitas.com/rss/feed.json",
+    "icon": "https://cassiorsfreitas.com/cover-blog.png",
+    "author": {
+        "name": "Cássio Freitas",
+        "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+    },
+    "items": [
+        {
+            "id": "https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform",
+            "content_html": "A GCP é o conjunto de servidores do Google que dão suporte para desenvolvedores nos seus projetos.",
+            "url": "https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform",
+            "title": "Desmistificando o Google Cloud Plataform",
+            "summary": "A GCP é o conjunto de servidores do Google que dão suporte para desenvolvedores nos seus projetos.",
+            "date_modified": "2021-10-17T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
+            "id": "https://cassiorsfreitas.com/hello-containers",
+            "content_html": "Like the real world example of a container, the contents is isolated. Let me show you.",
+            "url": "https://cassiorsfreitas.com/hello-containers",
+            "title": "Hello, Containers",
+            "summary": "Like the real world example of a container, the contents is isolated. Let me show you.",
+            "date_modified": "2022-02-21T00:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
+            "id": "https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login",
+            "content_html": "Entenda a estrutura básica de uma página de login e o quanto ela pode testar seus conhecimentos.",
+            "url": "https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login",
+            "title": "O poder de uma simples página de login",
+            "summary": "Entenda a estrutura básica de uma página de login e o quanto ela pode testar seus conhecimentos.",
+            "date_modified": "2021-10-10T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
+            "id": "https://cassiorsfreitas.com/seo-peca-chave-para-o-seu-negocio",
+            "content_html": "Aparecer ou não no Google pode definir o futuro do seu projeto. Mas, antes de tudo, você sabe mesmo o que é SEO?",
+            "url": "https://cassiorsfreitas.com/seo-peca-chave-para-o-seu-negocio",
+            "title": "SEO: peça chave para o seu negócio",
+            "summary": "Aparecer ou não no Google pode definir o futuro do seu projeto. Mas, antes de tudo, você sabe mesmo o que é SEO?",
+            "date_modified": "2018-02-20T00:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
+            "id": "https://cassiorsfreitas.com/short-discussion-of-frontend-tests",
+            "content_html": "Testing always involves decisions and tradeoffs. Let me show what have been my \"philosophy\".",
+            "url": "https://cassiorsfreitas.com/short-discussion-of-frontend-tests",
+            "title": "Short discussion of frontend tests",
+            "summary": "Testing always involves decisions and tradeoffs. Let me show what have been my \"philosophy\".",
+            "date_modified": "2022-06-08T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
+            "id": "https://cassiorsfreitas.com/ssg-spa-and-ssr-pick-one",
+            "content_html": "In the last decade, front end development went through multiple paradigm changes that make it hard to follow.",
+            "url": "https://cassiorsfreitas.com/ssg-spa-and-ssr-pick-one",
+            "title": "SSG, SPA and SSR. Pick one!",
+            "summary": "In the last decade, front end development went through multiple paradigm changes that make it hard to follow.",
+            "date_modified": "2021-11-03T00:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
+            "id": "https://cassiorsfreitas.com/vim-cheat-sheet",
+            "content_html": "A Great Vim Cheat Sheet! I have compiled a list of essential Vim commands that I use every day.",
+            "url": "https://cassiorsfreitas.com/vim-cheat-sheet",
+            "title": "My VIM Cheat Sheet",
+            "summary": "A Great Vim Cheat Sheet! I have compiled a list of essential Vim commands that I use every day.",
+            "date_modified": "2022-04-21T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        }
+    ]
+}
