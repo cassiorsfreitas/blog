@@ -13,7 +13,7 @@ metakeyword: 'front end, web development, spotify'
 metadescription: 'Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.'
 ---
 
-![Blog (NextJS) + Spotify: sounds good! -fullwidth](images/post8/cover.jpg)
+![Blog (NextJS) + Spotify: sounds good! -fullwidth](images/post8/cover.png)
 
 Months ago I found a really cool feature while exploring the blog of Lee Robinson, VP of Developer Experience at Vercel. He connected the NextJS blog with his Spotify account and I was very curious about this integration. Fortunately, like this blog, all the code was open on Github. Well, you can feel free to also explore the repository (and I recommend it) or for now follow this article and understand how it works.
 
