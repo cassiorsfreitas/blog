@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cassiorsfreitas.com</id>
     <title>Cássio Freitas' blog</title>
-    <updated>2022-06-21T22:47:39.076Z</updated>
+    <updated>2022-06-22T12:31:18.743Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Cássio Freitas</name>
@@ -14,6 +14,24 @@
     <logo>https://cassiorsfreitas.com/cover-blog.png</logo>
     <icon>https://cassiorsfreitas.com/favicon.png</icon>
     <rights>All rights reserved 2022, Cássio Freitas</rights>
+    <entry>
+        <title type="html"><![CDATA[Blog (NextJS) + Spotify: sounds good!]]></title>
+        <id>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good</id>
+        <link href="https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good"/>
+        <updated>2022-06-22T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></summary>
+        <content type="html"><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Desmistificando o Google Cloud Plataform]]></title>
         <id>https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform</id>
@@ -88,8 +106,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Short discussion of frontend tests]]></title>
-        <id>https://cassiorsfreitas.com/short-discussion-of-frontend-tests</id>
-        <link href="https://cassiorsfreitas.com/short-discussion-of-frontend-tests"/>
+        <id>https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy</id>
+        <link href="https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy"/>
         <updated>2022-06-08T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></summary>
         <content type="html"><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></content>

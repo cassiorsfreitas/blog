@@ -4,7 +4,7 @@
         <title>Cássio Freitas' blog</title>
         <link>https://cassiorsfreitas.com</link>
         <description></description>
-        <lastBuildDate>Tue, 21 Jun 2022 22:47:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jun 2022 12:31:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://cassiorsfreitas.com</link>
         </image>
         <copyright>All rights reserved 2022, Cássio Freitas</copyright>
+        <item>
+            <title><![CDATA[Blog (NextJS) + Spotify: sounds good!]]></title>
+            <link>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good</link>
+            <guid>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good</guid>
+            <pubDate>Wed, 22 Jun 2022 23:00:00 GMT</pubDate>
+            <description><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></description>
+            <content:encoded><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></content:encoded>
+            <author>cassio.rsfreitas@gmail.com (Cássio Freitas)</author>
+        </item>
         <item>
             <title><![CDATA[Desmistificando o Google Cloud Plataform]]></title>
             <link>https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform</link>
@@ -51,8 +60,8 @@
         </item>
         <item>
             <title><![CDATA[Short discussion of frontend tests]]></title>
-            <link>https://cassiorsfreitas.com/short-discussion-of-frontend-tests</link>
-            <guid>https://cassiorsfreitas.com/short-discussion-of-frontend-tests</guid>
+            <link>https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy</link>
+            <guid>https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy</guid>
             <pubDate>Wed, 08 Jun 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></description>
             <content:encoded><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></content:encoded>

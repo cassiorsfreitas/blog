@@ -10,6 +10,18 @@
     },
     "items": [
         {
+            "id": "https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good",
+            "content_html": "Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.",
+            "url": "https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good",
+            "title": "Blog (NextJS) + Spotify: sounds good!",
+            "summary": "Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.",
+            "date_modified": "2022-06-22T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
             "id": "https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform",
             "content_html": "A GCP é o conjunto de servidores do Google que dão suporte para desenvolvedores nos seus projetos.",
             "url": "https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform",
@@ -58,9 +70,9 @@
             }
         },
         {
-            "id": "https://cassiorsfreitas.com/short-discussion-of-frontend-tests",
+            "id": "https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy",
             "content_html": "Testing always involves decisions and tradeoffs. Let me show what have been my \"philosophy\".",
-            "url": "https://cassiorsfreitas.com/short-discussion-of-frontend-tests",
+            "url": "https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy",
             "title": "Short discussion of frontend tests",
             "summary": "Testing always involves decisions and tradeoffs. Let me show what have been my \"philosophy\".",
             "date_modified": "2022-06-08T23:00:00.000Z",

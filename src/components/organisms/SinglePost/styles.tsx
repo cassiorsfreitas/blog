@@ -62,6 +62,22 @@ export const Container = styled.div`
       margin-left: 1rem;
     }
 
+    pre {
+      width: 100%;
+      font-size: 0.7;
+      margin: 1rem 0%;
+      padding: 1rem;
+      border: 1px solid ${theme.colors.primary[0]};
+      font-family: 'Courier New', Courier, monospace;
+
+      overflow-x: auto;
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
     .tag {
       width: 40%;
       margin-top: 2rem;
