@@ -15,7 +15,7 @@ metadescription: 'Spotify Web API endpoints return JSON about music artists, alb
 
 ![Blog (NextJS) + Spotify: sounds good! -fullwidth](images/post8/cover.png)
 
-A few months ago I found a really cool feature while exploring the Lee Robinson's blog, VP of Developer Experience at Vercel. He connected the NextJS blog with his Spotify account and I was very curious about this integration. Fortunately, like this blog, all the code was open on Github. Well, you can feel free to also explore the repository (and I recommend it) or for now follow this article and understand how it works.
+A few months ago I found a really cool feature while exploring Lee Robinson's blog, VP of Developer Experience at Vercel. He connected the NextJS blog with his Spotify account and I was very curious about this integration. Fortunately, like this blog, all the code was open on Github. Well, you can freely explore the repository (and I recommend it) or for now follow this article and understand how it works.
 
 ![Unit testing example -fullwidth](images/post8/example1.png)
 
@@ -56,7 +56,7 @@ There are many types of authentication, but we are going with `refresh_token` b
 
 ## Authorization Code
 
-As you can see in the above image we have everything except [scopes](https://developer.spotify.com/documentation/general/guides/authorization/scopes/). Which defines, what we need fetch from the Spotify API. We'll have our application request authorization by logging in with whatever **scopes** we need. Here's an example of what the URL might look like. Don't forget to swap out the **`client_id`** and scopes for your own:
+As you can see in the above image we have everything except [scopes](https://developer.spotify.com/documentation/general/guides/authorization/scopes/). Scopes defines what we need fetch from the Spotify API. We'll have our application request authorization by logging in with whatever **scopes** we need. Here's an example of what the URL might look like. Don't forget to swap out the **`client_id`** and scopes for your own:
 
 ```
 https://accounts.spotify.com/authorize?client_id=8e94bde7dd
@@ -226,7 +226,7 @@ export default async function handler(
 }
 ```
 
-This returns all the song details if the user is playing the song. Otherwise, isPlaying will return false. You can handle both the conditions now. If the user is playing the song, then simply show the song Otherwise Display Not Playing.
+This returns all the song details if the user is playing the song. Otherwise, isPlaying will return false. You can handle both the conditions now. If the user is playing the song, then simply show the song otherwise display “Not Playing”.
 
 ```json
 {
