@@ -14,6 +14,7 @@ const Button = ({
   outline,
   white,
   selected,
+  submit,
   ...props
 }: ButtonProps) => {
   return (
@@ -27,6 +28,7 @@ const Button = ({
       hasIcon={!!icon}
       onClick={onClick}
       selected={selected}
+      type={submit ? 'submit' : 'button'}
       {...props}
     >
       {icon}
