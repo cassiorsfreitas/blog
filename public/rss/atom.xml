@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cassiorsfreitas.com</id>
     <title>Cássio Freitas' blog</title>
-    <updated>2022-06-22T12:31:18.743Z</updated>
+    <updated>2022-07-11T18:53:47.500Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Cássio Freitas</name>
@@ -106,8 +106,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Short discussion of frontend tests]]></title>
-        <id>https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy</id>
-        <link href="https://cassiorsfreitas.com/short-discussion-of-frontend-tests copy"/>
+        <id>https://cassiorsfreitas.com/short-discussion-of-frontend-tests</id>
+        <link href="https://cassiorsfreitas.com/short-discussion-of-frontend-tests"/>
         <updated>2022-06-08T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></summary>
         <content type="html"><![CDATA[Testing always involves decisions and tradeoffs. Let me show what have been my "philosophy".]]></content>

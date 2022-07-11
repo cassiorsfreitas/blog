@@ -38,6 +38,7 @@ export const Container = styled.div`
 
     .icon {
       margin-top: 1rem;
+      color: ${theme.colors.primary[3]};
     }
 
     @media screen and (max-width: 360px) {

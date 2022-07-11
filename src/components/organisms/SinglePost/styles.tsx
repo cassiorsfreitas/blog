@@ -187,6 +187,12 @@ export const Container = styled.div`
       }
     }
 
+    .divider {
+      margin-top: 1.6rem;
+      border-bottom: 1px solid ${theme.colors.lightGray};
+      opacity: 0.3;
+    }
+
     @media screen and (min-width: 720px) {
       .tag {
         max-width: 10rem;

@@ -12,6 +12,7 @@ export type ButtonProps = {
   disabled?: boolean
   hasIcon?: boolean
   selected?: boolean
+  submit?: boolean
   // eslint-disable-next-line no-undef
   icon?: JSX.Element
   onClick?: () => void

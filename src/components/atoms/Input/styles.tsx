@@ -12,7 +12,8 @@ export const Container = styled.div<InputProps>`
     disabled,
     fullWidth,
     margin,
-    type
+    type,
+    noPadding
   }) => css`
     background-color: ${theme.colors.background[1]};
     color: ${theme.colors.primary[1]};
@@ -23,6 +24,7 @@ export const Container = styled.div<InputProps>`
     height: 4.8rem;
     width: max-content;
     padding: 1.5rem 1rem 1rem;
+    padding: ${noPadding && '0rem 1rem'};
 
     ${!!valid && stateModifiers.valid(theme)}
     ${!!invalid && stateModifiers.invalid(theme)}

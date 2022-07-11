@@ -25,6 +25,7 @@ const Input = ({
   mask,
   ref,
   onBlur,
+  noPadding,
   ...props
 }: InputProps) => {
   const [isVisible, setVisible] = useState(false)
@@ -48,6 +49,7 @@ const Input = ({
         disabled={disabled}
         outsideLabel={outsideLabel}
         margin={!!message}
+        noPadding={noPadding}
       >
         <label data-testid="input-label">{outsideLabel && label}</label>
 
@@ -61,7 +63,7 @@ const Input = ({
             placeholder={placeholder}
             required={required}
             autoCapitalize={autoCapitalize}
-            autoComplete={autoComplete || 'new-password'}
+            autoComplete={autoComplete || 'email'}
             onChange={onChange}
             maskChar={null}
             alwaysShowMask={false}
