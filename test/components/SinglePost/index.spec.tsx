@@ -48,7 +48,7 @@ describe('<SinglePost />', () => {
 
   it('should show liked icon after click', async () => {
     makeSut()
-    await userEvent.click(screen.queryByTestId('unlike-icon'))
+    await userEvent.click(screen.queryByTestId('unlike-icon') as HTMLElement)
     expect(screen.queryByTestId('like-icon')).toBeInTheDocument()
     expect(screen.queryByTestId('unlike-icon')).not.toBeInTheDocument()
   })
@@ -56,7 +56,7 @@ describe('<SinglePost />', () => {
   it('should add favorite post in cookies after click', async () => {
     makeSut()
     // console.log(userEvent.click(screen.queryByTestId('unliked-icon')))
-    await userEvent.click(screen.queryByTestId('unlike-icon'))
+    await userEvent.click(screen.queryByTestId('unlike-icon') as HTMLElement)
     const cookies = parseCookies()
     expect(cookies['FAVPOST' + readFakeData.metadata.id]).not.toBeUndefined()
   })
@@ -82,7 +82,7 @@ describe('<SinglePost />', () => {
         }
       }
     })
-    await userEvent.click(screen.queryByTestId('share-icon'))
+    await userEvent.click(screen.queryByTestId('share-icon') as HTMLElement)
 
     expect(window.location.href).toEqual(readFakeData.urlCopied)
     expect(screen.getByText('URL copied successfully')).toBeInTheDocument()

@@ -1,6 +1,6 @@
 import { PostCardProps } from '../../../src/components/atoms/PostCard/interface'
 
-export const readFakeData: PostCardProps = {
+export const readFakeData: PostCardProps | any = {
   imagePath: '/images/post3/image-google.jpg',
   subtitle: 'any_subtitle',
   title: 'any_title',
