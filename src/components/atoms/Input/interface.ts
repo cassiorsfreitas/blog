@@ -1,6 +1,7 @@
 import React from 'react'
 
 export type InputProps = {
+  noPadding?: boolean
   children?: React.ReactNode
   value?: string
   label?: string

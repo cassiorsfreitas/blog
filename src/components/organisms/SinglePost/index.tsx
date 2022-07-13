@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { destroyCookie, parseCookies, setCookie } from 'nookies'
 import React, { useEffect, useState } from 'react'
 import { MdFavorite, MdFavoriteBorder, MdShare } from 'react-icons/md'
+import Newsletter from '../../molecules/Newsletter'
 import MainContent from '../../templates/MainContent'
 import { Container } from './styles'
 
@@ -88,6 +89,8 @@ const SinglePost = ({ metadata, content }) => {
           <div className={`message scale-${scaleUpVerTop}`}>
             <div className="message-content">{messageCopied}</div>
           </div>
+          <div className="divider"></div>
+          <Newsletter />
         </div>
       </MainContent>
     </Container>
