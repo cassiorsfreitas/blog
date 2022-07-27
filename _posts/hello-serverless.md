@@ -35,15 +35,15 @@ First of all, the first way is entirely possible and often necessary. However, I
 
 **Applications where server-side logic is still written by the application developer, but, it’s run in stateless compute containers**. In other words, the ecosystem provides a "space" to run part of your application's code that could not run on the front end side. Note: This processing will only happen on demand (event) and after execution, it is finished, that is, there is no infrastructure running all the time. Although this service is also called Lambda Functions or Lambdas Edges, it has become well known mainly for its implementation of AWS Lambdas.
 
-Without a doubt, Amazon, Microsoft, and Google are major references on the subject for investing a lot of time and money. But, there are also other companies and services with good technologies to talk to. For example, Vercel and Netlify.
+Without a doubt, Amazon, Microsoft, and Google are major references on the subject for investing a lot of time and money. But, there are also other companies and services with good technologies to talk to, like Vercel and Netlify.
 
-[Vercel](https://vercel.com/) offers a slightly different hosting model than the common one. I mean, part of your service is to provide processing space for functions (Js, Go, Ruby, PHP, etc.) that cannot run on the front end of the hosted application (FaaS). In practice, it is possible to incorporate part of the advantages of a backend without the need to develop one, for example, a Node + Express application.
+[Vercel](https://vercel.com/) offers a slightly different hosting model than the common one. I mean, part of your service is to provide processing space for functions (Js, Go, Ruby, PHP, etc.) that cannot run on the front end of the hosted application (FaaS). In practice, it is possible to incorporate part of the advantages of a backend without the need to develop one with Node + Express application, for example.
 
-For example, when developing a front end application with NextJs (and MongoDB Cloud Service), each file inside the _/api_ folder becomes a serverless function, being a route that the application can access, which when started, a piece of code is processed on the server side. Like an API controller. Following the example of the introduction, we would have something like:
+As such, when developing a front end application with NextJs (and MongoDB Cloud Service), each file inside the _/api_ folder becomes a serverless function, being a route that the application can access, which when started, a piece of code is processed on the server side. For instance, a simple API controller. Following the example of the introduction, we would have something like:
 
 ![NextJS serverless function -fullwidth](images/post9/example-nextjs.png)
 
-Thanks to this kind of approach, we can develop a front end application that navigates through different architectures.  Some pages are SPA and will request resources at runtime, others are SSR and will process all server side resources, and others are SSG and process best side at build time. **The modern backend is a Javascript function**.
+Thanks to this kind of approach, we can develop a front end application that navigates through [different architectures](https://cassiorsfreitas.com/ssg-spa-and-ssr-pick-one).  Some pages are SPA and will request resources at runtime, others are SSR and will process all server side resources, and others are SSG and process best side at build time. **The modern backend is a Javascript function**.
 
 ![NextJS serverless function -fullwidth](images/post9/example-nextjs2.png)
 
@@ -67,6 +67,8 @@ Thanks to this kind of approach, we can develop a front end application that nav
 
 - **Dependency:** ceding control of these aspects of your IT stack also opens you up to vendor lock-in. Deciding to change providers will also likely come with the cost of upgrading your systems to adhere to the new vendor’s specifications.
 
-Depending on the size and on the timing of your application, cost can be an advantage or a disadvantage. The services work on demand and CHARGE on demand.
+Depending on the size and on the timing of your application, cost can be an advantage or a disadvantage. The services work on demand and TO GET YOUR MONEY on demand.
 
 **Quick idea validation!** Most BaaS and FaaS services are free initially. It is possible to build great ideas, abstracting the complexity of the infrastructure and focusing more on the product that will be built. A great environment to test, study and validate projects, for sure. Every time you spend time with infrastructure, you have less time to generate value for the end users.
+
+Fortunately, following trends topics, we will talk more about serverless in the future and learn about concrete cases. So I'm open to talking about it and going deeper and deeper into this article. See you and take care!
