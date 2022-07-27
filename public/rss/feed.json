@@ -46,6 +46,18 @@
             }
         },
         {
+            "id": "https://cassiorsfreitas.com/hello-serverless",
+            "content_html": "Let me introduce you to Serverless or Serverless computing and how it may be helpful.",
+            "url": "https://cassiorsfreitas.com/hello-serverless",
+            "title": "Hello, Serverless",
+            "summary": "Let me introduce you to Serverless or Serverless computing and how it may be helpful.",
+            "date_modified": "2022-07-27T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
             "id": "https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login",
             "content_html": "Entenda a estrutura básica de uma página de login e o quanto ela pode testar seus conhecimentos.",
             "url": "https://cassiorsfreitas.com/o-poder-de-uma-simples-pagina-de-login",
