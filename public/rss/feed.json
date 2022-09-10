@@ -22,6 +22,18 @@
             }
         },
         {
+            "id": "https://cassiorsfreitas.com/communication-over-the-web",
+            "content_html": " SOAP, REST, JSON, XML, Interoperability... wait, wait! Intero what? Lets talk about communication between applications.",
+            "url": "https://cassiorsfreitas.com/communication-over-the-web",
+            "title": "Communication over the web",
+            "summary": " SOAP, REST, JSON, XML, Interoperability... wait, wait! Intero what? Lets talk about communication between applications.",
+            "date_modified": "2022-09-12T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
             "id": "https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform",
             "content_html": "A GCP é o conjunto de servidores do Google que dão suporte para desenvolvedores nos seus projetos.",
             "url": "https://cassiorsfreitas.com/desmistificando-o-google-cloud-plataform",
