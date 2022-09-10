@@ -3,7 +3,7 @@ id: 10
 title: 'Communication over the web'
 date: '12-09-2022'
 excerpt: ' SOAP, REST, JSON, XML, Interoperability... wait, wait! Intero what? Lets talk about communication between applications.'
-cover: '/images/post9/cover.jpg'
+cover: '/images/post10/cover.jpg'
 time: '7 min'
 category: 'DevOps'
 link: 'devops'
