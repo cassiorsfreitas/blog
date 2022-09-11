@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cassiorsfreitas.com</id>
     <title>Cássio Freitas' blog</title>
-    <updated>2022-07-27T09:41:57.781Z</updated>
+    <updated>2022-09-10T14:09:03.030Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Cássio Freitas</name>
@@ -21,6 +21,24 @@
         <updated>2022-06-22T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></summary>
         <content type="html"><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></content>
+        <author>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </author>
+        <contributor>
+            <name>Cássio Freitas</name>
+            <email>cassio.rsfreitas@gmail.com</email>
+            <uri>https://www.linkedin.com/in/cassiorsfreitas/</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Communication over the web]]></title>
+        <id>https://cassiorsfreitas.com/communication-over-the-web</id>
+        <link href="https://cassiorsfreitas.com/communication-over-the-web"/>
+        <updated>2022-09-12T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ SOAP, REST, JSON, XML, Interoperability... wait, wait! Intero what? Lets talk about communication between applications.]]></summary>
+        <content type="html"><![CDATA[ SOAP, REST, JSON, XML, Interoperability... wait, wait! Intero what? Lets talk about communication between applications.]]></content>
         <author>
             <name>Cássio Freitas</name>
             <email>cassio.rsfreitas@gmail.com</email>

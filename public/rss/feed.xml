@@ -4,7 +4,7 @@
         <title>Cássio Freitas' blog</title>
         <link>https://cassiorsfreitas.com</link>
         <description></description>
-        <lastBuildDate>Wed, 27 Jul 2022 09:41:57 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Sep 2022 14:09:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -20,6 +20,15 @@
             <pubDate>Wed, 22 Jun 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></description>
             <content:encoded><![CDATA[Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.]]></content:encoded>
+            <author>cassio.rsfreitas@gmail.com (Cássio Freitas)</author>
+        </item>
+        <item>
+            <title><![CDATA[Communication over the web]]></title>
+            <link>https://cassiorsfreitas.com/communication-over-the-web</link>
+            <guid>https://cassiorsfreitas.com/communication-over-the-web</guid>
+            <pubDate>Mon, 12 Sep 2022 23:00:00 GMT</pubDate>
+            <description><![CDATA[ SOAP, REST, JSON, XML, Interoperability... wait, wait! Intero what? Lets talk about communication between applications.]]></description>
+            <content:encoded><![CDATA[ SOAP, REST, JSON, XML, Interoperability... wait, wait! Intero what? Lets talk about communication between applications.]]></content:encoded>
             <author>cassio.rsfreitas@gmail.com (Cássio Freitas)</author>
         </item>
         <item>

@@ -1,53 +1,48 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { PostInterface } from '../../../interfaces/postInterface'
+import { generateFilters } from '../../../lib/generateFilters'
 import Button from '../../atoms/Button'
 import SectionTitle from '../../atoms/SectionTitle'
 import { Container } from './styles'
 
-const MenuBottom = ({ posts }) => {
+type Props = {
+  posts: PostInterface[]
+}
+
+const Filter = ({ posts }: Props) => {
+  const [filters, setFilters] = useState<string[]>([])
+  console.log('posts', posts)
+
+  useEffect(() => {
+    const filtersArray = generateFilters(posts)
+    setFilters(filtersArray)
+  }, [])
+
   return (
     <Container>
       <SectionTitle title="Tags" strong />
       <div className="categories">
-        <div className="category">
-          <Link href={'/explore/seo'}>
-            <a>
-              <Button rounded size="small">
-                <span>SEO</span>
-              </Button>
-            </a>
-          </Link>
-        </div>
-        <div className="category">
-          <Link href={'/explore/front-end'}>
-            <a>
-              <Button rounded size="small">
-                <span>Front end</span>
-              </Button>
-            </a>
-          </Link>
-        </div>
-        <div className="category">
-          <Link href={'/explore/devops'}>
-            <a>
-              <Button rounded size="small">
-                <span>DevOps</span>
-              </Button>
-            </a>
-          </Link>
-        </div>
-        <div className="category">
-          <Link href={'/explore/quick-tips'}>
-            <a>
-              <Button rounded size="small">
-                <span>Quick tips</span>
-              </Button>
-            </a>
-          </Link>
-        </div>
+        {filters.map(filter => {
+          return (
+            <div className="category" key={filter}>
+              <Link href={`/explore/${filter}`}>
+                <a>
+                  <Button rounded size="small">
+                    <span>
+                      {(
+                        filter.charAt(0).toUpperCase() + filter.slice(1)
+                      ).replace('-', ' ')}
+                    </span>
+                  </Button>
+                </a>
+              </Link>
+            </div>
+          )
+        })}
       </div>
     </Container>
   )
 }
 
-export default MenuBottom
+export default Filter
