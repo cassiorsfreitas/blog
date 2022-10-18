@@ -23,7 +23,6 @@ export default async function handler(
     body: JSON.stringify({ email })
   })
   const data = await result.json()
-  console.log(data)
 
   if (!result.ok) {
     return res.status(500).json({ error: data.error.email[0] })

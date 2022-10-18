@@ -8,7 +8,6 @@ const handleDate = (date: string) => {
 }
 
 const generateRssFeed = async posts => {
-  console.log(posts)
   const siteURL = 'https://cassiorsfreitas.com'
   const date = new Date()
   const author = {

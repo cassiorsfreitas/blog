@@ -12,7 +12,6 @@ type Props = {
 
 const Filter = ({ posts }: Props) => {
   const [filters, setFilters] = useState<string[]>([])
-  console.log('posts', posts)
 
   useEffect(() => {
     const filtersArray = generateFilters(posts)

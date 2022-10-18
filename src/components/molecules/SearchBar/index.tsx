@@ -6,10 +6,6 @@ import { Container } from './styles'
 const SearchBar = () => {
   const { search, setSearch } = useContext(SearchContext)
 
-  const validateSearch = () => {
-    console.log(search)
-  }
-
   return (
     <Container>
       <Input
@@ -17,7 +13,6 @@ const SearchBar = () => {
         type="search"
         placeholder="Search..."
         value={search || ''}
-        onBlur={() => validateSearch()}
         onChange={e => {
           setSearch(e.target.value)
         }}
