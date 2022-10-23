@@ -1,4 +1,3 @@
-import React from 'react'
 import LayoutMobile from '../../templates/LayoutMobile'
 import SinglePost from '../../organisms/SinglePost'
 import HeadSeo from '../../organisms/HeadSeo'

@@ -1,4 +1,3 @@
-import React from 'react'
 import MenuBottom from '../../molecules/MenuBottom'
 import MenuTop from '../../molecules/MenuTop'
 import { LayoutProps } from './interface'

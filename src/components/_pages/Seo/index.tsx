@@ -1,4 +1,3 @@
-import React from 'react'
 import SearchBar from '../../molecules/SearchBar'
 import HeadSeo from '../../organisms/HeadSeo'
 import LatestPosts from '../../organisms/LatestPosts'

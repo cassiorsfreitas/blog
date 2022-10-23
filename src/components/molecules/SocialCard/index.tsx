@@ -1,5 +1,3 @@
-import React from 'react'
-
 import EmailIcon from '@material-ui/icons/Email'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'

@@ -1,4 +1,3 @@
-import React from 'react'
 import { GetStaticProps } from 'next'
 import { graphQLClient } from './api/graphql'
 import Home from '../components/_pages/Home'

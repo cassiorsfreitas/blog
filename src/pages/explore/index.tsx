@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next'
-import React from 'react'
 import Explore from '../../components/_pages/Explore'
 import { PostInterface } from '../../interfaces/postInterface'
 import { graphQLClient } from '../api/graphql'

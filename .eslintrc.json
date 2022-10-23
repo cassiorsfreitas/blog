@@ -8,7 +8,8 @@
     "extends": [
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
-        "standard"
+        "standard",
+        "plugin:@next/next/recommended"
     ],
     "settings": {
       "react": {

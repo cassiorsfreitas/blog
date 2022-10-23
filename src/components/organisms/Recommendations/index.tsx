@@ -1,5 +1,4 @@
 /* eslint-disable indent */
-import React from 'react'
 import router from 'next/router'
 import { Container } from './styles'
 
