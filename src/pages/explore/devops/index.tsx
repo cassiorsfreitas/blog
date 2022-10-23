@@ -26,8 +26,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const { data } = await graphQLClient.executeOperation({ query })
 
-  data.posts.map(post => console.log(post.metadata.category))
-
   const dataFiltered = data.posts.filter(
     post => post.metadata.category === 'DevOps'
   )

@@ -42,7 +42,7 @@ export const Container = styled.div`
 `
 
 export const ContainerMobile = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     display: flex;
     justify-content: center;
     @media screen and (max-width: 780px) {
