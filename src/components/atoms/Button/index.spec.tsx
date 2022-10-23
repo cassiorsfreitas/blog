@@ -1,14 +1,12 @@
 import React from 'react'
-import { render, screen } from '../../../config/react-library'
-import { ThemeProvider, dark } from '../../../config/theme-wrapper'
-
-import Button from '../../../../src/components/atoms/Button'
-import '@testing-library/jest-dom'
+import { render, screen } from '../../../../test/config/react-library'
+import { ThemeProvider, dark } from '../../../../test/config/theme-wrapper'
+import Button from '.'
 
 const makeSut = () => {
   return render(
     <ThemeProvider theme={dark}>
-      <Button>Potato</Button>
+      <Button>Any</Button>
     </ThemeProvider>
   )
 }
