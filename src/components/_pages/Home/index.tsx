@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Filter from '../../molecules/Filter'
 import HeadSeo from '../../organisms/HeadSeo'
 import Recommendations from '../../organisms/Recommendations'

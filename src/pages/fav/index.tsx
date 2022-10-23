@@ -1,6 +1,4 @@
 import { GetStaticProps } from 'next'
-import React from 'react'
-
 import Fav from '../../components/_pages/Fav'
 import { graphQLClient } from '../api/graphql'
 import { parseCookies } from 'nookies'

@@ -1,5 +1,4 @@
 /* eslint-disable multiline-ternary */
-/* eslint-disable no-new-wrappers */
 import React, { useState } from 'react'
 import { Container } from './styles'
 import { Form, FormState } from '../../../lib/types'

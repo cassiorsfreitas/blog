@@ -1,4 +1,3 @@
-import React from 'react'
 import { NowPlayingSong } from '../../../lib/types'
 import { Container } from './styles'
 import { SiSpotify } from 'react-icons/si'

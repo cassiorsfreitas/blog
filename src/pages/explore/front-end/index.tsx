@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next'
-import React from 'react'
 import Frontend from '../../../components/_pages/Front-end'
 import { graphQLClient } from '../../api/graphql'
 

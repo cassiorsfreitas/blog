@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import Career from '../../molecules/Career'
 import SocialCard from '../../molecules/SocialCard'

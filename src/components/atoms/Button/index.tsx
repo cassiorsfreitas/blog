@@ -1,7 +1,4 @@
-import React from 'react'
-
 import { WrapperButton } from './styles'
-
 import { ButtonProps } from './interface'
 
 const Button = ({

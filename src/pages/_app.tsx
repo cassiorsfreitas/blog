@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react'
 import { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
-
 import * as gtag from '../lib/gtag'
-// eslint-disable-next-line no-unused-vars
 import NextNprogress from 'nextjs-progressbar'
-
 import { GlobalProvider } from '../contexts/globalContext'
 import { SearchProvider } from '../contexts/searchContext'
 import ThemeWrapper from '../components/templates/ThemeWrapper'

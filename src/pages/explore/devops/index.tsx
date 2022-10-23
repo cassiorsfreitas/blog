@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next'
-import React from 'react'
 import Devops from '../../../components/_pages/Devops'
 import { graphQLClient } from '../../api/graphql'
 

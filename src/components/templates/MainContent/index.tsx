@@ -1,4 +1,3 @@
-import React from 'react'
 import { MainContentProps } from './interface'
 import { Container } from './styles'
 

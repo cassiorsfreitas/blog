@@ -1,6 +1,5 @@
 /* eslint-disable multiline-ternary */
 import Link from 'next/link'
-import React from 'react'
 import { BiMoon } from 'react-icons/bi'
 import { MdSearch, MdWbSunny } from 'react-icons/md'
 import useSWR from 'swr'

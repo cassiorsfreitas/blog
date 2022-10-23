@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next'
-import React from 'react'
 import Quicktips from '../../../components/_pages/Quick-tips'
 import { graphQLClient } from '../../api/graphql'
 
