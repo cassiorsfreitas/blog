@@ -2,7 +2,7 @@ import styled, { css, DefaultTheme } from 'styled-components'
 import { ButtonProps } from './interface'
 
 const wrapperModifiers = {
-  small: ({ theme }) => css`
+  small: () => css`
     @media only screen and (min-width: 680px) {
       font-size: 1rem;
       height: 1.95rem;

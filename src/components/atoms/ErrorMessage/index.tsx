@@ -1,6 +1,7 @@
 export default function ErrorMessage({ children }) {
   return (
     <p
+      data-testid="error-message"
       style={{
         display: 'flex',
         alignItems: 'center',
