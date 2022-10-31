@@ -1,10 +1,6 @@
-import { NowPlayingSong } from '../../../lib/types'
 import { Container } from './styles'
 import { SiSpotify } from 'react-icons/si'
-
-type NowPlayingProps = {
-  data: NowPlayingSong
-}
+import { NowPlayingProps } from './interface'
 
 const NowPlaying = ({ data }: NowPlayingProps) => {
   return (
