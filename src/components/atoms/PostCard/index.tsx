@@ -15,7 +15,7 @@ const PostCard = ({
   category
 }: PostCardProps) => {
   return (
-    <Container>
+    <Container data-testId="post-card">
       <Link href={`/${link}`}>
         <a>
           <div className="cardContainer">

@@ -14,7 +14,7 @@ const makeSut = () => {
 describe('Button component', () => {
   it('should render with correct state', () => {
     makeSut()
-    const button = screen.queryByTestId('error-message')
-    expect(button).toBeInTheDocument()
+    const errorMessage = screen.queryByTestId('error-message')
+    expect(errorMessage).toBeInTheDocument()
   })
 })
