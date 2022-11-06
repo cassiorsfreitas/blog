@@ -1,5 +1,5 @@
 module.exports = {
-  setupFilesAfterEnv: ["./jest.setup.js"],
+  setupFilesAfterEnv: ['./jest.setup.js'],
   collectCoverageFrom: [
     '**/*.{ts,tsx}',
     '!**/interface.{ts,tsx}',
@@ -7,7 +7,7 @@ module.exports = {
     '!**/styles/**',
     '!**/_app.tsx',
     '!**/_document.tsx',
-    '!**/pages/**',
+    '!**/pages/**'
   ],
-  roots: ['<rootDir>/test', '<rootDir>/src'],
-};
+  roots: ['<rootDir>/test', '<rootDir>/src']
+}

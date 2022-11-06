@@ -37,4 +37,4 @@ yarn-error.log*
 
 # rss
 /public/rss/*
-!/public/rss/feed.json
+# !/public/rss/feed.json
