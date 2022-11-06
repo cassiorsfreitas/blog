@@ -31,6 +31,7 @@ const PostCard = ({
                 layout="responsive"
                 objectFit="cover"
                 className="cardImageIn"
+                data-testId="image"
               />
             </div>
             <div className="cardDescription">

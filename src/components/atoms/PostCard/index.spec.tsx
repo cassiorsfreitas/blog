@@ -25,9 +25,25 @@ describe('PostCard component', () => {
     expect(postCard).toBeInTheDocument()
   })
 
-  test('should render with correct data', () => {
+  test('should render with correct text', () => {
     makeSut()
     const postCard = screen.queryByTestId('post-card')
     expect(postCard).toHaveTextContent(dataMock.title)
+    expect(postCard).toHaveTextContent(dataMock.subtitle)
+    expect(postCard).toHaveTextContent(dataMock.date)
+    expect(postCard).toHaveTextContent(dataMock.time)
+    expect(postCard).toHaveTextContent(dataMock.category)
+  })
+
+  test('should render with correct link', () => {
+    makeSut()
+    const postCardLink = screen.getByRole('link')
+    expect(postCardLink).toHaveAttribute('href', `/${dataMock.link}`)
+  })
+
+  test('should render with correct image url', async () => {
+    makeSut()
+    const postCardImage = screen.queryByTestId('image')
+    expect(postCardImage).toBeInTheDocument()
   })
 })
