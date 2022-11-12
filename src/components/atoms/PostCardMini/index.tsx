@@ -12,7 +12,7 @@ const PostCardMini = ({
   link
 }: PostCardMiniProps) => {
   return (
-    <Container>
+    <Container data-testId="post-card-mini">
       <Link href={`/${link}`}>
         <a>
           <div className="cardContainer">

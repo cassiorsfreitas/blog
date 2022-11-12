@@ -4,12 +4,12 @@ import { ThemeProvider, dark } from '../../../../test/config/theme-wrapper'
 import NowPlaying from '.'
 import { NowPlayingProps } from './interface'
 import { NowPlayingSong } from '../../../lib/types'
-import dataMock from './dataMock'
+import { dataMockNowPlaying } from '../../../constants/dataMock'
 
 const makeSut = (props: Partial<NowPlayingSong> = {}) => {
   const defaultProps: NowPlayingProps = {
     data: {
-      ...dataMock,
+      ...dataMockNowPlaying,
       ...props
     }
   }
