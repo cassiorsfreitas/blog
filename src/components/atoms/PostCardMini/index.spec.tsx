@@ -24,4 +24,21 @@ describe('PostCardMini component', () => {
     const postCardMini = screen.queryByTestId('post-card-mini')
     expect(postCardMini).toBeInTheDocument()
   })
+
+  test('should render with correct text', () => {
+    makeSut()
+    const postCardMini = screen.queryByTestId('post-card-mini')
+    expect(postCardMini).toHaveTextContent(dataMockPostCardMini.title)
+    expect(postCardMini).toHaveTextContent(dataMockPostCardMini.date)
+    expect(postCardMini).toHaveTextContent(dataMockPostCardMini.time)
+  })
+
+  test('should render with correct text', () => {
+    makeSut()
+    const postCardMiniLink = screen.getByRole('link')
+    expect(postCardMiniLink).toHaveAttribute(
+      'href',
+      `/${dataMockPostCardMini.link}`
+    )
+  })
 })
