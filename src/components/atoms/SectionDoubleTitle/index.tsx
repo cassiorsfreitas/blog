@@ -6,7 +6,7 @@ const SectionDoubleTitle = ({
   titleMax
 }: SectionDoubleTitleProps) => {
   return (
-    <Container>
+    <Container data-testId="double-title">
       <div className="titleMin">{titleMin}</div>
       <div className="titleMax">{titleMax}</div>
     </Container>

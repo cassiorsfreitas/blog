@@ -27,6 +27,7 @@ describe('PostCardMini component', () => {
 
   test('should render with correct text', () => {
     makeSut()
+    // potato
     const postCardMini = screen.queryByTestId('post-card-mini')
     expect(postCardMini).toHaveTextContent(dataMockPostCardMini.title)
     expect(postCardMini).toHaveTextContent(dataMockPostCardMini.date)

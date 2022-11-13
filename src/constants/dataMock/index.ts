@@ -24,3 +24,8 @@ export const dataMockPostCardMini = {
   imagePath: '/image.com',
   link: 'url.com'
 }
+
+export const dataMockSectionDoubleTitle = {
+  titleMin: 'Any title min',
+  titleMax: 'Any title max'
+}
