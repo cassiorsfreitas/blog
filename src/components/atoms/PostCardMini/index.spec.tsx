@@ -19,7 +19,7 @@ const makeSut = (props: Partial<PostCardMiniProps> = {}) => {
 }
 
 describe('PostCardMini component', () => {
-  test('should render correctly', () => {
+  test('should render by default', () => {
     makeSut()
     const postCardMini = screen.queryByTestId('post-card-mini')
     expect(postCardMini).toBeInTheDocument()
