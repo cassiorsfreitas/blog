@@ -22,7 +22,7 @@ const makeSut = (props: Partial<ButtonProps> = {}) => {
 }
 
 describe('Button component', () => {
-  it('should render with correct state', () => {
+  it('should render by default', () => {
     makeSut()
     const button = screen.queryByTestId('button')
     expect(button).toBeInTheDocument()

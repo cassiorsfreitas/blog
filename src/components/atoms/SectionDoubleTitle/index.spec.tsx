@@ -19,7 +19,7 @@ const makeSut = (props: Partial<SectionDoubleTitleProps> = {}) => {
 }
 
 describe('SectionDoubleTitle component', () => {
-  test('should render correctly', () => {
+  test('should render by default', () => {
     makeSut()
     const sectionDoubleTitle = screen.queryByTestId('double-title')
     expect(sectionDoubleTitle).toBeInTheDocument()

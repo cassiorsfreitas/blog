@@ -19,7 +19,7 @@ const makeSut = (props: Partial<PostCardProps> = {}) => {
 }
 
 describe('PostCard component', () => {
-  test('should render correctly', () => {
+  test('should render by default', () => {
     makeSut()
     const postCard = screen.queryByTestId('post-card')
     expect(postCard).toBeInTheDocument()

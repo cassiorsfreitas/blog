@@ -12,7 +12,7 @@ const makeSut = () => {
 }
 
 describe('Button component', () => {
-  it('should render with correct state', () => {
+  it('should render by default', () => {
     makeSut()
     const errorMessage = screen.queryByTestId('error-message')
     expect(errorMessage).toBeInTheDocument()

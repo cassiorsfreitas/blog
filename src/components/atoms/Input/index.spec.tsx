@@ -13,7 +13,7 @@ const makeSut = (props: Partial<InputProps> = {}) => {
 }
 
 describe('Button component', () => {
-  it('should render with correct state', () => {
+  it('should render by default', () => {
     makeSut()
     const button = screen.queryByTestId('input-container')
     expect(button).toBeInTheDocument()
