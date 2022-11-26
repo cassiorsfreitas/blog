@@ -6,14 +6,12 @@ function postOrganizer() {
     })
     return sorted.slice(0, recommendationSize)
   }
-
   function descending(posts: any, recommendationSize: number) {
     const sorted = posts.sort((a, b) => {
       return b.metadata.id - a.metadata.id
     })
     return sorted.slice(0, recommendationSize)
   }
-
   return {
     ascending,
     descending
