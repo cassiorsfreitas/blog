@@ -1,6 +1,10 @@
 import { Container } from './styles'
 
-const Tag = ({ category }) => {
+export interface PropsTag {
+  category: string
+}
+
+const Tag = ({ category }: PropsTag) => {
   return <Container>{category}</Container>
 }
 
