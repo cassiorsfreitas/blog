@@ -5,7 +5,7 @@ export interface PropsTag {
 }
 
 const Tag = ({ category }: PropsTag) => {
-  return <Container>{category}</Container>
+  return <Container data-testId="category">{category}</Container>
 }
 
 export default Tag
