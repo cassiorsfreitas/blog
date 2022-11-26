@@ -29,14 +29,12 @@ const Input = ({
   ...props
 }: InputProps) => {
   const [isVisible, setVisible] = useState(false)
-
   const Eyes = () => {
     if (isVisible) {
       return <FaRegEyeSlash data-testid="hide-password" size={18} />
     }
     return <FaRegEye data-testid="show-password" size={18} />
   }
-
   return (
     <>
       <Container
