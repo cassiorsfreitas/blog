@@ -32,6 +32,7 @@ const PostCard = ({
                 objectFit="cover"
                 className="cardImageIn"
                 data-testid="image"
+                priority
               />
             </div>
             <div className="cardDescription">
