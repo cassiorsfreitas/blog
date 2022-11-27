@@ -9,6 +9,7 @@ export default function SuccessMessage({ children }) {
         fontWeight: 'bold',
         paddingBottom: '1rem'
       }}
+      data-testid="success-message"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

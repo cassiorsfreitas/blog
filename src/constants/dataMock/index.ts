@@ -29,3 +29,8 @@ export const dataMockSectionDoubleTitle = {
   titleMin: 'Any title min',
   titleMax: 'Any title max'
 }
+
+export const dataMockSectionTitle = {
+  title: 'Any title',
+  strong: false
+}
