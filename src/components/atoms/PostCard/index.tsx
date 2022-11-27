@@ -15,7 +15,7 @@ const PostCard = ({
   category
 }: PostCardProps) => {
   return (
-    <Container data-testId="post-card">
+    <Container data-testid="post-card">
       <Link href={`/${link}`}>
         <a>
           <div className="cardContainer">
@@ -31,7 +31,7 @@ const PostCard = ({
                 layout="responsive"
                 objectFit="cover"
                 className="cardImageIn"
-                data-testId="image"
+                data-testid="image"
               />
             </div>
             <div className="cardDescription">

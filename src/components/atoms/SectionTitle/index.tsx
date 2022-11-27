@@ -3,7 +3,7 @@ import { SectionTitleProps } from './interface'
 
 const SectionTitle = ({ title, strong = false }: SectionTitleProps) => {
   return (
-    <Container strong={strong} data-testId="section-title">
+    <Container strong={strong} data-testid="section-title">
       {title}
     </Container>
   )
