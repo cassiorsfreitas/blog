@@ -9,6 +9,7 @@ import ThemeWrapper from '../components/templates/ThemeWrapper'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
+  console.log('Have a great day! 📣🦖')
 
   useEffect(() => {
     const handleRouteChange = (url: URL) => {
