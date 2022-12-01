@@ -42,3 +42,14 @@ export const dataMockSectionTitle = {
   title: 'Any title',
   strong: false
 }
+
+export const dataMockCareer = {
+  role: 'Any role',
+  company: 'Any company',
+  urlCompany: 'Any urlCompany',
+  city: 'Any city',
+  country: 'Any country',
+  startDate: 'Any startDate',
+  finalDate: 'Any finalDate',
+  duration: 'Any duration'
+}

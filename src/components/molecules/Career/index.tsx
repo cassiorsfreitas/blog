@@ -1,6 +1,6 @@
 import { Container } from './styles'
 
-interface CareerProps {
+export interface CareerProps {
   role: string
   company: string
   urlCompany: string
@@ -22,7 +22,7 @@ const Career = ({
   duration
 }: CareerProps) => {
   return (
-    <Container>
+    <Container data-testid="career-component">
       <div className="job">
         <h3>{role}</h3>
         <p>
