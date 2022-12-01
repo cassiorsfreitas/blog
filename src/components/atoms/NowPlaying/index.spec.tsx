@@ -34,5 +34,7 @@ describe('Button component', () => {
     })
     const nowPlaying = screen.queryByTestId('nowPlaying')
     expect(nowPlaying).toBeInTheDocument()
+    expect(nowPlaying).toHaveTextContent(dataMockNowPlaying.title)
+    expect(nowPlaying).toHaveTextContent(dataMockNowPlaying.artist)
   })
 })
