@@ -1,3 +1,11 @@
+export const dataMockButton = {
+  text: 'Any text'
+}
+
+export const dataMockErrorMessage = {
+  text: 'Any text'
+}
+
 export const dataMockNowPlaying = {
   album: 'Any album',
   albumImageUrl: 'http://anyimageurl.com/',

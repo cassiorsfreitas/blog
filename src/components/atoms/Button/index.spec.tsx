@@ -7,16 +7,16 @@ import {
 import { ThemeProvider, dark } from '../../../../test/config/theme-wrapper'
 import Button from '.'
 import { ButtonProps } from './interface'
+import { dataMockButton } from '../../../constants/dataMock/index'
 
 const makeSut = (props: Partial<ButtonProps> = {}) => {
   const defaultProps: ButtonProps = {
-    onClick: jest.fn()
+    onClick: jest.fn(),
+    ...props
   }
   return render(
     <ThemeProvider theme={dark}>
-      <Button {...defaultProps} {...props}>
-        Any
-      </Button>
+      <Button {...defaultProps}>{dataMockButton.text}</Button>
     </ThemeProvider>
   )
 }
@@ -26,6 +26,7 @@ describe('Button component', () => {
     makeSut()
     const button = screen.queryByTestId('button')
     expect(button).toBeInTheDocument()
+    expect(button).toHaveTextContent(dataMockButton.text)
   })
 
   it('should call correct onClick function', async () => {
