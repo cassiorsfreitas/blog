@@ -30,7 +30,7 @@ describe('Filter component', () => {
     expect(filter[0]).toBeInTheDocument()
   })
 
-  it('should render value with correct format', () => {
+  it('should render correct formatting of the data provided', () => {
     makeSut({ filters: ['Any-test'] })
     const filter = screen.queryAllByTestId('category')
     expect(filter[0]).toHaveTextContent('Any test')
