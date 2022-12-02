@@ -6,11 +6,11 @@ import Button from '../../atoms/Button'
 import SectionTitle from '../../atoms/SectionTitle'
 import { Container } from './styles'
 
-type Props = {
+export interface FilterProps {
   posts: PostInterface[]
 }
 
-const Filter = ({ posts }: Props) => {
+const Filter = ({ posts }: FilterProps) => {
   const [filters, setFilters] = useState<string[]>([])
 
   useEffect(() => {
@@ -19,12 +19,12 @@ const Filter = ({ posts }: Props) => {
   }, [])
 
   return (
-    <Container>
+    <Container data-testid="filter-component">
       <SectionTitle title="Tags" strong />
       <div className="categories">
         {filters.map(filter => {
           return (
-            <div className="category" key={filter}>
+            <div className="category" key={filter} data-testid="category">
               <Link href={`/explore/${filter}`}>
                 <a>
                   <Button rounded size="small">
