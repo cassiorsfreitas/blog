@@ -23,4 +23,16 @@ describe('Filter component', () => {
     const filter = screen.queryByTestId('filter-component')
     expect(filter).toBeInTheDocument()
   })
+
+  it('should render category buttons', () => {
+    makeSut()
+    const filter = screen.queryAllByTestId('category')
+    expect(filter[0]).toBeInTheDocument()
+  })
+
+  it('should render value with correct format', () => {
+    makeSut({ filters: ['Any-test'] })
+    const filter = screen.queryAllByTestId('category')
+    expect(filter[0]).toHaveTextContent('Any test')
+  })
 })

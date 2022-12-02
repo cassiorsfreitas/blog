@@ -1,23 +1,14 @@
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import { PostInterface } from '../../../interfaces/postInterface'
-import { generateFilters } from '../../../lib/generateFilters'
+import React from 'react'
 import Button from '../../atoms/Button'
 import SectionTitle from '../../atoms/SectionTitle'
 import { Container } from './styles'
 
 export interface FilterProps {
-  posts: PostInterface[]
+  filters: string[]
 }
 
-const Filter = ({ posts }: FilterProps) => {
-  const [filters, setFilters] = useState<string[]>([])
-
-  useEffect(() => {
-    const filtersArray = generateFilters(posts)
-    setFilters(filtersArray)
-  }, [])
-
+const Filter = ({ filters }: FilterProps) => {
   return (
     <Container data-testid="filter-component">
       <SectionTitle title="Tags" strong />

@@ -55,32 +55,5 @@ export const dataMockCareer = {
 }
 
 export const dataMockFilter = {
-  posts: [
-    {
-      metadata: {
-        category: 'Any category',
-        cover: 'Any cover',
-        date: 'Any date',
-        excerpt: 'Any excerpt',
-        id: 'Any id',
-        link: 'Any link',
-        slug: 'Any slug',
-        time: 'Any time',
-        title: 'Any title'
-      }
-    },
-    {
-      metadata: {
-        category: 'Any category',
-        cover: 'Any cover',
-        date: 'Any date',
-        excerpt: 'Any excerpt',
-        id: 'Any id',
-        link: 'Any link',
-        slug: 'Any slug',
-        time: 'Any time',
-        title: 'Any title'
-      }
-    }
-  ]
+  filters: ['Devops', 'Front end', 'SEO']
 }
