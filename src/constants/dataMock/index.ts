@@ -1,3 +1,11 @@
+export const dataMockButton = {
+  text: 'Any text'
+}
+
+export const dataMockErrorMessage = {
+  text: 'Any text'
+}
+
 export const dataMockNowPlaying = {
   album: 'Any album',
   albumImageUrl: 'http://anyimageurl.com/',
@@ -33,4 +41,19 @@ export const dataMockSectionDoubleTitle = {
 export const dataMockSectionTitle = {
   title: 'Any title',
   strong: false
+}
+
+export const dataMockCareer = {
+  role: 'Any role',
+  company: 'Any company',
+  urlCompany: 'Any urlCompany',
+  city: 'Any city',
+  country: 'Any country',
+  startDate: 'Any startDate',
+  finalDate: 'Any finalDate',
+  duration: 'Any duration'
+}
+
+export const dataMockFilter = {
+  filters: ['Devops', 'Front end', 'SEO']
 }

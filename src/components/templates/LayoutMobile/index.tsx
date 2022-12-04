@@ -7,6 +7,10 @@ import { Container } from './styles'
 // bottom menu
 
 const LayoutMobile = ({ children, noTop }: LayoutProps) => {
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <Container>
       {!noTop && <MenuTop />}
@@ -14,7 +18,7 @@ const LayoutMobile = ({ children, noTop }: LayoutProps) => {
       {children}
 
       <div className="menu-bottom">
-        <MenuBottom />
+        <MenuBottom scrollTop={scrollTop} />
       </div>
     </Container>
   )

@@ -1,30 +1,21 @@
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import { PostInterface } from '../../../interfaces/postInterface'
-import { generateFilters } from '../../../lib/generateFilters'
+import React from 'react'
 import Button from '../../atoms/Button'
 import SectionTitle from '../../atoms/SectionTitle'
 import { Container } from './styles'
 
-type Props = {
-  posts: PostInterface[]
+export interface FilterProps {
+  filters: string[]
 }
 
-const Filter = ({ posts }: Props) => {
-  const [filters, setFilters] = useState<string[]>([])
-
-  useEffect(() => {
-    const filtersArray = generateFilters(posts)
-    setFilters(filtersArray)
-  }, [])
-
+const Filter = ({ filters }: FilterProps) => {
   return (
-    <Container>
+    <Container data-testid="filter-component">
       <SectionTitle title="Tags" strong />
       <div className="categories">
         {filters.map(filter => {
           return (
-            <div className="category" key={filter}>
+            <div className="category" key={filter} data-testid="category">
               <Link href={`/explore/${filter}`}>
                 <a>
                   <Button rounded size="small">
