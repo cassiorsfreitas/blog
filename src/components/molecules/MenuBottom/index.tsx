@@ -9,13 +9,13 @@ import {
   MdArrowUpward
 } from 'react-icons/md'
 
-const MenuBottom = () => {
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+export interface MenuBottomProps {
+  scrollTop: () => void
+}
 
+const MenuBottom = ({ scrollTop }: MenuBottomProps) => {
   return (
-    <Container>
+    <Container data-testid="menu-bottom">
       <Link href="/">
         <a className="button">
           <div className="menu-desktop">home</div>
@@ -34,7 +34,11 @@ const MenuBottom = () => {
           <MdAccountCircle className="menu-mobile" size={30} />
         </a>
       </Link>
-      <a className="button" onClick={() => scrollTop()}>
+      <a
+        className="button"
+        onClick={() => scrollTop()}
+        data-testid="menu-bottom-btn"
+      >
         <div className="menu-desktop">top</div>
         <MdArrowUpward size={30} className="scrollTop menu-mobile" />
       </a>
