@@ -7,7 +7,7 @@ const SearchBar = () => {
   const { search, setSearch } = useContext(SearchContext)
 
   return (
-    <Container>
+    <Container data-testid="search-container">
       <Input
         fullWidth
         type="search"
