@@ -37,7 +37,7 @@ const Newsletter = () => {
 
   return (
     <>
-      <Container>
+      <Container data-testid="newsletter-container">
         Subscribe to the newsletter
         <p className="">
           Get emails from me about web development, tech, and early access to
