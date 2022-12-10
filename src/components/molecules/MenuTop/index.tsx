@@ -15,18 +15,20 @@ const MenuTop = () => {
 
   return (
     <>
-      <Container>
+      <Container data-testid="menu-top">
         {isLight ? (
           <BiMoon
             onClick={() => setIsLight !== undefined && setIsLight(!isLight)}
             size={30}
             className="theme-icon"
+            data-testid="moon-button"
           />
         ) : (
           <MdWbSunny
             onClick={() => setIsLight !== undefined && setIsLight(!isLight)}
             size={30}
             className="theme-icon"
+            data-testid="sun-button"
           />
         )}
         <div className="header-profile">
