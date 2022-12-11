@@ -1,13 +1,43 @@
 import Image from 'next/image'
 import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import Career from '../../molecules/Career'
-import SocialCard from '../../molecules/SocialCard'
+import SocialCards from '../../molecules/SocialCards'
 import HeadSeo from '../../organisms/HeadSeo'
 import LayoutMobile from '../../templates/LayoutMobile'
 import MainContent from '../../templates/MainContent'
 import { Container } from './styles'
+import EmailIcon from '@material-ui/icons/Email'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import TwitterIcon from '@material-ui/icons/Twitter'
 
 const Profile = () => {
+  const SOCIAL_DATA = [
+    {
+      link: 'https://github.com/cassiorsfreitas',
+      title: 'PORTFOLIO',
+      subtitle: 'Last projects',
+      icon: <GitHubIcon fontSize="large" />
+    },
+    {
+      link: 'https://twitter.com/cassiorsfreitas',
+      title: 'TWITTER',
+      subtitle: 'Discussions',
+      icon: <TwitterIcon fontSize="large" />
+    },
+    {
+      link: 'https://www.linkedin.com/in/cassiorsfreitas/',
+      title: 'LINKEDIN',
+      subtitle: 'Connect to me',
+      icon: <LinkedInIcon fontSize="large" />
+    },
+    {
+      link: 'mailto:cassio.rsfreitas@gmail.com',
+      title: 'EMAIL',
+      subtitle: 'Talk to me',
+      icon: <EmailIcon fontSize="large" />
+    }
+  ]
   return (
     <>
       <HeadSeo
@@ -95,7 +125,7 @@ const Profile = () => {
                 />
               </div>
             </div>
-            <SocialCard />
+            <SocialCards socialData={SOCIAL_DATA} />
           </Container>
         </MainContent>
       </LayoutMobile>
