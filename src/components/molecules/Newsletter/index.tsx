@@ -11,7 +11,7 @@ const Newsletter = () => {
   const [form, setForm] = useState<FormState>({ state: Form.Initial })
   const [email, setEmail] = useState(null)
 
-  const subscribe = async e => {
+  const subscribe = async (e: React.SyntheticEvent) => {
     e.preventDefault()
     setForm({ state: Form.Loading })
 
