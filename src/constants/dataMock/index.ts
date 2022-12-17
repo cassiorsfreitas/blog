@@ -57,3 +57,30 @@ export const dataMockCareer = {
 export const dataMockFilter = {
   filters: ['Devops', 'Front end', 'SEO']
 }
+
+export const dataMockSocialCards = [
+  {
+    link: 'https://github.com/cassiorsfreitas',
+    title: 'PORTFOLIO',
+    subtitle: 'Last projects',
+    icon: 'Any icon'
+  },
+  {
+    link: 'https://twitter.com/cassiorsfreitas',
+    title: 'TWITTER',
+    subtitle: 'Discussions',
+    icon: 'Any icon'
+  },
+  {
+    link: 'https://www.linkedin.com/in/cassiorsfreitas/',
+    title: 'LINKEDIN',
+    subtitle: 'Connect to me',
+    icon: 'Any icon'
+  },
+  {
+    link: 'mailto:cassio.rsfreitas@gmail.com',
+    title: 'EMAIL',
+    subtitle: 'Talk to me',
+    icon: 'Any icon'
+  }
+]

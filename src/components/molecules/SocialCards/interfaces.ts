@@ -5,5 +5,5 @@ export interface SocialDataProps {
   link: string
   title: string
   subtitle: string
-  icon: React.ReactElement<SvgIconProps>
+  icon: React.ReactElement<SvgIconProps> | string
 }
