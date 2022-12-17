@@ -8,7 +8,7 @@ export interface SocialCardsProps {
 
 const SocialCards = ({ socialData }: SocialCardsProps) => {
   return (
-    <Container>
+    <Container data-testid="social-card-container">
       {socialData.map(card => {
         return (
           <div className="card" key={card.title}>
