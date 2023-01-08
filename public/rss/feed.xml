@@ -4,7 +4,7 @@
         <title>Cássio Freitas' blog</title>
         <link>https://cassiorsfreitas.com</link>
         <description></description>
-        <lastBuildDate>Sun, 11 Dec 2022 17:23:14 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Jan 2023 00:00:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -12,7 +12,7 @@
             <url>https://cassiorsfreitas.com/cover-blog.png</url>
             <link>https://cassiorsfreitas.com</link>
         </image>
-        <copyright>All rights reserved 2022, Cássio Freitas</copyright>
+        <copyright>All rights reserved 2023, Cássio Freitas</copyright>
         <item>
             <title><![CDATA[Blog (NextJS) + Spotify: sounds good!]]></title>
             <link>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good</link>
