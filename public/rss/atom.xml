@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cassiorsfreitas.com</id>
     <title>Cássio Freitas' blog</title>
-    <updated>2022-12-11T17:23:14.380Z</updated>
+    <updated>2023-01-08T00:00:15.000Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Cássio Freitas</name>
@@ -13,7 +13,7 @@
     <link rel="self" href="https://cassiorsfreitas.com/rss/atom.xml"/>
     <logo>https://cassiorsfreitas.com/cover-blog.png</logo>
     <icon>https://cassiorsfreitas.com/favicon.png</icon>
-    <rights>All rights reserved 2022, Cássio Freitas</rights>
+    <rights>All rights reserved 2023, Cássio Freitas</rights>
     <entry>
         <title type="html"><![CDATA[Blog (NextJS) + Spotify: sounds good!]]></title>
         <id>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good</id>

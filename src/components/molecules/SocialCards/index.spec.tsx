@@ -1,8 +1,8 @@
 import React from 'react'
 import { render, screen } from '../../../../test/config/react-library'
 import { ThemeProvider, dark } from '../../../../test/config/theme-wrapper'
-import SocialCards from '.'
 import { dataMockSocialCards } from '../../../constants/dataMock'
+import SocialCards from '.'
 
 const makeSut = () => {
   return render(
