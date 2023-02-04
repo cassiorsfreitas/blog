@@ -39,5 +39,9 @@ yarn-error.log*
 .vercel
 
 # rss
+<<<<<<< HEAD
 public/rss/
+=======
+/public/rss/
+>>>>>>> a9f868607eebd45f208d251b89d464c4a517b5eb
 # !/public/rss/feed.json
