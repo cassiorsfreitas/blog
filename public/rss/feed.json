@@ -10,18 +10,6 @@
     },
     "items": [
         {
-            "id": "https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good copy",
-            "content_html": "Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???",
-            "url": "https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good copy",
-            "title": "What is tRPC?",
-            "summary": "Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???",
-            "date_modified": "2023-02-21T00:00:00.000Z",
-            "author": {
-                "name": "Cássio Freitas",
-                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
-            }
-        },
-        {
             "id": "https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good",
             "content_html": "Spotify Web API endpoints return JSON about music artists, albums, and tracks, directly from the Spotify Data Catalogue.",
             "url": "https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good",
@@ -136,6 +124,18 @@
             "title": "My VIM Cheat Sheet",
             "summary": "A Great Vim Cheat Sheet! I have compiled a list of essential Vim commands that I use every day.",
             "date_modified": "2022-04-21T23:00:00.000Z",
+            "author": {
+                "name": "Cássio Freitas",
+                "url": "https://www.linkedin.com/in/cassiorsfreitas/"
+            }
+        },
+        {
+            "id": "https://cassiorsfreitas.com/what-is-trpc",
+            "content_html": "Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???",
+            "url": "https://cassiorsfreitas.com/what-is-trpc",
+            "title": "What is tRPC?",
+            "summary": "Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???",
+            "date_modified": "2023-02-21T00:00:00.000Z",
             "author": {
                 "name": "Cássio Freitas",
                 "url": "https://www.linkedin.com/in/cassiorsfreitas/"

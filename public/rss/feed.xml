@@ -4,7 +4,7 @@
         <title>Cássio Freitas' blog</title>
         <link>https://cassiorsfreitas.com</link>
         <description></description>
-        <lastBuildDate>Mon, 20 Feb 2023 15:47:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Feb 2023 17:59:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,15 +13,6 @@
             <link>https://cassiorsfreitas.com</link>
         </image>
         <copyright>All rights reserved 2023, Cássio Freitas</copyright>
-        <item>
-            <title><![CDATA[What is tRPC?]]></title>
-            <link>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good copy</link>
-            <guid>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good copy</guid>
-            <pubDate>Tue, 21 Feb 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></description>
-            <content:encoded><![CDATA[Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></content:encoded>
-            <author>cassio.rsfreitas@gmail.com (Cássio Freitas)</author>
-        </item>
         <item>
             <title><![CDATA[Blog (NextJS) + Spotify: sounds good!]]></title>
             <link>https://cassiorsfreitas.com/blog-nextjs-spotify-sounds-good</link>
@@ -110,6 +101,15 @@
             <pubDate>Thu, 21 Apr 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[A Great Vim Cheat Sheet! I have compiled a list of essential Vim commands that I use every day.]]></description>
             <content:encoded><![CDATA[A Great Vim Cheat Sheet! I have compiled a list of essential Vim commands that I use every day.]]></content:encoded>
+            <author>cassio.rsfreitas@gmail.com (Cássio Freitas)</author>
+        </item>
+        <item>
+            <title><![CDATA[What is tRPC?]]></title>
+            <link>https://cassiorsfreitas.com/what-is-trpc</link>
+            <guid>https://cassiorsfreitas.com/what-is-trpc</guid>
+            <pubDate>Tue, 21 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></description>
+            <content:encoded><![CDATA[Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></content:encoded>
             <author>cassio.rsfreitas@gmail.com (Cássio Freitas)</author>
         </item>
     </channel>
