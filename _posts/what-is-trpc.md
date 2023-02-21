@@ -2,7 +2,7 @@
 id: 11
 title: 'What is tRPC?'
 date: '20-02-2023'
-excerpt: 'Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???'
+excerpt: 'Wait, so are we going back to use mono repository which contain the whole application? Like Java + Tomcat + Thymeleaf???'
 cover: '/images/post11/cover.jpeg'
 time: '8 min'
 category: 'Front end'
@@ -15,7 +15,7 @@ metadescription: 'TypeScript Remote Procedure Call is the most simple and lightw
 
 ![What is tRPC? -fullwidth](images/post11/cover.jpeg)
 
-First of all, I need to assume that you know what an API is or at least read the Wikipedia definition and then this article doesn't need to be long. Just for our context, application programming interface is bunch of rules that allow the client sends and receives messages from the server through the internet. If curiosity pushes you to learn about communication over the web, [check this article later](https://cassiorsfreitas.com/communication-over-the-web).
+First of all, I need to assume that you know what an API is or at least read the Wikipedia definition and then this article doesn't need to be long. Just for our context, Application Programming Interface is a bunch of rules that allow the client sends and receives messages from the server through the internet. If curiosity pushes you to learn about communication over the web, [check this article later](https://cassiorsfreitas.com/communication-over-the-web).
 
 In chronological order, the first communications were through Web Sockets, where only one function was provided to send and receive bits and everything else was up to you. And you can imagine the amount of problems caused by managing bits over the web, right? Because of that, many people worked to create lighter weight solutions and then RPC was born.
 
@@ -27,9 +27,9 @@ For that, it's necessary to create an agnostic communication bridge between clie
 
 ![End to end testing example -fullwidth](images/post11/idl.png)
 
-Then you can use the IDL compiler tool to generate the code stub to take care of the serialisation and deserialisation of the message for both the client and server sides. Is the same case for GraphQL nowadays: **code generation from the schema file**.
+Then you can use the IDL compiler tool to generate the code stub to take care of the serialisation and deserialisation of the message for both the client and server sides. It's the same case for GraphQL nowadays: **code generation from the schema file**.
 
-This solution was questioned a lot because it generates some negative effects such as the high coupling between the systems and a difficulty in debugging the calls. On the other hand, regarding internal APIs (gRPC) it is still a good solution to consider. But that's all for now.
+This solution was questioned a lot because it generates some negative effects such as the high coupling between the systems and a difficulty in debugging the calls. At the same time, regarding internal APIs (gRPC) it is still a good solution to consider. But that's all for now.
 
 
 ## What is tRPC?
@@ -76,7 +76,7 @@ From the frontend perspective, tRPC provides a factory that consumes the single 
 
 ## For frontend developers
 
-If you already know NextJs and already work with Prisma ORM, I recommend starting a project using the [T3 Stack](https://create.t3.gg/) to see in the code how tRPC works and the great advantage that this layer of abstraction can offer to your experience as a frontend developer.
+If you know NextJs and have already worked with Prisma ORM once in your life, I huge propose starting a project using the [T3 Stack](https://create.t3.gg/) to see in code how tRPC works and see as well the great advantage that this layer of abstraction can offer to your experience as a frontend developer.
 
 ### Few clicks and you will have a great full stack project without boilerplate and scaffolding:
 
