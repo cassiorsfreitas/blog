@@ -1,13 +1,14 @@
 backend:
-  name: github
-  repo: cassiorsfreitas/blog
+  name: git-gateway
+  branch: master
   base_url: https://cassiorsfreitas.com/
-  auth_endpoint: api/auth/ # Essa rota vai ser muito importante mais para frente
+  auth_endpoint: api/auth/
 
-media_folder: public/assets/img
-public_folder: /assets/img
+# These lines should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
-publish_mode: editorial_workflow # Isso permite ter aquele workflow com drafts e tudo
+publish_mode: editorial_workflow
 
 slug:
   encoding: 'ascii'
