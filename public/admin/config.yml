@@ -1,16 +1,18 @@
 backend:
   name: github
   repo: cassiorsfreitas/blog
-  branch: master
-  base_url: https://cassiorsfreitas.com
-  auth_endpoint: api/auth
+  base_url: https://cassiorsfreitas.com/
+  auth_endpoint: api/auth/
+
 media_folder: "public/images"
 public_folder: "/images"
+
 publish_mode: editorial_workflow
-display_url: https://cassiorsfreitas.com
+
 slug:
   encoding: 'ascii'
   clean_accents: true
+
 collections:
   - name: posts
     label: posts
