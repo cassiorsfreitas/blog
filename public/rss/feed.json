@@ -131,10 +131,10 @@
         },
         {
             "id": "https://cassiorsfreitas.com/what-is-trpc",
-            "content_html": "Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???",
+            "content_html": "Wait, so are we going back to use mono repository which contain the whole application? Like Java + Tomcat + Thymeleaf???",
             "url": "https://cassiorsfreitas.com/what-is-trpc",
             "title": "What is tRPC?",
-            "summary": "Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???",
+            "summary": "Wait, so are we going back to use mono repository which contain the whole application? Like Java + Tomcat + Thymeleaf???",
             "date_modified": "2023-02-21T00:00:00.000Z",
             "author": {
                 "name": "Cássio Freitas",

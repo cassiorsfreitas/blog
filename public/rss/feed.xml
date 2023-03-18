@@ -4,7 +4,7 @@
         <title>Cássio Freitas' blog</title>
         <link>https://cassiorsfreitas.com</link>
         <description></description>
-        <lastBuildDate>Mon, 20 Feb 2023 17:59:56 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 18 Mar 2023 18:42:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -108,8 +108,8 @@
             <link>https://cassiorsfreitas.com/what-is-trpc</link>
             <guid>https://cassiorsfreitas.com/what-is-trpc</guid>
             <pubDate>Tue, 21 Feb 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></description>
-            <content:encoded><![CDATA[Wait, so are we going back to using mono repositories which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></content:encoded>
+            <description><![CDATA[Wait, so are we going back to use mono repository which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></description>
+            <content:encoded><![CDATA[Wait, so are we going back to use mono repository which contain the whole application? Like Java + Tomcat + Thymeleaf???]]></content:encoded>
             <author>cassio.rsfreitas@gmail.com (Cássio Freitas)</author>
         </item>
     </channel>
