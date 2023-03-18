@@ -1,25 +1,19 @@
 backend:
-  name: github
-  repo: cassiorsfreitas/blog
-  base_url: https://cassiorsfreitas.com/
-  auth_endpoint: api/auth/ # Essa rota vai ser muito importante mais para frente
-
-media_folder: public/assets/img
-public_folder: /assets/img
-
-publish_mode: editorial_workflow # Isso permite ter aquele workflow com drafts e tudo
-
+  name: git-gateway
+  branch: master
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+publish_mode: editorial_workflow
 slug:
   encoding: 'ascii'
   clean_accents: true
-
 collections:
   - name: posts
     label: posts
-    folder: posts # A pasta onde ficarão os posts
-    create: true # Permite criar um post novo
-    slug: '{{slug}}' # Estrutura do nome arquivo, exemplo: title.md
-    fields: # Os campos do seu frontmatter
+    folder: posts
+    create: true
+    slug: '{{slug}}'
+    fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - {
           label: 'Date',
