@@ -1,26 +1,19 @@
 backend:
   name: git-gateway
   branch: master
-  base_url: https://cassiorsfreitas.com/
-  auth_endpoint: api/auth/
-
-# These lines should *not* be indented
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
-
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 publish_mode: editorial_workflow
-
 slug:
   encoding: 'ascii'
   clean_accents: true
-
 collections:
   - name: posts
     label: posts
-    folder: posts # A pasta onde ficarão os posts
-    create: true # Permite criar um post novo
-    slug: '{{slug}}' # Estrutura do nome arquivo, exemplo: title.md
-    fields: # Os campos do seu frontmatter
+    folder: posts
+    create: true
+    slug: '{{slug}}'
+    fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - {
           label: 'Date',
