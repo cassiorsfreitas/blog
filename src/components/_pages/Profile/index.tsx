@@ -61,6 +61,7 @@ const Profile = () => {
                   layout="responsive"
                   className="profileImageIn"
                   quality={100}
+                  priority
                 />
               </div>
               <div className="titles">
