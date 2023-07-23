@@ -33,12 +33,14 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   `
 
-  const { data } = await graphQLClient.executeOperation({ query })
-  await generateRssFeed(data.posts)
+  const {
+    data: { posts }
+  } = await graphQLClient.executeOperation({ query })
+  await generateRssFeed(posts)
 
   return {
     props: {
-      posts: data.posts
+      posts
     }
   }
 }
