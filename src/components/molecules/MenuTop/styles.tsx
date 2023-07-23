@@ -10,6 +10,10 @@ export const Container = styled.div`
     padding: 2rem 1.5rem;
     position: relative;
 
+    .theme-icon {
+      cursor: pointer;
+    }
+
     .picture-profile {
       border-radius: 100%;
     }
