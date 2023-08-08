@@ -6,10 +6,13 @@ import PostCard from '../../atoms/PostCard'
 import SectionDoubleTitle from '../../atoms/SectionDoubleTitle'
 import { MdSearch } from 'react-icons/md'
 import postOrganizer from '../../../lib/sortingPosts'
+import useWindowSize from '../../../hooks/useWindowsize'
 
 const Recommendations = ({ posts }) => {
+  const windowSize = useWindowSize()
+  const numberOfPosts = windowSize.width > 1600 ? 9 : 7
   const organizer = postOrganizer()
-  const sortedPosts = organizer.descending(posts, 5)
+  const sortedPosts = organizer.descending(posts, numberOfPosts)
 
   return (
     <Container>

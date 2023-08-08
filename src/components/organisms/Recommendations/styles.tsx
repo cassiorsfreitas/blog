@@ -43,12 +43,21 @@ export const Container = styled.div`
 
     @media screen and (min-width: 720px) {
       .postCardContainer {
-        width: 100%;
         display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(6, 320px);
-        overflow-x: auto;
-        padding-bottom: 1rem;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @media (min-width: 1280px) {
+        .postCardContainer {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media (min-width: 1600px) {
+        .postCardContainer {
+          grid-template-columns: repeat(5, 1fr);
+        }
       }
 
       .postCardContainer::-webkit-scrollbar {
