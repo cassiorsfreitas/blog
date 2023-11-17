@@ -15,13 +15,13 @@ metadescription: 'Spotify Web API endpoints return JSON about music artists, alb
 
 ![Blog (NextJS) + Spotify: sounds good! -fullwidth](images/post8/cover.png)
 
-A few months ago I found a really cool feature while exploring Lee Robinson's blog, VP of Developer Experience at Vercel. He connected the NextJS blog with his Spotify account and I was very curious about this integration. Fortunately, like this blog, all the code was open on Github. Well, you can freely explore the repository (and I recommend it) or for now follow this article and understand how it works.
+Some time ago, I stumbled upon a fascinating feature on Lee Robinson's blog, where he, as Vercel's VP of Developer Experience, integrated the Next.js blog with his Spotify account. This integration intrigued me, and luckily, much like this blog, all the code was openly available on Github. You're welcome to explore the repository (which I highly recommend) or follow along with this article to understand how it operates.
 
 ![Unit testing example -fullwidth](images/post8/example1.png)
 
-First of all, based on simple REST principles, the Spotify Web API endpoints return JSON metadata about music artists, albums, and tracks, directly from the Spotify Data Catalogue. Using NextJS we can create a simple server-side application that accesses user related data through the Spotify Web API.
+Primarily rooted in simple REST principles, the Spotify Web API endpoints furnish JSON metadata about music artists, albums, and tracks, directly sourced from the Spotify Data Catalogue. Leveraging Next.js, we can fashion a straightforward server-side application that taps into user-related data through the Spotify Web API.
 
-I don't want to talk about CSS or any other styling. The purpose of this article is to quickly teach you how to make this connection and get to this point:
+Let's skip discussions about CSS or styling for now. The focal point of this article is to swiftly guide you through establishing this connection and reaching this stage:
 
 ![Unit testing example -fullwidth](images/post8/example2.png)
 
@@ -35,7 +35,7 @@ I don't want to talk about CSS or any other styling. The purpose of this article
 
 ## Create a Spotify App
 
-First, we need to create a Spotify application to give us credentials to authenticate with the API.<br/><br/>
+Initially, we'll need to create a Spotify application to acquire the necessary credentials for authenticating with the API.<br/><br/>
 
 - Go to your **[Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)** and log in.
 - Click **Create an App**.
@@ -56,7 +56,7 @@ There are many types of authentication, but we are going with `refresh_token` b
 
 ## Authorization Code
 
-As you can see in the above image we have everything except [scopes](https://developer.spotify.com/documentation/general/guides/authorization/scopes/). Scopes defines what we need fetch from the Spotify API. We'll have our application request authorization by logging in with whatever **scopes** we need. Here's an example of what the URL might look like. Don't forget to swap out the **`client_id`** and scopes for your own:
+In the image above, you'll notice everything except the [scopes](https://developer.spotify.com/documentation/general/guides/authorization/scopes/). Scopes define what we aim to fetch from the Spotify API. Our application will request authorization by logging in with the relevant **scopes** we require. Here's an example of what the URL might resemble. Remember to replace the **`client_id`** and scopes with your own:
 
 ```
 https://accounts.spotify.com/authorize?client_id=8e94bde7dd
@@ -65,14 +65,14 @@ b84a1f7a0e51bf3bc95be8&response_type=code&redirect_uri=http
 user-top-read
 ```
 
-After that, if everything is okay, you'll be redirected back to your redirect_uri. In the URL, there's a code query parameter. Save this value!
+Once redirected back to your designated redirect_uri, you'll notice a code query parameter in the URL. Make sure to save this value!
 `
 
 ```
 http://localhost:3000/callback?code=NApCCg..BkWtQ
 ```
 
-Now, we'll need to retrieve the refresh token. In this case, you'll need to generate a Base 64 encoded string containing the client ID and secret from earlier. You can use any tool to encode it online. The format should be client_id:client_secret. Some suggestions:<br/><br/>
+Next, we'll proceed to obtain the refresh token. To do this, you'll need to generate a Base64 encoded string that combines the client ID and secret obtained earlier. Several online tools can help with this encoding process. The format should appear as client_id:client_secret. Here are a few suggestions:<br/><br/>
 
 - [https://codebeautify.org/base64-encode](https://codebeautify.org/base64-encode)
 - [https://www.base64encode.net/](https://www.base64encode.net/)
@@ -86,13 +86,13 @@ curl -H "Authorization: Basic <base64 encoded client_id:client_secret>"
 %2F%2Flocalhost:3000 https://accounts.spotify.com/api/token
 ```
 
-This will return a JSON response containing a refresh_token. IMPORTANT: This token is [valid indefinitely](https://github.com/spotify/web-api/issues/374) unless you revoke access, so we'll want to save this in an environment variable.
+Upon encoding, you'll receive a JSON response containing a refresh_token. It's crucial to note: this token remains [valid indefinitely](https://github.com/spotify/web-api/issues/374) unless access is revoked. Therefore, it's essential to store this securely in an environment variable.
 
 ## Using Spotify API
 
-To make our life easier and make the code cleaner, create environment variables for: SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET and SPOTIFY_REFRESH_TOKEN. If you've never worked with NextJs environment variables before, [read this](https://nextjs.org/docs/basic-features/environment-variables).
+To simplify our workflow and enhance code clarity, set up environment variables for: SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, and SPOTIFY_REFRESH_TOKEN. If you're new to managing Next.js environment variables, refer to [this guide](https://nextjs.org/docs/basic-features/environment-variables).
 
-We can now request an access token using our client ID, client secret, and **refresh_token**.
+With our client ID, client secret, and **refresh_token** in place, we're ready to request an access token.
 
 ```js
 // lib/spotify.js
@@ -123,7 +123,7 @@ const getAccessToken = async () => {
 };
 ```
 
-Use this access_token to securely request your top tracks. This assumes you added the user-top-read scope at the beginning.
+Utilize this access_token to securely request your top tracks, assuming you added the user-top-read scope initially.
 
 ```js
 // lib/spotify.js
@@ -179,7 +179,7 @@ export const getTopTracks = async () => {
 
 ## Creating an API Route
 
-Let's test our communication with Spotify. First, create a new file at **pages/api/now-playing.ts**. Then, import the new function **getNowPLaying**.
+To test our communication with Spotify, start by creating a new file at **pages/api/now-playing.ts**. Subsequently, import the new function **getNowPLaying**.
 
 ```js
 // pages/api/now-playing.ts
@@ -226,7 +226,7 @@ export default async function handler(
 }
 ```
 
-This returns all the song details if the user is playing the song. Otherwise, isPlaying will return false. You can handle both the conditions now. If the user is playing the song, then simply show the song otherwise display “Not Playing”.
+This function retrieves all the song details if the user is actively playing a track. Otherwise, the function will return false for isPlaying. You can handle both conditions accordingly. If the user is playing a song, display the song details; otherwise, show "Not Playing".
 
 ```json
 {
@@ -239,4 +239,4 @@ This returns all the song details if the user is playing the song. Otherwise, i
 }
 ```
 
-Done! Now just pass this information to the interested components and be happy huhu. Any questions or suggestions, please let me know.
+That's it! Now pass this information to the relevant components and enjoy the outcome. If you have any questions or suggestions, feel free to reach out.
