@@ -66,15 +66,15 @@ const Profile = () => {
               </div>
               <div className="titles">
                 <SectionDoubleTitle
-                  titleMin="Full Stack Developer"
+                  titleMin="Software Engineer"
                   titleMax="Cássio Freitas"
                 />
               </div>
               <div className="description">
                 <h2>Bio</h2>
                 <p>
-                  A blog by a <strong>software engineer</strong>, digital
-                  marketing analyst and consumer experience enthusiast.
+                  A blog by a <strong>developer</strong>, digital marketing
+                  analyst and consumer experience enthusiast.
                 </p>
                 <br />
                 <p>
