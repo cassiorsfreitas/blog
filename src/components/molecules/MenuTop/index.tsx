@@ -32,7 +32,7 @@ const MenuTop = () => {
           />
         )}
         <div className="header-profile">
-          <h1>Read. Learn. Teach.</h1>
+          <h1>blog</h1>
         </div>
         <Link href="/explore">
           <a>
