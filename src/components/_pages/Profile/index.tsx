@@ -66,29 +66,31 @@ const Profile = () => {
               </div>
               <div className="titles">
                 <SectionDoubleTitle
-                  titleMin="Full Stack Developer"
+                  titleMin="Software Engineer"
                   titleMax="Cássio Freitas"
                 />
               </div>
               <div className="description">
                 <h2>Bio</h2>
                 <p>
-                  A blog by a <strong>full-stack developer</strong>, digital
-                  marketing analyst and consumer experience enthusiast.
+                  A blog by a <strong>developer</strong>, digital marketing
+                  analyst and consumer experience enthusiast.
                 </p>
                 <br />
                 <p>
-                  Hey there! My name is Cássio Freitas and I{"'"}m a web
-                  developer from Brazil living in Portugal. Although I studied
-                  Chemical Engineering, I started my professional career as
-                  Marketing Analyst, Digital Traffic Manager and Programmer.
+                  I{"'"}m Cássio Freitas, a web developer from Brazil 🇧🇷 ,
+                  currently residing in Portugal 🇵🇹 for almost 5 years. Despite
+                  my academic background in Chemical Engineering, my
+                  professional journey began with roles as a Marketing Analyst,
+                  Digital Traffic Manager, and Developer.
                 </p>
                 <br />
                 <p>
-                  Nowadays, I am Code Cadet of the 52nd class of the Academia de
-                  Código, passionate about web applications and open source
-                  projects, that{"'"}s why I{"'"}ve always loved producing and
-                  sharing a lot of content with everyone around me.
+                  Presently, I am a Code Cadet from the 52nd class of the Code
+                  for All_, where my passion for web applications and
+                  open-source projects thrives. I{"'"}ve always had a deep
+                  enthusiasm for creating and sharing valuable content with
+                  those around me.
                 </p>
               </div>
             </div>
