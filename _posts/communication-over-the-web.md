@@ -15,19 +15,21 @@ metadescription: 'Lets talk about communication between applications over the i
 
 ## Introduction
 
-These days, my wife has asked me specific questions about the API topic. She threw on the table a bunch of random letters that were on her mind: SOAP, REST, JSON, XML, Interoperability... wait, wait! "Intero" what? Yeah, she is going deep in her studies. But this is a subject for another article. Let's talk about **communication between applications over the internet**.
+Lately, my wife's delving into some intricate API questions, tossing around a jumble of tech terms: SOAP, REST, JSON, XML, and something about "Intero" - wait, what's that? She's really digging deep into her studies. But that's a story for another time. Let's zone in on **communication between applications over the internet**.
 
-First of all, interoperability is a fancy way for a system to say: hey, I'm able to communicate with other systems transparently and without paying royalties to anyone. Though it may seem like a new word, it has been discussed since the late 2000s that whenever there was a need to talk about properties that allow the unrestricted sharing of resources between different applications. And whoever thinks that this term is restricted to IT system is wrong.
+Interoperability, in simple terms, means a system's knack for seamless communication with other systems, sans any royalties or complexities. While it might sound new, it's been on the tech radar since the late 2000s, whenever the need arose to discuss features enabling unhindered resource sharing among various applications. And here's the kicker: this term isn't limited to just IT systems.
 
-However, bringing the term to the technology environment side, from this capacity and the growth of open standard projects different languages, systems and companies can integrate and develop a direct line of communication between them. I mean, since 'interoperability' has become widespread, the management of data transfers has improved significantly.
+In the tech sphere, leveraging this capability and the proliferation of open standard projects has allowed diverse languages, systems, and companies to connect and establish direct communication channels. With 'interoperability' in the picture, the management of data transfers has seen a significant uptick in efficiency.
 
 ## Protocols
 
-Before we talk about communication mechanisms, we need to discuss communication protocols like HTTP or FTP and the various piece of details that complicate the head of a beginner in Web programming. Keep in mind the web communication also involves sockets, processes, buffers, clients, servers, and other subtopics that would give an entire article about each one. But for now, let's look at just one of the TCP/IP layers: application layer.
+Before diving into communication mechanisms, let's untangle the web of communication protocols such as HTTP or FTP. For beginners in web programming, these intricacies can often confound. Web communication isn't just about protocols; it encompasses sockets, processes, buffers, clients, servers, and an array of subtopics, each worthy of an entire article.
+
+For the moment, let's narrow our focus to just one slice of the TCP/IP layers: the application layer.
 
 ![TCPIP layers and protocols -fullwidth](images/post10/image1.png)
 
-The application layer is not an application. Instead, it is a component within an application that controls the communication method to other devices. It is an abstraction layer service that masks the rest of the application from the transmission process.
+Contrary to its name, the application layer isn't an application itself. Rather, it's a vital component nestled within an application, overseeing communication with other devices. Functioning as an abstraction layer service, it shields the inner workings of the application, masking the intricacies of the transmission process.
 <br>
 - Ensures that the receiving device is identified, reachable and ready to accept data;
 
@@ -43,11 +45,13 @@ The application layer is not an application. Instead, it is a component within a
 
 ## In practice
 
-Imagine that you have an application running on port 3000. When someone on the network decides to send some information to the IP address of your computer where your application is running and sends a "request" that wants to talk to whoever is connected to that port 3000, the operating system receives this and says, "Okay, who's listening on port 3000, let's see in the table, oh it's the process PID 11, I'll send it to its open pipe". Now your program, which was just listening, starts receiving bits. At this point, he can choose to accept or reject it. This is the *accept* step.
+Picture this: Your application is humming away on port 3000. When someone on the network sends data to the IP address of your computer, aiming to connect with whoever's handling port 3000, the operating system steps in. It checks its table and identifies that process PID 11 is the listener on that port. The OS then redirects the incoming data to the open pipe connected to that process.
 
-I know, this is perhaps the best example to explain when communication between applications is started. But I believe it has become clear that this doesn’t happen magically. For a conversation to exist, both of them need to agree on which commands they accept to exchange. This agreement between the two ends is the famous protocol. Protocols are what define the commands and values that both the browser and the web server program can understand, **the right pins to the right holes in the socket**.
+Now, your program, which was quietly listening, begins receiving these bits. At this juncture, it faces a decision: accept or reject? This is the pivotal acceptance moment.
 
-Remember, the main objective is to transfer data from application A to application B, so let's restrict ourselves to the Application Layer and some of its protocols.<br>
+Indeed, this example vividly demonstrates that communication between applications isn't a magical occurrence. For a meaningful exchange to take place, both ends must align on the commands they're willing to swap. Enter the revered protocol. Protocols define the language, the set of commands, and values that both the browser and the web server program comprehend—a synchronization of the right pins with the right holes in the socket. This agreement is what facilitates seamless communication between these entities.
+
+When it comes to transferring data from application A to application B, our focus narrows down to the Application Layer and its protocols. This layer exclusively handles the seamless exchange of data between applications, shielding the underlying network complexities.<br>
 - **HTTP:**
 Hypertext Transfer Protocol It is the most basic and used for browsing internet sites and also works as a connection between the client and the server. The browser sends a request to access a page. This request happens when we put the address of some website in the search field in the browser. Meanwhile, the server sends an access permission response. With it come the files that make up the page that the user accesses. In addition to the hypertext information that makes other requests to take the reader to other pages through links.
 
@@ -61,7 +65,8 @@ Secure Shell means Security Block. It is one of the specific security protocols 
 
 ## Web services
 
-The protocol between pins and sockets is defined through a communication interface called API (Application Programming Interface). So, we can say that APIs are interfaces created to establish a communication protocol between two applications. And each API operates according to a specific network protocol, depending on your needs and goals. For example:
+APIs, short for Application Programming Interfaces, serve as communication interfaces shaping the protocol between pins and sockets. Their core purpose is to establish seamless communication between two applications. Each API operates in accordance with a specific network protocol, tailored to meet specific needs and objectives.
+
 
 ## RESTful Web Service
 
@@ -129,6 +134,6 @@ The two data formats are widely used throughout the web to work with data, and f
 
 ## Overview
 
-So, let's recap. For communication over the web to happen, applications need to follow the same communication protocol (eg HTTPS). We call API, the contract/protocol and the architecture defined by these applications (eg REST). The architectures work with different types of data formats (eg JSON).
+In essence, for seamless web communication, applications must align with a common communication protocol like HTTPS. APIs serve as the defined contract or protocol, shaping the interaction between applications, such as the REST architecture. These architectural models accommodate diverse data formats, such as JSON.
 
-In the end, that bunch of letters my wife threw were all part of the same bucket. By the way, she has reviewed this entire article and now has a better understanding of how two applications communicate over the web. Quest completed!
+Ultimately, those strings of tech jargon—SOAP, REST, JSON—belong to the same realm. And kudos to your wife for reviewing this article; she now holds a clearer understanding of how web applications converse. Quest accomplished!
