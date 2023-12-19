@@ -1,5 +1,4 @@
-import HeadSeo from '../../organisms/HeadSeo'
-import LatestPosts from '../../organisms/LatestPosts'
+import HeadSeo from '../../HeadSeo'
 import MainContent from '../../templates/MainContent'
 
 const Blog = ({ posts }) => {
@@ -13,9 +12,7 @@ const Blog = ({ posts }) => {
         slug="https://cassiorsfreitas.com/explore"
         canonical="https://cassiorsfreitas.com/explore"
       />
-      <MainContent>
-        <LatestPosts posts={posts} />
-      </MainContent>
+      <MainContent>Blog</MainContent>
     </>
   )
 }

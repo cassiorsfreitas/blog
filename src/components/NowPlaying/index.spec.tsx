@@ -1,10 +1,10 @@
 import React from 'react'
-import { render, screen } from '../../../../test/config/react-library'
-import { ThemeProvider, dark } from '../../../../test/config/theme-wrapper'
+import { render, screen } from '../../../test/config/react-library'
+import { ThemeProvider, dark } from '../../../test/config/theme-wrapper'
 import NowPlaying from '.'
 import { NowPlayingProps } from './interface'
-import { NowPlayingSong } from '../../../lib/types'
-import { dataMockNowPlaying } from '../../../constants/dataMock'
+import { NowPlayingSong } from '../../lib/types'
+import { dataMockNowPlaying } from '../../mocks/nowPlaying'
 
 const makeSut = (props: Partial<NowPlayingSong> = {}) => {
   const defaultProps: NowPlayingProps = {

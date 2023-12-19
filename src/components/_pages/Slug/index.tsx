@@ -1,4 +1,4 @@
-import SinglePost from '../../organisms/SinglePost'
+import MainContent from '../../templates/MainContent'
 
 const Slug = ({ metadata, content, slug }) => {
   return (
@@ -11,7 +11,7 @@ const Slug = ({ metadata, content, slug }) => {
         slug={`https://cassiorsfreitas.com/${slug}`}
         canonical={`https://cassiorsfreitas.com/${slug}`}
       /> */}
-      <SinglePost metadata={metadata} content={content} />
+      <MainContent>Slug</MainContent>
     </>
   )
 }
