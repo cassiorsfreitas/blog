@@ -1,13 +1,26 @@
 import { GetStaticProps } from 'next'
-import Blog from '../../components/_pages/Blog'
-import { PostInterface } from '../../interfaces/postInterface'
+import { PostInterface } from '../../interfaces/post'
 import { graphQLClient } from '../api/graphql'
+import HeadSeo from '../../components/HeadSeo'
 
 type Props = {
   posts: PostInterface[]
 }
 const Index = ({ posts }: Props) => {
-  return <Blog posts={posts} />
+  console.log(posts)
+  return (
+    <>
+      <HeadSeo
+        title="Cássio Freitas - Software Engineer"
+        description="A blog by a full-stack developer, digital marketing and consumer experience enthusiast. Team Liquid fan and musician in his spare time."
+        keyword="software engineer"
+        cover="https://cassiorsfreitas.com/cover-blog.png"
+        slug="https://cassiorsfreitas.com/"
+        canonical="https://cassiorsfreitas.com/"
+      />
+      Im Cássio Freitas
+    </>
+  )
 }
 
 export default Index

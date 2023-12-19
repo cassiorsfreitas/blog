@@ -1,6 +1,6 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import ThemeWrapper from '../components/templates/ThemeWrapper'
+import ThemeWrapper from '../components/ThemeWrapper'
 
 function MyApp({ Component, pageProps }: AppProps) {
   console.log('Have a great day! 📣🦖')

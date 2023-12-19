@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "cassiorsfreitas.com",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -17,9 +17,6 @@
     "test:ci": "yarn test --coverage"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@openlab/vercel-netlify-cms-github": "^1.1.1",
     "apollo-server-micro": "^2.21.1",
     "axios": "^0.21.1",
     "feed": "^4.2.2",
@@ -45,7 +42,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^14.2.0",
-    "@types/gtag.js": "^0.0.7",
     "@types/node": "^16.0.1",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
@@ -64,9 +60,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
-    "husky": "^8.0.2",
     "jest": "^26.4.2",
-    "lint-staged": "^13.0.4",
     "next-sitemap": "^1.6.179",
     "prettier": "^2.3.2",
     "typescript": "^4.8.3"

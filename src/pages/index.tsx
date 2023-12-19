@@ -1,46 +1,19 @@
-import { GetStaticProps } from 'next'
-import { graphQLClient } from './api/graphql'
-import Home from '../components/_pages/Home'
-import generateRssFeed from '../lib/generateRssFeed'
-import { PostInterface } from '../interfaces/postInterface'
+import HeadSeo from '../components/HeadSeo'
 
-type Props = {
-  posts: PostInterface[]
-}
-
-export const Index = ({ posts }: Props) => {
-  return <Home posts={posts} />
+export const Index = () => {
+  return (
+    <>
+      <HeadSeo
+        title="Cássio Freitas - Software Engineer"
+        description="A blog by a full-stack developer, digital marketing and consumer experience enthusiast. Team Liquid fan and musician in his spare time."
+        keyword="software engineer"
+        cover="https://cassiorsfreitas.com/cover-blog.png"
+        slug="https://cassiorsfreitas.com/"
+        canonical="https://cassiorsfreitas.com/"
+      />
+      Im Cássio Freitas
+    </>
+  )
 }
 
 export default Index
-
-export const getStaticProps: GetStaticProps = async () => {
-  const query = `
-    query {
-      posts {
-        metadata {
-          id
-          title
-          excerpt
-          date
-          time
-          cover
-          slug
-          category
-          link
-        }
-      }
-    }
-  `
-
-  const {
-    data: { posts }
-  } = await graphQLClient.executeOperation({ query })
-  await generateRssFeed(posts)
-
-  return {
-    props: {
-      posts
-    }
-  }
-}
