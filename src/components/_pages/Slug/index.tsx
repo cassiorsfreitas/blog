@@ -1,21 +1,17 @@
-import LayoutMobile from '../../templates/LayoutMobile'
 import SinglePost from '../../organisms/SinglePost'
-import HeadSeo from '../../organisms/HeadSeo'
 
 const Slug = ({ metadata, content, slug }) => {
   return (
     <>
-      <HeadSeo
+      {/* <HeadSeo
         title={`${metadata.title} - Cássio Freitas`}
         description={metadata.metadescription}
         keyword={metadata.metakeyword}
         cover={`https://cassiorsfreitas.com${metadata.cover}`}
         slug={`https://cassiorsfreitas.com/${slug}`}
         canonical={`https://cassiorsfreitas.com/${slug}`}
-      />
-      <LayoutMobile>
-        <SinglePost metadata={metadata} content={content} />
-      </LayoutMobile>
+      /> */}
+      <SinglePost metadata={metadata} content={content} />
     </>
   )
 }

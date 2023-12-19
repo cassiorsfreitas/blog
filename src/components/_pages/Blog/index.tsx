@@ -1,10 +1,8 @@
-import SearchBar from '../../molecules/SearchBar'
 import HeadSeo from '../../organisms/HeadSeo'
 import LatestPosts from '../../organisms/LatestPosts'
-import LayoutMobile from '../../templates/LayoutMobile'
 import MainContent from '../../templates/MainContent'
 
-const Explore = ({ posts }) => {
+const Blog = ({ posts }) => {
   return (
     <>
       <HeadSeo
@@ -15,14 +13,11 @@ const Explore = ({ posts }) => {
         slug="https://cassiorsfreitas.com/explore"
         canonical="https://cassiorsfreitas.com/explore"
       />
-      <LayoutMobile>
-        <MainContent>
-          <SearchBar />
-          <LatestPosts posts={posts} />
-        </MainContent>
-      </LayoutMobile>
+      <MainContent>
+        <LatestPosts posts={posts} />
+      </MainContent>
     </>
   )
 }
 
-export default Explore
+export default Blog

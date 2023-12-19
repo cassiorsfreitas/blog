@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next'
-import Explore from '../../components/_pages/Explore'
+import Blog from '../../components/_pages/Blog'
 import { PostInterface } from '../../interfaces/postInterface'
 import { graphQLClient } from '../api/graphql'
 
@@ -7,7 +7,7 @@ type Props = {
   posts: PostInterface[]
 }
 const Index = ({ posts }: Props) => {
-  return <Explore posts={posts} />
+  return <Blog posts={posts} />
 }
 
 export default Index

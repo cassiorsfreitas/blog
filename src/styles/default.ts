@@ -9,7 +9,7 @@ export default {
   },
 
   font: {
-    family: "'Open Sans', sans-serif",
+    family: 'Fira Code',
     weight: {
       light: 300,
       normal: 400,
@@ -25,12 +25,13 @@ export default {
     lightGray: '#cbcbcb',
     gray: '#8F8F8F',
     darkGray: '#B5B5B5',
-    background: ['#202329', '#2B3138', '#fff', '#F1F7FB'],
+    background: ['#08070B', '#2B3138', '#fff', '#F1F7FB'],
     footer: '#0866B7',
     header: '#fff',
     dropcard: '#fafafa',
     postCard: '#fafafa',
-    scroll: '#2b3138'
+    scroll: '#2b3138',
+    white: '#F8F8F2'
   },
 
   layers: {

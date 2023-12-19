@@ -7,7 +7,6 @@ import Document, {
   NextScript
 } from 'next/document'
 
-import { GA_TRACKING_ID } from '../lib/gtag'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -41,31 +40,12 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Montserrat:wght@300;400;700&display=swap"
             rel="stylesheet"
           />
-
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-            />
-            <script
-              // eslint-disable-next-line react/no-danger
-              dangerouslySetInnerHTML={{
-                __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `
-              }}
-            />
-          </>
         </Head>
         <body>
           <Main />

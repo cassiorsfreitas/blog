@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     font-weight: 300;
     background-color: ${({ theme }) => theme.colors.background[0]};
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     scroll-behavior: smooth;
 
   }
@@ -34,13 +34,15 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2.5rem;
     line-height: 3.25rem;
     margin-bottom: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Code', sans-serif;
+
   }
 
   h2 {
     font-size: 2rem;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Code', sans-serif;
+
   }
 
   h3 {

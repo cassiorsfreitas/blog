@@ -68,7 +68,7 @@ export const Container = styled.div`
       margin: 1rem 0%;
       padding: 1rem;
       border: 1px solid ${theme.colors.primary[0]};
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Fira Code', monospace;
 
       overflow-x: auto;
       white-space: pre-wrap;
@@ -124,7 +124,6 @@ export const Container = styled.div`
       top: 0rem;
       font-size: 7rem;
       position: absolute;
-      font-family: ;
       color: ${theme.colors.primary[0]};
     }
 

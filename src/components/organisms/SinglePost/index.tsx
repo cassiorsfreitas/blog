@@ -48,7 +48,6 @@ const SinglePost = ({ metadata, content }) => {
     <Container>
       <MainContent>
         <div className="desktop">
-          <div className="tag">{metadata.category}</div>
           <div className="text-content">
             <h1>{metadata.title}</h1>
             <h4>

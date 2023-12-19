@@ -4,8 +4,8 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     width: 100%;
-    color: ${theme.colors.primary[0]};
-    background-color: #202329;
+    color: ${theme.colors.white};
+    background-color: #44475a;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;

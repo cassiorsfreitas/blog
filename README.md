@@ -47,7 +47,6 @@ npm run dev or yarn dev
 "test": "jest --passWithNoTests --runInBand --no-cache --silent --noStackTrace",
     "test:unit": "yarn test --watch -c jest-unit-config.js",
     "test:staged": "yarn test --findRelatedTests",
-    "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:verbose": "jest --passWithNoTests --runInBand --no-cache",
     "test:ci": "yarn test --coverage",
     "cypress:open": "cypress open"
@@ -64,13 +63,7 @@ npm run dev or yarn dev
 "test:unit": "yarn test --watch -c jest-unit-config.js"
 ```
 
-3. Integration test:
-
-```sh
-"test:integration": "yarn test --watch -c jest-integration-config.js"
-```
-
-4. CI test:
+3. CI test:
 
 ```sh
 "test:ci": "yarn test --coverage"
